@@ -1,15 +1,20 @@
-@extends("plantilla")
-@section("main")
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title></title>
   </head>
   <body>
+    <header>
+
+    </header>
+
+
+    @yield("main")
+
+    <footer>
+      
+    </footer>
 
   </body>
 </html>
-
-@endsection

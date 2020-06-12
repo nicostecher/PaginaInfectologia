@@ -1,3 +1,6 @@
+@extends("plantilla")
+@section("main")
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -8,3 +11,5 @@
 
   </body>
 </html>
+
+@endsection
