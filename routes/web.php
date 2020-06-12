@@ -14,3 +14,31 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::get('/bibliografia', function () {
+    return view('bibliografia');
+});
+
+Route::get('/casosClinicos', function () {
+    return view('casosClinicos');
+});
+
+Route::get('/novedades', function () {
+    return view('novedades');
+});
+
+Route::get('/clases', function () {
+    return view('clases');
+});
+
+Route::get('/cronograma', function () {
+    return view('cronograma');
+});
+
+Route::get('/cuerpoDocente', function () {
+    return view('cuerpoDocente');
+});
