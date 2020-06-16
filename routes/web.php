@@ -45,3 +45,7 @@ Route::get('/cronograma', function () {
 Route::get('/cuerpoDocente', function () {
     return view('cuerpoDocente');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

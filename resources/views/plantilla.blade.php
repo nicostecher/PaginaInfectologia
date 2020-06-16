@@ -7,22 +7,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/header.css">
-    <title>plantilla</title>
+    <title>Catedra de Infectología</title>
   </head>
   <body>
     <header>
-      
+
       <div class="imagen-uba">
         <a href="/home"><img src="/imagenes/logo-uba.png" alt="uba"></a>
       </div>
-      
+
         <div class="titulo-principal">
             <a href="/home"><h4>Catedra de <br> Infectología</h4></a>
         </div>
-        
-        
+
+
         <!--MENU MOBILE-->
-        
+
         <div class="menu-mobile">
           <div class="fixed-top">
             <div class="collapse" id="navbarToggleExternalContent">
@@ -35,7 +35,7 @@
                   <li class="text-muted"><a href="/bibliografia">Bibliografía</a></li>
                  </div>
                </ul>
-               
+
              </div>
              <nav class="navbar navbar-dark">
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +61,7 @@
                  </div>
                </div>
            </div>
-           
+
              <br>
              <br>
              <br>
@@ -76,7 +76,7 @@
                        Secciones
                      </a>
                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="/cronograma">Cronograma</a> 
+                      <a class="dropdown-item" href="/cronograma">Cronograma</a>
                       <a class="dropdown-item" href="/clases">Clases</a>
                        <a class="dropdown-item" href="/casosClinicos">Casos Clinicos</a>
                        <a class="dropdown-item" href="/cuerpoDocente">Cuerpo Docente</a>
@@ -99,7 +99,7 @@
     @yield("main")
 
     <footer>
-      
+
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

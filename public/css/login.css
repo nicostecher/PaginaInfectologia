@@ -1,0 +1,16 @@
+.container {
+    margin-top: 12px;
+}
+.btn-link  {
+  display: block;
+  margin-right: 200px;
+}
+
+.card-header{
+  text-align: center;
+}
+
+
+@media (min-width: 1024px){
+
+}
