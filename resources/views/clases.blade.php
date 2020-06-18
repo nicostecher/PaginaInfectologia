@@ -1,15 +1,53 @@
 @extends("plantilla")
-@section("main")
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Clases</title>
-  </head>
-  <body>
+@section("main")  
 
-  </body>
-</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/clases.css">
+  
+
+<div class="titulo-clases">
+  <h2>Clases</h2>
+</div>
+  
+
+<section class="contenido-clases">
+
+  <article class="clase">
+
+    <div class="video">
+    <iframe src="https://docs.google.com/viewer?srcid=1v2U0h14MMKsdOXEvX8pgHCN6-OLETX3N&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="80%" height="250px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="descripcion">
+        <p>Clase 1</p>
+        </div>
+
+  </article>
+
+  <br>
+
+  <article class="clase2">
+    <div class="pdf">
+      <iframe src="https://docs.google.com/viewer?srcid=1QDqahbmx_CWZi_sS7bEfqSz8cKmk9lhS&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="90%" height="250px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      
+    </div>
+    
+      <div class="descripcion">
+        <p>Clase 2</p>
+        </div>
+  </article>
+  
+
+</section>
+
+<br>
+
+
 
 @endsection
