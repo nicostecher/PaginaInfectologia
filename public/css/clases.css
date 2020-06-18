@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    width: 100%;
+    background-image: url("../imagenes/fondo.jpg");
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    
+    
+    
+    
+}
+
+.titulo-clases{
+    margin-top: 25px;
+    text-align: center;
+    background-color:  hsl(211, 29%, 25%, 0.9);
+}
+
+section{
+   margin: 0 auto;
+   width: 90%;
+}
+
+.contenido-clases{
+    margin-top: 15%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+
+.titulo-clases h2{ 
+    font-family: 'Libre Baskerville', serif;
+    color:rgba(231, 218, 218, 0.781);
+    text-decoration: underline;
+    
+}
+
+.article{
+    width: 100%;
+}
+
+.clase, .clase2{
+    border: 1px solid gray;
+    background-color:  hsl(211, 29%, 25%, 0.9);
+    
+}
+
+
+
+.video{
+    position: relative;
+    margin-top: 15px;
+}
+.descripcion p{
+    color: rgba(231, 218, 218, 0.781);
+    text-decoration: underline;
+}
+
+.pdf{
+    margin-top: 15px;
+}
+      
+
+/* VERSION ESCRITORIO*/
+
+
+@media (min-width:1024px){
+
+    .titulo-clases{
+        text-align: left;
+        display: inline-block;
+        margin-top: 5%;
+        margin-left:5% ;
+        width: 20%;
+    }
+
+    .titulo-clases h2{
+        font-size: 40px;
+        text-align: center;
+        
+    }
+
+    .contenido-clases{
+        background-color: hsl(211, 29%, 25%, 0.9);
+        width: 75%;
+        margin-top: 5%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    article{
+      
+        width: 50%;
+        float: left;
+       
+        margin-bottom: 25px;
+    }
+
+    .clase{
+        margin-top: 25px;
+        width: 40%;
+        margin-left: 5%;
+    }
+
+    .clase2{
+            margin-top: 1px;
+            width: 40%;
+            margin-left: 5%;
+    }
+
+   .pdf{
+       display: inline-block;
+      
+   }
+    
+}
+
+

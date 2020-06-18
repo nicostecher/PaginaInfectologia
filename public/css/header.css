@@ -8,9 +8,9 @@
   }
 
     /*HEADER EN MOBILE*/
-
   header{
-      background-color:#2E4053 ;
+      background-color:#2E4053;
+      opacity: 0.9;
       overflow: hidden;
       width: 100%;
       box-sizing: border-box;
