@@ -1,9 +1,10 @@
 .container {
     margin-top: 12px;
+
 }
 .btn-link  {
   display: block;
-  margin-right: 200px;
+  margin-right: 3px;
 }
 
 .card-header{
@@ -12,5 +13,8 @@
 
 
 @media (min-width: 1024px){
-
+  .btn-link  {
+    display: block;
+    margin-right: 200px;
+  }
 }

@@ -1,0 +1,15 @@
+.cuerpo-docente{
+  background-color: white;
+  border-radius: 15px;
+  height: 324px;
+  margin-top: 20px;
+margin-left: 10px;
+align-items: center;
+display: block;
+margin-right: 10px;
+text-align: center;
+}
+
+body{
+  background-color: #D6D6D6;
+}
