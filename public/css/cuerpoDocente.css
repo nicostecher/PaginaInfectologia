@@ -1,5 +1,6 @@
 .cuerpo-docente{
   background-color: white;
+  opacity: 0.8;
   border-radius: 15px;
   height: 324px;
   margin-top: 20px;
@@ -12,4 +13,25 @@ text-align: center;
 
 body{
   background-color: #D6D6D6;
+}
+
+p.nombre-docente {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (min-width: 1024px){
+  .cuerpo-docente{
+    margin-left: 49px;
+    margin-right: 49px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .docente2{
+    margin-left: -61px;
+}
+  }
 }
