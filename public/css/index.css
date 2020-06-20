@@ -1,0 +1,68 @@
+.barra-busqueda{
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.navbar {
+      padding: 0px;
+      border-radius: 15px;
+
+}
+.lupita{
+  display: inline;
+}
+.busqueda{
+  display: inline;
+  margin-left: 123px;
+  font-size: 13px;
+}
+
+
+.novedades{
+  text-align: center;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.noticia1{
+  display: none;
+}
+.noticia2{
+  display: none;
+}
+.categorias{
+  text-align: center;
+}
+
+.categoria-cronograma{
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.categoria-bibliografia{
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.categoria-casosClinicos{
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.categoria-clases{
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.categoria-cuerpoDocente{
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width:1024px){
+  .noticia1{
+    display: inline-block;
+  }
+  .noticia2{
+    display: inline-block;
+  }
+}

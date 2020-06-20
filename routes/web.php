@@ -46,6 +46,9 @@ Route::get('/cuerpoDocente', function () {
     return view('cuerpoDocente');
 });
 
+Route::get('/index', function () {
+    return view('index');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
