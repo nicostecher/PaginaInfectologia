@@ -15,20 +15,22 @@ body{
     background-repeat:no-repeat;
     background-attachment: fixed;
     
-    
-    
-    
+}
+
+.titulo-escritorio{
+    display: none;
 }
 
 .titulo-clases{
     margin-top: 25px;
     text-align: center;
-    background-color:  hsl(211, 29%, 25%, 0.9);
+    background-color: rgb(255, 255, 255,0.3);
 }
 
 section{
    margin: 0 auto;
    width: 90%;
+   border-radius: 5px;
 }
 
 .contenido-clases{
@@ -43,8 +45,8 @@ section{
 
 
 .titulo-clases h2{ 
-    font-family: 'Libre Baskerville', serif;
-    color:rgba(231, 218, 218, 0.781);
+    font-family: 'Roboto', sans-serif;
+    color:black;
     text-decoration: underline;
     
 }
@@ -54,8 +56,10 @@ section{
 }
 
 .clase, .clase2{
-    border: 1px solid gray;
-    background-color:  hsl(211, 29%, 25%, 0.9);
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255,0.3);
+    border-radius: 5px;
+
     
 }
 
@@ -66,7 +70,7 @@ section{
     margin-top: 15px;
 }
 .descripcion p{
-    color: rgba(231, 218, 218, 0.781);
+    color: black;
     text-decoration: underline;
 }
 
@@ -80,22 +84,27 @@ section{
 
 @media (min-width:1024px){
 
+  
     .titulo-clases{
-        text-align: left;
-        display: inline-block;
-        margin-top: 5%;
-        margin-left:5% ;
-        width: 20%;
+        display: none;
     }
 
-    .titulo-clases h2{
+    .titulo-escritorio{
+        text-align: left;
+        display: inline-block;
+       margin: 0 auto;
+        
+        
+    }
+
+    .titulo-escritorio h2{
         font-size: 40px;
         text-align: center;
         
     }
 
     .contenido-clases{
-        background-color: hsl(211, 29%, 25%, 0.9);
+        background-color: rgb(255, 255, 255,0.6);
         width: 75%;
         margin-top: 5%;
         overflow: hidden;

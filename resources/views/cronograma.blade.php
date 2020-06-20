@@ -1,15 +1,30 @@
 @extends("plantilla")
 @section("main")
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Cronograma</title>
-  </head>
-  <body>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/cronograma.css">
 
-  </body>
-</html>
+    <title>Cronograma</title>
+  
+
+    
+    <section class="contenedor-cronograma ">
+      
+          <div class="titulo-cronograma" >
+             <h2> Cronogorama</h2>
+          </div>
+      
+      <div class="imagen-cronograma">
+          <img src="/imagenes/cronograma.jpg"  alt="">
+       </div>
+
+       
+    </section>
+
+    <br>
+    <br>
+    <br>
+
 
 @endsection
