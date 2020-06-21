@@ -12,7 +12,7 @@
     <div class="cuerpo-docente">
       <div class="docente1">
         <div class="imagen-docente">
-          <img src="/public/imagenes/daniel-stecher.jpg" alt="Daniel Stecher">
+          <img src="/imagenes/daniel-stecher.jpg" alt="Daniel Stecher">
         </div>
         <div class="descripcion-docente">
           <p class="nombre-docente">Daniel Stecher</p>

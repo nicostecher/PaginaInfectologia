@@ -22,7 +22,8 @@
      padding-left: 15px;
  }
   .titulo-principal h4{
-      font-family: 'Libre Baskerville', serif;
+      font-family:  'Roboto', sans-serif;
+      color: white;
   }
 
   .titulo-principal a{

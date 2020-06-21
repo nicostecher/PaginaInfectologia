@@ -10,6 +10,10 @@
 
     
     <section class="contenedor-cronograma ">
+        
+        <div class="imagen-fondo">
+            
+       
       
           <div class="titulo-cronograma" >
              <h2> Cronogorama</h2>
@@ -19,7 +23,7 @@
           <img src="/imagenes/cronograma.jpg"  alt="">
        </div>
 
-       
+    </div>
     </section>
 
     <br>

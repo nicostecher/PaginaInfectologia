@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/plantilla.css">
-    <title>Catedra de Infectología</title>
+    <title>Cursada de Infectología</title>
   </head>
   <body>
     <header>
@@ -18,7 +18,7 @@
       </div>
 
         <div class="titulo-principal">
-            <a href="/home"><h4>Catedra de <br> Infectología</h4></a>
+            <a href="/home"><h4>Cursada de <br> Infectología</h4></a>
         </div>
 
 
@@ -86,9 +86,6 @@
                    </li>
                    <li class="nav-item">
                      <a class="nav-link" href="#">Novedades</a>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="#">Contacto</a>
                    </li>
                  </ul>
                </div>
