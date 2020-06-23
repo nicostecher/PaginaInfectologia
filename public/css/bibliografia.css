@@ -63,13 +63,13 @@ header{
 
     .listado-bibliografia{
         margin-top: 15px;
-        display: inline-block;
-        top: left;
-        margin-left: 20px;
+       
     }
 
+ 
     .listado-bibliografia li{
        padding-bottom: 10px ;
+       text-align: center;
       
     }
 
