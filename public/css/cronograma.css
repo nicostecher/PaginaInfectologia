@@ -8,27 +8,24 @@
 
 }
 
-body{
-    width: 100%;
+
+
+.transparencia{
+    background-color: rgb(255, 255, 255,0.3);
+    padding-top:50px;
+}
+
+
+section.contenedor-cronograma{
+    background-image: url("../imagenes/fondo.jpg");
     background-size:cover;
     background-position: center center;
     background-repeat:no-repeat;
     background-attachment: fixed;
-    height:100vh; 
+    z-index: -1;
 }
 
-.imagen-fondo{
-    background-image: url("../imagenes/fondo.jpg");
-    
-}
 
-section.contenedor-cronograma{
-    margin-top: 60px;
-    width: 100%;
-    border: 1px solid black;
-    background-color:  rgb(255, 255, 255,0.7);
-   
-}
 
 .titulo-cronograma{
     margin-top: 15px;
@@ -39,10 +36,15 @@ section.contenedor-cronograma{
 .titulo-cronograma h2{
     font-family: 'Roboto', sans-serif;
     text-decoration: underline;
-    
-    
+    color: blue;
+   font-variant-caps: all-small-caps;
 }
 
+.caja-cronograma{
+    background-color: rgb(255, 255, 255,0.3);
+    width: 80%;
+    margin: 0 auto;
+}
 
 .imagen-cronograma{
     width:90%;
@@ -53,7 +55,7 @@ section.contenedor-cronograma{
 
 .imagen-cronograma img{
     width: 100%;
-    height: 100vh;
+   
 }
 
 
@@ -61,12 +63,6 @@ section.contenedor-cronograma{
 
 
 @media (min-width:1024px){
- 
-    section.contenedor-cronograma{
-        width: 80%;
-        margin-top: 25px;
-       margin-left: 105px;
- }
 
  .titulo-cronograma h2{
     font-size: 50px;
@@ -74,10 +70,18 @@ section.contenedor-cronograma{
 
  .imagen-cronograma{
      width: 80%;
+     margin: 0 auto;
  }
  .imagen-cronograma img{
-     width: 100%;
-     height: 100%;
+     width: 70%;
+     margin-left: 15%;
  }
+
+ .caja-cronograma{
+    background-color: rgb(255, 255, 255,0.3);
+    width: 80%;
+    margin: 0 auto;
+}
+ 
 
 }

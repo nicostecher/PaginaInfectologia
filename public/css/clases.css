@@ -7,24 +7,36 @@
     color: black;
 }
 
-body{
-    width: 100%;
+.contenedor-principal{
     background-image: url("../imagenes/fondo.jpg");
     background-size:cover;
-    background-position: center center;
+    background-position: center;
     background-repeat:no-repeat;
     background-attachment: fixed;
-    
+    overflow: hidden;  
+}
+
+.transparencia{
+    background-color: rgb(255, 255, 255,0.3);
+  padding-top: 30px;
 }
 
 .titulo-escritorio{
     display: none;
 }
 
+
 .titulo-clases{
-    margin-top: 25px;
+    margin-top: 50px;
     text-align: center;
-    background-color: rgb(255, 255, 255,0.3);
+}
+
+
+.titulo-clases h2{ 
+    font-family: 'Roboto', sans-serif;
+    color:blue;
+    font-variant-caps: all-small-caps;
+    
 }
 
 section{
@@ -37,23 +49,16 @@ section{
     margin-top: 15%;
     box-sizing: border-box;
     text-align: center;
-    position: relative;
     overflow: hidden;
 
-
 }
 
 
-.titulo-clases h2{ 
-    font-family: 'Roboto', sans-serif;
-    color:black;
-    text-decoration: underline;
-    
-}
 
 .article{
     width: 100%;
 }
+
 
 .clase, .clase2{
     border: 1px solid black;
@@ -84,7 +89,7 @@ section{
 
 @media (min-width:1024px){
 
-  
+    
     .titulo-clases{
         display: none;
     }
@@ -100,6 +105,7 @@ section{
     .titulo-escritorio h2{
         font-size: 40px;
         text-align: center;
+        color: blue;
         
     }
 
@@ -107,8 +113,6 @@ section{
         background-color: rgb(255, 255, 255,0.6);
         width: 75%;
         margin-top: 5%;
-        overflow: hidden;
-        position: relative;
     }
 
     article{
@@ -128,14 +132,15 @@ section{
     .clase2{
             margin-top: 1px;
             width: 40%;
-            margin-left: 5%;
+            margin-left: 9%;
     }
 
    .pdf{
        display: inline-block;
       
    }
-    
+
+   
 }
 
 
