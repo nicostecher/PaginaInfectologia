@@ -24,8 +24,7 @@
 
 .barra-busqueda{
   margin-top: 10px;
-  opacity: 0.5;
- 
+
 }
 
 .navbar{
@@ -50,7 +49,7 @@
   margin: 0 auto;
   text-align: center;
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid gray;
   border-radius: 5%;
   overflow-y: scroll;
@@ -59,22 +58,22 @@
   height: 200px;
 }
 
-.titulo-noticia h5{ 
+.titulo-noticia h5{
   color: red;
-  
+
 }
 
 .noticia2{
  border-top: 1px solid black;
  padding-top: 10px;
- 
+
 }
 
 .categorias{
   margin-top: 25px;
   text-align: center;
   overflow: hidden;
-  
+
 
 }
 
@@ -84,27 +83,27 @@
 
 .categoria-cronograma{
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .categoria-bibliografia{
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .categoria-casosClinicos{
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .categoria-clases{
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .categoria-cuerpoDocente{
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 @media (min-width:1024px){
@@ -113,9 +112,12 @@
     margin-top: 50px;
     width: 70%;
     margin-left: 16%;
-   
+
   }
 
+  .busqueda{
+        margin-left: 280px;
+  }
 <<<<<<< HEAD
   .categorias{
     margin-top: 10px;
@@ -148,12 +150,15 @@
 
 }
 
+
+
 .categoria-cronograma, .categoria-bibliografia,.categoria-casosClinicos,.categoria-clases,.categoria-cuerpoDocente{
   font-size: 25px;
   width: 50%;
   border:1px solid black;
   margin: 10px;
 }
+
 
 >>>>>>> 746a67480915ea8a8a254c172cf826d780d0ebd9
 }

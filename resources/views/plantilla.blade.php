@@ -97,6 +97,15 @@
     @yield("main")
 
     <footer>
+      <div class="footer">
+        <div class="contacta">
+          <p class="contactanos">Contactanos:</p>
+          <p class="email-catedra">catedra_infectologia@gmail.com</p>
+        </div>
+        <div class="logo-uba">
+          <img src="/imagenes/Logo-UBA.png" alt="logo-uba">
+        </div>
+      </div>
 
     </footer>
 
