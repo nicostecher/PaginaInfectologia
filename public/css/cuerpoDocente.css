@@ -2,7 +2,7 @@
   background-color: white;
   opacity: 0.8;
   border-radius: 15px;
-  height: 324px;
+  height: 536px;
   margin-top: 20px;
 margin-left: 10px;
 align-items: center;
@@ -24,6 +24,7 @@ p.nombre-docente {
   .cuerpo-docente{
     margin-left: 49px;
     margin-right: 49px;
+    height: 324px;
     text-align: center;
     display: flex;
     flex-direction: row;

@@ -8,3 +8,36 @@
 body{
   background-color: #D6D6D6;
 }
+
+@media (min-width: 1024px){
+
+.footer{
+  margin-top: 20px;
+  background-color: black;
+  height: 150px;
+}
+
+.contacta{
+  height: 20px;
+    text-align: center;
+    margin-right: 293px;
+}
+
+.contactanos{
+  color: white;
+}
+
+.email-catedra{
+  display: inline;
+  color: white;
+}
+.logo-uba{
+display: inline;
+}
+
+.logo-uba img{
+  display: inline;
+float: right;
+margin-right: 135px;
+}
+}

@@ -9,7 +9,7 @@
 
     /*HEADER EN MOBILE*/
   header{
-      background-color:#2E4053;
+      background-color:black;
       opacity: 0.9;
       overflow: hidden;
       width: 100%;
@@ -41,7 +41,7 @@
    width: 10%;
 
  }
- 
+
  #navbarToggleExternalContent{
     padding-right: 15px;
  }
@@ -61,7 +61,7 @@
      color: white;
  }
 
- .text-muted{ 
+ .text-muted{
      font-weight: bold;
     color:white!important;
 
@@ -78,7 +78,7 @@
  /* HEADER EN ESCRITORIO*/
 
  @media (min-width:1024px){
-    
+
     .menu-mobile{
         display:none;
 
@@ -98,8 +98,8 @@
         float: left;
         margin-top:5px;
         margin-left: 5px;
-        margin-bottom: 5px; 
-        display: initial;    
+        margin-bottom: 5px;
+        display: initial;
     }
 
 
@@ -110,26 +110,26 @@
        margin-right:70px;
        box-sizing: border-box;
        font-family: 'Libre Baskerville', serif;
-       
-     
+
+
     }
-    
+
     /* BOTON DE USUARIO*/
-    
+
     button.btn.btn-primary{
         background-color: #2E4053;
         color:rgba(255, 255, 255, 0.596) ;
         border-color: rgba(255, 255, 255, 0.596);
         margin-left: 85px;
     }
-    
+
     .card.card-body{
         background-color: rgba(255, 255, 255, 0.596);
         margin: 5px;
         padding: 3px;
         padding-bottom: 0px;
     }
-    
+
     .card.card-body ul li{
         padding-top:3px;
         margin: 0 auto;
@@ -140,22 +140,22 @@
     #sesion{
         margin-left:25px
     }
-    
+
     /*BARRA DE NAVEGACION*/
-    
+
     #menu-escritorio{
           position: absolute;
           display: initial;
          left: 95px;
          padding-top:5px;
-          
+          color: white;
         }
     #menu-escritorio ul li {
         color: white;
         font-family:'Libre Baskerville', serif;
-        
+
     }
-    
+
     .navbar-light .navbar-nav .nav-link {
         color: rgba(255, 255, 255, 0.596);
     }
@@ -169,5 +169,5 @@
     }
 
 
-    
-}   
+
+}

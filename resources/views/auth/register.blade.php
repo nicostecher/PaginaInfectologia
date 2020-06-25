@@ -91,10 +91,11 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
+                            <div class="registrate">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Registrate') }}
                                 </button>
+                                <input type="reset" value="Borrar">
                             </div>
                         </div>
                     </form>

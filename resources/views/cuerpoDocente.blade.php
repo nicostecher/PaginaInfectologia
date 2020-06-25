@@ -21,7 +21,7 @@
       </div>
       <div class="docente2">
         <div class="imagen-docente">
-          <img src="/public/imagenes/silueta.jpg" alt="silueta">
+          <img src="/imagenes/silueta.jpg" alt="silueta">
         </div>
         <div class="descripcion-docente2">
           <p class="nombre-docente">Carlos Gonzales</p>
@@ -30,7 +30,7 @@
       </div>
       <div class="docente3">
         <div class="imagen-docente">
-          <img src="/public/imagenes/silueta.jpg" alt="silueta">
+          <img src="/imagenes/silueta.jpg" alt="silueta">
         </div>
         <div class="descripcion-docente2">
           <p class="nombre-docente">Juan Peréz</p>
