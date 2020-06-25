@@ -1,16 +1,44 @@
-.barra-busqueda{
-  margin-top: 10px;
-  border-radius: 15px;
+*{
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+
 }
 
-.navbar {
+.imagen-fondo{
+  padding-top: 15px;
+  background-image: url("../imagenes/fondo.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.container{
+  width: 100%;
+
+}
+
+
+.barra-busqueda{
+  margin-top: 10px;
+  opacity: 0.5;
+ 
+}
+
+.navbar{
       padding: 0px;
       border-radius: 15px;
 
 }
+
 .lupita{
   display: inline;
 }
+
+
 .busqueda{
   display: inline;
   margin-left: 123px;
@@ -19,18 +47,39 @@
 
 
 .novedades{
+  margin: 0 auto;
   text-align: center;
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid gray;
+  border-radius: 5%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 200px;
 }
-.noticia1{
-  display: none;
+
+.titulo-noticia h5{ 
+  color: red;
+  
 }
+
 .noticia2{
-  display: none;
+ border-top: 1px solid black;
+ padding-top: 10px;
+ 
 }
+
 .categorias{
+  margin-top: 25px;
   text-align: center;
+  overflow: hidden;
+  
+
+}
+
+.categorias a{
+  color: black;
 }
 
 .categoria-cronograma{
@@ -59,13 +108,15 @@
 }
 
 @media (min-width:1024px){
-  .noticia1{
-    display: inline-block;
-  }
-  .noticia2{
-    display: inline-block;
+
+  .barra-busqueda{
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 16%;
+   
   }
 
+<<<<<<< HEAD
   .categorias{
     margin-top: 10px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -73,4 +124,36 @@
     flex-direction: row;
     justify-content: space-around;
   }
+=======
+.busqueda p{
+  text-align: center;
+}
+.novedades{
+  margin-top: 20px;
+  width: 90%;
+  border-radius: 0%;
+  height: 300px;
+}
+
+.novedades h5{
+  font-size: 25px;
+}
+
+.categorias{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+
+}
+
+.categoria-cronograma, .categoria-bibliografia,.categoria-casosClinicos,.categoria-clases,.categoria-cuerpoDocente{
+  font-size: 25px;
+  width: 50%;
+  border:1px solid black;
+  margin: 10px;
+}
+
+>>>>>>> 746a67480915ea8a8a254c172cf826d780d0ebd9
 }
