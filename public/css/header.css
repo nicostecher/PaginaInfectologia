@@ -30,7 +30,7 @@
       text-decoration: none;
   }
   
-  .imagen-uba{
+  .imagen-clinicas{
       display: none;
   }
 
@@ -85,14 +85,16 @@
     }
 
     .titulo-principal{
-        padding-top: 15px;
+        display: inline-block;
+        margin-left: 22%;
+        margin-top: 15px;
     }
 
     .titulo-principal h4{
-        font-size: 28px;
+        text-align: center;
     }
     
-    .imagen-uba{
+    .imagen-clinicas{
         float: left;
         margin-top:5px;
         margin-left: 5px;

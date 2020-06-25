@@ -13,12 +13,12 @@
   <body>
     <header>
 
-      <div class="imagen-uba">
-        <a href="/home"><img src="/imagenes/logo-uba.png" alt="uba"></a>
+      <div class="imagen-clinicas">
+        <a href="/home"><img src="/imagenes/logo-clinicas-transparente-.jpg"  width="100px" height="100px" alt="uba"></a>
       </div>
 
         <div class="titulo-principal">
-            <a href="/home"><h4>Cursada de <br> Infectología</h4></a>
+            <a href="/home"><h4>Cursada de Infectología Hospital de Clínicas <br> Facultad de Medicina  Universidad de Buenos Aires</h4></a>
         </div>
 
 
