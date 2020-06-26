@@ -33,7 +33,7 @@
 
 .titulo-clases h2{ 
     font-family: 'Roboto', sans-serif;
-    color:blue;
+    color:black;
     font-variant-caps: all-small-caps;
     
 }
@@ -49,6 +49,7 @@ section{
     box-sizing: border-box;
     text-align: center;
     overflow: hidden;
+    box-shadow: 0 0 5px black;
 
 }
 

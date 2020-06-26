@@ -201,7 +201,12 @@
     .dropdown-menu{
         background-color: black;
        margin-top: 25px;
+      
         
+    }
+
+    .dropdown-menu a:hover{
+       background-color: rgb(31, 29, 29);
     }
 
     .card.card-body li a{
