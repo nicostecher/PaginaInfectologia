@@ -10,7 +10,6 @@
 .contenedor-principal{
     background-image: url("../imagenes/fondo.jpg");
     background-size:cover;
-    background-position: center;
     background-repeat:no-repeat;
     background-attachment: fixed;
     overflow: hidden;  

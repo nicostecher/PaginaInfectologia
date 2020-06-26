@@ -14,12 +14,16 @@
     <header>
 
       <div class="imagen-clinicas">
-        <a href="/home"><img src="/imagenes/logo-clinicas-transparente-.jpg"  width="100px" height="100px" alt="uba"></a>
+        <a href="/home"><img src="/imagenes/logo-clinicas-transparente-.jpg"  width="100px" height="95px" alt="uba"></a>
       </div>
 
-        <div class="titulo-principal">
-            <a href="/home"><h4>Cursada de Infectología Hospital de Clínicas <br> Facultad de Medicina  Universidad de Buenos Aires</h4></a>
+        <div class="titulo-principal-mobile">
+            <a href="/home"><h4>Cursada de Infectología <br>Hospital de Clínicas <br>Facultad de Medicina Universidad de Buenos Aires</h4></a>
         </div>
+
+        <div class="titulo-principal-escritorio">
+          <a href="/home"><h4>Cursada de Infectología <br>Hospital de Clínicas <br>Facultad de Medicina Universidad de Buenos Aires</h4></a>
+      </div>
 
 
         <!--MENU MOBILE-->
@@ -27,13 +31,20 @@
         <div class="menu-mobile">
           <div class="fixed-top">
             <div class="collapse" id="navbarToggleExternalContent">
-              <div class="hamburgesa">
+              <div class="hamburguesa">
                 <ul class="listado-mobile">
                   <li class="text-muted"><a href="/cronograma">Cronograma</a></li>
                   <li class="text-muted"><a href="/clases">Clases</a></li>
                   <li class="text-muted"><a href="/casosClinicos">Casos Clinicos</a></li>
                   <li class="text-muted"><a href="/cuerpoDocente">Cuerpo Docente</a></li>
                   <li class="text-muted"><a href="/bibliografia">Bibliografía</a></li>
+
+                  <div class="usuario-mobile">
+                    <li class="text-muted"><a href="/bibliografia">Cambiar contraseña</a></li>
+
+                    <li class="text-muted"><a href="/bibliografia">Cerrar sesión</a></li>
+                </div>
+
                  </div>
                </ul>
 
@@ -63,9 +74,6 @@
                </div>
            </div>
 
-             <br>
-             <br>
-             <br>
              <nav id="menu-escritorio" class="navbar navbar-expand-lg navbar-light">
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>

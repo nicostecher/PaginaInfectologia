@@ -19,7 +19,6 @@
 section.contenedor-cronograma{
     background-image: url("../imagenes/fondo.jpg");
     background-size:cover;
-    background-position: center center;
     background-repeat:no-repeat;
     background-attachment: fixed;
     z-index: -1;

@@ -16,17 +16,26 @@
       box-sizing: border-box;
   }
 
- .titulo-principal{
+ .titulo-principal-mobile{
      float: left;
+     width: 62%;
      padding-top: 5px;
-     padding-left: 15px;
+     padding-left: 5px;
  }
-  .titulo-principal h4{
+
+ .titulo-principal-escritorio{
+     display:none;
+ }
+
+
+  .titulo-principal-mobile h4{
+      text-align: center;
+      font-size: 15px;
       font-family:  'Roboto', sans-serif;
       color: white;
   }
 
-  .titulo-principal a{
+  .titulo-principal-mobile a{
       text-decoration: none;
   }
   
@@ -37,14 +46,12 @@
  .menu-mobile{
    float: right;
    position: relative;
-   padding-top: 7px;
+   padding-top: 20px;
+   padding-right: 20px;
    width: 10%;
 
  }
 
- #navbarToggleExternalContent{
-    padding-right: 15px;
- }
 
  .hamburguesa{
      color:grey;
@@ -55,16 +62,28 @@
      float: right;
  }
 
+.listado-mobile{
+     padding-bottom: 5px;
+     text-align: right;
+}
+
+
  .listado-mobile li a{
-     padding-bottom: 10px;
      text-decoration: none;
      color: white;
+
  }
 
  .text-muted{
      font-weight: bold;
     color:white!important;
 
+ }
+
+ .usuario-mobile{
+     border-top: 1px solid white;
+    margin-top: 10px;
+    padding-top: 5px;
  }
 
  #menu-escritorio{
@@ -82,17 +101,29 @@
     .menu-mobile{
         display:none;
 
+    }   
+
+    .titulo-principal-mobile{
+        display: none;
     }
 
-    .titulo-principal{
+    .titulo-principal-escritorio{
         display: inline-block;
         margin-left: 22%;
-        margin-top: 15px;
+        margin-top: 10px; 
+        margin-bottom: -25; 
     }
 
-    .titulo-principal h4{
+    .titulo-principal-escritorio h4{
         text-align: center;
+        color: white;
     }
+
+    .titulo-principal-escritorio a{
+        text-decoration: none;
+    }
+
+    
     
     .imagen-clinicas{
         float: left;
@@ -117,14 +148,14 @@
     /* BOTON DE USUARIO*/
 
     button.btn.btn-primary{
-        background-color: #2E4053;
+        background-color:  rgb(14, 13, 13);
         color:rgba(255, 255, 255, 0.596) ;
         border-color: rgba(255, 255, 255, 0.596);
         margin-left: 85px;
     }
 
     .card.card-body{
-        background-color: rgba(255, 255, 255, 0.596);
+        background-color: rgb(14, 13, 13);
         margin: 5px;
         padding: 3px;
         padding-bottom: 0px;
@@ -134,8 +165,11 @@
         padding-top:3px;
         margin: 0 auto;
         font-weight: bold;
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Roboto', sans-serif; 
+        color: white;
     }
+
+
 
     #sesion{
         margin-left:25px
@@ -149,23 +183,31 @@
          left: 95px;
          padding-top:5px;
           color: white;
+          margin-top: 33px;
+          margin-left: 25px;
         }
-    #menu-escritorio ul li {
+
+
+    #menu-escritorio ul li a {
         color: white;
-        font-family:'Libre Baskerville', serif;
+        font-family:'Roboto', sans-serif;   
 
     }
 
     .navbar-light .navbar-nav .nav-link {
-        color: rgba(255, 255, 255, 0.596);
+        color: 
     }
 
     .dropdown-menu{
-        background-color: #2E4053
+        background-color: black;
+       margin-top: 25px;
+        
     }
 
-    .dropdown-menu a{
-        color: white;
+    .card.card-body li a{
+        font-weight: lighter;
+    }
+        
     }
 
 
