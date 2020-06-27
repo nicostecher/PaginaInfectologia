@@ -12,7 +12,7 @@ body{
 @media (min-width: 1024px){
 
 .footer{
-  margin-top: 20px;
+  margin-top: 0px;
   background-color: black;
   height: 150px;
 }

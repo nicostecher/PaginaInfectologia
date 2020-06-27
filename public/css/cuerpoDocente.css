@@ -1,4 +1,6 @@
 .cuerpo-docente{
+  position: relative;
+  z-index: -1;
   background-color: white;
   opacity: 0.8;
   border-radius: 15px;
@@ -22,6 +24,8 @@ p.nombre-docente {
 
 @media (min-width: 1024px){
   .cuerpo-docente{
+    position: relative;
+    z-index: -1;
     margin-left: 49px;
     margin-right: 49px;
     height: 324px;

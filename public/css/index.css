@@ -72,7 +72,7 @@ body{
 }
 
 .titulo-noticia h5{
-  color: red;
+  color:#D64239;
 
 }
 
@@ -140,11 +140,14 @@ body{
   .busqueda p{
         text-align: center;
   }
-  .categorias{
+
+
+ /* .categorias{
     margin-top: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255,);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+  */
 }
