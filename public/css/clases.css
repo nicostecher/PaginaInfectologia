@@ -34,7 +34,6 @@
 .titulo-clases h2{ 
     font-family: 'Roboto', sans-serif;
     color:black;
-    font-variant-caps: all-small-caps;
     
 }
 
@@ -61,9 +60,9 @@ section{
 
 
 .clase, .clase2{
-
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
+    padding-top: 5px;
    
     
 }
