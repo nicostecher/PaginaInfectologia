@@ -107,6 +107,18 @@
     <footer>
       <div class="footer">
         <br>
+        <div class="titulo-footer">
+          <p class="infecto">Infectología</p>
+          <br>
+          <p class="clinicas">Hospital de Clínicas</p>
+          <br>
+          <p class="ubah">Universidad de Buenos Aires.</p>
+        </div>
+        <!--
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.442876334298!2d-58.40200242380624!3d-34.59856163596656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9474de07c3%3A0x6d168bee0e66f0b5!2sHospital%20de%20Cl%C3%ADnicas%20Jose%20de%20San%20Martin!5e0!3m2!1ses!2sar!4v1593416377494!5m2!1ses!2sar" width="300" height="225" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+-->
         <div class="contacta">
           <p class="contactanos">Contactanos:</p>
           <p class="email-catedra">catedra_infectologia@gmail.com</p>
@@ -116,11 +128,10 @@
           <a href="http://www.uba.ar/"><img src="/imagenes/Logo-UBA.png" alt="logo-uba"></a>
         </div>
 
-      <!--   <div class="nosotros">
-          <p class="sitio">Sitio Web creado por T.V Coding</p>
-          <p class="email-nosotros">Contactanos a tv.codingtoprogramate@gmail.com</p>
-        </div>
-      -->
+      <!--
+-->
+
+
       </div>
 
 
