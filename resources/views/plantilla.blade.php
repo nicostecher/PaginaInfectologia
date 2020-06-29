@@ -106,14 +106,23 @@
 
     <footer>
       <div class="footer">
+        <br>
         <div class="contacta">
           <p class="contactanos">Contactanos:</p>
           <p class="email-catedra">catedra_infectologia@gmail.com</p>
         </div>
+
         <div class="logo-uba">
-          <img src="/imagenes/Logo-UBA.png" alt="logo-uba">
+          <a href="http://www.uba.ar/"><img src="/imagenes/Logo-UBA.png" alt="logo-uba"></a>
         </div>
+
+      <!--   <div class="nosotros">
+          <p class="sitio">Sitio Web creado por T.V Coding</p>
+          <p class="email-nosotros">Contactanos a tv.codingtoprogramate@gmail.com</p>
+        </div>
+      -->
       </div>
+
 
     </footer>
 
