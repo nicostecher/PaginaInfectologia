@@ -9,21 +9,20 @@
 <link rel="stylesheet" href="/css/header.css">
 <link rel="stylesheet" href="/css/clases.css">
 
-  
 
 <div class="contenedor-principal">
   
   <div class="transparencia">
 
 
-      <div class="titulo-clases">
-        <h2>Clases</h2>
-      </div>
         
 
       <section class="contenido-clases">
 
        
+      <div class="titulo-clases">
+        <h2>Clases</h2>
+      </div>
 
             <div class="titulo-escritorio">
               <h2>Clases</h2>

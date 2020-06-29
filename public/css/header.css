@@ -53,10 +53,7 @@
  }
 
 
- .hamburguesa{
-     color:grey;
- }
-
+ 
  .fixed-top{
      position: relative;;
      float: right;
@@ -64,18 +61,19 @@
 
 .listado-mobile{
      padding-bottom: 5px;
-     text-align: right;
+     text-align: center;
+     list-style-type: square;
+
 }
 
 
  .listado-mobile li a{
      text-decoration: none;
      color: white;
-
+ 
  }
 
  .text-muted{
-     font-weight: bold;
     color:white!important;
 
  }
@@ -140,8 +138,7 @@
        margin-top: 30px;
        margin-right:70px;
        box-sizing: border-box;
-       font-family: 'Libre Baskerville', serif;
-
+      
 
     }
 
@@ -164,8 +161,6 @@
     .card.card-body ul li{
         padding-top:3px;
         margin: 0 auto;
-        font-weight: bold;
-        font-family: 'Roboto', sans-serif; 
         color: white;
     }
 
@@ -190,7 +185,7 @@
 
     #menu-escritorio ul li a {
         color: white;
-        font-family:'Roboto', sans-serif;   
+        
 
     }
 
