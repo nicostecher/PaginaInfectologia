@@ -14,9 +14,6 @@
   
   <div class="transparencia">
 
-
-        
-
       <section class="contenido-clases">
 
        
@@ -41,9 +38,7 @@
                   </div>
 
             </article>
-
-            <br>
-
+            <!---   QUEDA BLOQUEADO HASTA AGREGAR PAGINACION FUNCIONAL!
             <article class="clase2">
               <div class="pdf">
                 <iframe src="https://docs.google.com/viewer?srcid=1QDqahbmx_CWZi_sS7bEfqSz8cKmk9lhS&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="90%" height="250px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -56,7 +51,7 @@
                   </div>
             </article>
             
-
+            -->
       </section>
 
    <br>

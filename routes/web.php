@@ -49,6 +49,14 @@ Route::get('/cuerpoDocente', function () {
 Route::get('/index', function () {
     return view('index');
 });
+
+Route::get('/sitiosDeInteres', function () {
+    return view('sitiosDeInteres');
+});
+
+
+
 Auth::routes();
+
 
 Route::get('/home', 'HomeController@index')->name('home');

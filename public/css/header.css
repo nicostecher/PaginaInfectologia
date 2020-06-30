@@ -30,18 +30,29 @@
 
   .titulo-principal-mobile h4{
       text-align: center;
-      font-size: 15px;
       font-family:  'Roboto', sans-serif;
       color: white;
+  }
+
+  #letra-1{
+      font-size: 18px;
+      margin-bottom: 0px;
+  }
+
+  #letra-2{
+      font-size: 12px;
+      margin-bottom: 0px;
   }
 
   .titulo-principal-mobile a{
       text-decoration: none;
   }
   
-  .imagen-clinicas{
+ 
+  .imagen-uba, .imagen-clinicas{
       display: none;
   }
+
 
  .menu-mobile{
    float: right;
@@ -123,7 +134,7 @@
 
     
     
-    .imagen-clinicas{
+    .imagen-uba{
         float: left;
         margin-top:5px;
         margin-left: 5px;
@@ -131,6 +142,13 @@
         display: initial;
     }
 
+
+    .imagen-clinicas{
+        display: block;
+        float: right;
+        margin-right: 30px;
+        margin-top: 3px;
+    }
 
     .usuario-escritorio{
         display: initial;

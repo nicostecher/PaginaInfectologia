@@ -13,16 +13,20 @@
   <body>
     <header>
 
-      <div class="imagen-clinicas">
-        <a href="/home"><img src="/imagenes/logo-clinicas-transparente-.jpg"  width="100px" height="95px" alt="uba"></a>
+      <div class="imagen-uba">
+        <a href="/home"><img src="/imagenes/logo-UBA.png"  width="100px" height="95px" alt="uba"></a>
       </div>
 
         <div class="titulo-principal-mobile">
-            <a href="/home"><h4>Cursada de Infectología <br>Hospital de Clínicas <br>Facultad de Medicina Universidad de Buenos Aires</h4></a>
+            <a href="/home"><h4 id="letra-1">Cursada de Infectología <br>Hospital de Clínicas</h4><h4 id="letra-2">Facultad de Medicina <br> Universidad de Buenos Aires</h4></a>
         </div>
 
         <div class="titulo-principal-escritorio">
-          <a href="/home"><h4>Cursada de Infectología <br>Hospital de Clínicas <br>Facultad de Medicina Universidad de Buenos Aires</h4></a>
+          <a href="/home"><h4>Cursada de Infectología <br>Hospital de Clínicas <br>Facultad de Medicina, Universidad de Buenos Aires</h4></a>
+      </div>
+
+      <div class="imagen-clinicas">
+        <a href="/home"><img src="/imagenes/logo-clinicas-transparente-.jpg"  width="100px" height="95px" alt="uba"></a>
       </div>
 
 
@@ -38,12 +42,12 @@
                   <li class="text-muted"><a href="/casosClinicos">Casos Clinicos</a></li>
                   <li class="text-muted"><a href="/cuerpoDocente">Cuerpo Docente</a></li>
                   <li class="text-muted"><a href="/bibliografia">Bibliografía</a></li>
+                  <li class="text-muted"><a href="/sitiosDeInteres">Sitios de Interes</a></li>
 
                   <div class="usuario-mobile">
                     <li class="text-muted"><a href="/bibliografia">Cambiar contraseña</a></li>
-
                     <li class="text-muted"><a href="/bibliografia">Cerrar sesión</a></li>
-                </div>
+                    </div>
 
                  </div>
                </ul>
@@ -90,6 +94,8 @@
                        <a class="dropdown-item" href="/casosClinicos">Casos Clinicos</a>
                        <a class="dropdown-item" href="/cuerpoDocente">Cuerpo Docente</a>
                        <a class="dropdown-item" href="/bibliografia">Bibliografía</a>
+                       <a class="dropdown-item" href="/sitiosDeInteres">Sitios de Interes</a>
+
                      </div>
                    </li>
                    <li class="nav-item">

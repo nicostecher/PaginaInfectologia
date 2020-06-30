@@ -59,12 +59,10 @@ section{
 }
 
 
-.clase, .clase2{
+.clase{
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     padding-top: 5px;
-   
-    
 }
 
 
@@ -73,6 +71,7 @@ section{
     position: relative;
     margin-top: 15px;
 }
+
 .descripcion p{
     color: black;
     text-decoration: underline;
@@ -112,34 +111,29 @@ section{
         background-color: rgb(255, 255, 255,0.6);
         width: 75%;
         margin-top: 5%;
-        box-shadow: ;
+         overflow: hidden;
     }
 
-    article{
-      
-        width: 50%;
-        float: left;
-       
-        margin-bottom: 25px;
-    }
 
     .clase{
-        margin-top: 25px;
-        width: 40%;
-        margin-left: 5%;
+       
+       width: 80%;
+       margin-left: 10%;
+       margin-right: 10%;
     }
 
+        /* PARA PAGINACION
     .clase2{
             margin-top: 1px;
             width: 40%;
             margin-left: 9%;
     }
-
+    
    .pdf{
        display: inline-block;
       
    }
-
+*/
    
 }
 
