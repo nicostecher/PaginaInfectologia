@@ -41,10 +41,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="legajo" class="col-md-4 col-form-label text-md-right">{{ __('N° de Legajo') }}</label>
+                            <label for="libreta" class="col-md-4 col-form-label text-md-right">{{ __('Libreta universitaria') }}</label>
 
                             <div class="col-md-6">
-                                <input id="legajo" type="text" class="form-control @error('legajo') is-invalid @enderror" name="legajo" value="{{ old('legajo') }}" required autocomplete="legajo" autofocus>
+                                <input id="libreta" type="text" class="form-control @error('libreta') is-invalid @enderror" name="libreta" value="{{ old('libreta') }}" required autocomplete="libreta" autofocus>
 
                                 @error('legajo')
                                     <span class="invalid-feedback" role="alert">

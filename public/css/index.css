@@ -132,9 +132,11 @@ body{
   }
 
   .novedades{
+    display: inline-block;
     margin-top: 5%;
     border-radius: 0px;
     height: 300px;
+    width:750px;
   }
 
   .busqueda p{
@@ -142,6 +144,11 @@ body{
   }
 
 
+  .categorias{
+    display: inline-block;
+    margin-left: 60px;
+
+  }
  /* .categorias{
     margin-top: 10px;
     background-color: rgba(255, 255, 255,);
