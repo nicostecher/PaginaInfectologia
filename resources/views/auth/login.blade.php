@@ -3,7 +3,7 @@
 @section('main')
 <link rel="stylesheet" href="/css/login.css">
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="display: block;">
         <div class="contenedor-login">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>

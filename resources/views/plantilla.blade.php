@@ -131,7 +131,7 @@
         </div>
 
         <div class="logo-uba">
-          <a href="http://www.uba.ar/"><img src="/imagenes/Logo-UBA.png" alt="logo-uba"></a>
+          <a href="http://www.uba.ar/"><img class="uba" src="/imagenes/Logo-UBA.png" alt="logo-uba"></a>
         </div>
 
       <!--

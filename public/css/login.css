@@ -51,6 +51,22 @@ p{
   margin-left: 88px;
 }
 
+p.clinicas{
+  margin-top: -25px;
+}
+
+p.ubah{
+  margin-top: -25px;
+}
+
+.contacta{
+  margin-top: 10px;
+}
+
+img.uba{
+   margin-top: 10px;
+ }
+
 @media (min-width: 1024px){
   .contenedor-login{
     margin-bottom: 39px;
@@ -80,4 +96,8 @@ p{
     display: contents;
   }
 
+  footer{
+    margin-left: -35px;
+    width: 1026px;
+  }
 }

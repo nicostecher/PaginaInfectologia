@@ -10,7 +10,7 @@ body{
 .footer{
   margin-top: 0px;
   background-color: black;
-  height: 184px;
+  height: 269px;
 }
 .contacta{
   display: inline-block;
@@ -19,9 +19,27 @@ body{
 
 }
 
+.titulo-footer p{
+  color: white;
+  margin-top:-13px;
+  text-align: center;
+}
+
+p.clinicas{
+  margin-top: -40px;
+}
+
+p.ubah{
+  margin-top: -40px;
+}
+
+.contacta{
+  margin-left: 46px;
+}
 .contactanos{
   color: white;
   text-decoration: underline;
+  text-align: center;
 }
 
 .email-catedra{
@@ -61,7 +79,10 @@ margin-right: 112px;
   background-color: black;
        height: 151px;
 }
-
+.titulo-footer{
+  display: inline-block;
+margin-left: 58px;
+}
 .titulo-footer p{
   float: left;
   color: white;
@@ -76,13 +97,26 @@ margin-right: 112px;
 .ubah{
   margin-left: -137px;
 }
-.contacta{
-  height: 20px;
-  margin-top: -45px;
-    text-align: center;
-        margin-left: 250px;
 
-    border-right: 1px solid #2d3737;
+p.infecto{
+  display: contents;
+}
+}
+p.clinicas{
+      margin-top: 2px;
+      margin-left: -23px;
+}
+
+p.ubah{
+      margin-top: -8px;
+      margin-left: -34px;
+}
+.contacta{
+  display: inline-block;
+  height: 20px;
+  margin-top: -50px;
+  text-align: center;
+  margin-left: 350px;
 }
 
 
@@ -106,9 +140,9 @@ display: inline;
 }
 
 .logo-uba img{
-  display: inline;
+  display: inline-block;
 float: right;
-    margin-top: -54px;
+    margin-top: -3px;
     margin-right: 109px;
 }
 }
