@@ -1,0 +1,30 @@
+.contenedor-sitio{
+  position: relative;
+  width: 90%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255,0.9);
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.titulo-sitio{
+  margin-top: 10px;
+  display: block;
+    text-align: center;
+    position: relative;
+}
+
+.comisiones{
+  margin-left: 20px;
+margin-top: 10px;
+}
+
+p.titulo-comision{
+  margin-left: 10px;
+}
+
+p.alumnos{
+  margin-left: 40px;
+}

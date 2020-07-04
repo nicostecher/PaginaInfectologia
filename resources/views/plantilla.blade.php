@@ -95,11 +95,11 @@
                        <a class="dropdown-item" href="/cuerpoDocente">Cuerpo Docente</a>
                        <a class="dropdown-item" href="/bibliografia">Bibliografía</a>
                        <a class="dropdown-item" href="/sitiosDeInteres">Sitios de Interes</a>
-
+                       <a class="dropdown-item" href="/comisiones">Comisiones</a>
                      </div>
                    </li>
                    <li class="nav-item">
-                     <a class="nav-link" href="#">Novedades</a>
+                     <a class="nav-link" href="/comisiones">Comisiones</a>
                    </li>
                  </ul>
                </div>

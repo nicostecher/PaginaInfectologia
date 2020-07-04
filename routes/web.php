@@ -54,6 +54,10 @@ Route::get('/sitiosDeInteres', function () {
     return view('sitiosDeInteres');
 });
 
+Route::get('/comisiones', function () {
+    return view('comisiones');
+});
+
 
 
 Auth::routes();
