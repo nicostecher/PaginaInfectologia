@@ -14,7 +14,7 @@
           <h2>Comisiones</h2>
       </div>
 
-      <div class="comisiones">
+      <div class="comisiones-">
         <div class="comision-1">
           <p class="titulo-comision">Comisión 1</p>
           <div class="alumnos">
