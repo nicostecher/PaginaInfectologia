@@ -124,19 +124,25 @@ body{
 }
 @media (min-width:1024px){
 
+  .container{
+    position: relative;
+  }
+
   .barra-busqueda{
     margin-top: 50px;
     width: 70%;
-    margin-left: 16%;
+    margin-left: 125px;
 
   }
 
   .novedades{
+    position: absolute;
     display: inline-block;
     margin-top: 5%;
     border-radius: 0px;
     height: 300px;
     width:750px;
+    margin-left: 130px;
   }
 
   .busqueda p{
@@ -146,7 +152,9 @@ body{
 
   .categorias{
     display: inline-block;
-    margin-left: 60px;
+    position: absolute;
+    margin-top: 103px;
+    margin-left: 1000px;
 
   }
  /* .categorias{
