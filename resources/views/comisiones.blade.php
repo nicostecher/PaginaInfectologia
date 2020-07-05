@@ -15,6 +15,7 @@
       </div>
 
       <div class="comisiones-">
+        <div class="comision1y2">
         <div class="comision-1">
           <p class="titulo-comision">Comisión 1</p>
           <div class="alumnos">
@@ -28,6 +29,9 @@
             <p class="alumnos">Karina Jelinek</p>
             <p class="alumnos">Jorge Luis Borges</p>
           </div>
+          </div>
+          </div>
+          <div class="comision3y4">
           <div class="comision-3">
             <p class="titulo-comision">Comisión 3</p>
             <div class="alumnos">
@@ -36,11 +40,13 @@
             </div>
         </div>
         <div class="comision-4">
-          <p class="titulo-comision">Comisión 3</p>
+          <p class="titulo-comision">Comisión 4</p>
           <div class="alumnos">
             <p class="alumnos">Diana Aisenberg</p>
             <p class="alumnos">Nicolas Stecher</p>
           </div>
+      </div>
+      </div>
       </div>
     </section>
   </body>

@@ -80,14 +80,18 @@ img.uba{
         margin-left: -104px;
   }
   .olvidasste{
-    margin-left: 168px;
+    margin-left: 248px;
   }
   .cajita-registrate{
-        margin-left: 220px;
+        margin-left: 373px;
         margin-top: 10px;
   }
   p{
     display: contents;
+  }
+
+  #boton{
+    margin-left: 100px;
   }
   .olvidaste{
         margin-left: 120px;
@@ -97,7 +101,29 @@ img.uba{
   }
 
   footer{
-    margin-left: -35px;
-    width: 1026px;
+    position: relative;
+    margin-right: 35px;
+    width: 1360px;
+    margin-left: -130px;
+  }
+
+  .titulo-footer{
+    position: absolute;
+  }
+
+  .contacta{
+    position:relative;
+    display: flex;
+    text-align: center;
+    margin-left: 500px;
+  }
+
+
+  .logo-uba{
+    position: relative;
+  }
+
+  img.uba{
+    margin-top: -43px;
   }
 }

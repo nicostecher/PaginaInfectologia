@@ -3,7 +3,7 @@
 @section('main')
 <link rel="stylesheet" href="/css/login.css">
 <div class="container">
-    <div class="row justify-content-center" style="display: block;">
+    <div  style="display: block;">
         <div class="contenedor-login">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
+                        <div id="boton"class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Entrar') }}

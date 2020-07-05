@@ -28,3 +28,16 @@ p.titulo-comision{
 p.alumnos{
   margin-left: 40px;
 }
+@media (min-width:1024px){
+.comision1y2{
+position: relative;
+margin-left: 300px;
+}
+
+.comision3y4{
+  position: relative;
+  float: right;
+  margin-top: -238px;
+  margin-right: 300px;
+}
+}
