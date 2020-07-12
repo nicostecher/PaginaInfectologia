@@ -26,21 +26,18 @@ Route::get('/bibliografia', function () {
     return view('bibliografia');
 });
 
-Route::get('/casosClinicos', function () {
-    return view('casosClinicos');
-});
+Route::get('/casosClinicos', "CasosClinicosController@vista");
 
 Route::get('/novedades', function () {
     return view('novedades');
 });
 
-Route::get('/clases', function () {
-    return view('clases');
-});
+Route::get('/clases', "ClasesController@vista");
 
-Route::get('/cronograma', function () {
-    return view('cronograma');
-});
+
+
+Route::get('/cronograma',"CronogramaController@vista");
+
 
 Route::get('/cuerpoDocente', function () {
     return view('cuerpoDocente');
