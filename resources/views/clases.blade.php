@@ -54,6 +54,38 @@
             -->
       </section>
 
+
+      <section class="cargarClase">
+
+        <ul class="errores"> 
+          
+         <!--ACA VA A LA LOGICA DE BORRAR LA CLASE CUAND HAYA BASE DE DATOS!-->
+        </ul>
+
+        <h3>Cargar una clase</h3>
+        <br>
+        <form action="/clases" method="post" enctype="">
+          {{ csrf_field() }}
+          <div>
+          <label for="Nombre">Nombre:</label>
+          <input type="text" name="nombre" value="">
+          </div>
+
+          <div>
+            <label for="material"></label>
+            <input type="file" name="archivo" id="">
+            <div>
+              <input type="button" value="Cargar">
+              <input type="button" value="Borrar">
+              </div>
+          </div>
+
+        </form>
+        
+
+
+      </section>
+
    <br>
    <br>
    <br>

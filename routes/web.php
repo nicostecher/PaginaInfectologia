@@ -34,6 +34,8 @@ Route::get('/novedades', function () {
 
 Route::get('/clases', "ClasesController@vista");
 
+/*Route::post('/clases', "ClasesController@cargarClase");*/
+
 
 
 Route::get('/cronograma',"CronogramaController@vista");
