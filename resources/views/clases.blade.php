@@ -64,7 +64,7 @@
 
         <h3>Cargar una clase</h3>
         <br>
-        <form action="/clases" method="post" enctype="">
+        <form action="/clases" method="post" enctype="multipart/form-data">
           {{ csrf_field() }}
           <div>
           <label for="Nombre">Nombre:</label>

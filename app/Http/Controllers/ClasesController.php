@@ -12,7 +12,7 @@ class ClasesController extends Controller
         return view("/clases");
     }
 
-/* FUNCIONALIDAD DE CARGAR CLASES, QUEDA BLOQUEADA HASTA QUE HAYA BASE DE DATOS SINO EXPLOTA LA PAGINA
+
     public function cargarClase(request $req){
 
         $reglas= [
@@ -25,13 +25,13 @@ class ClasesController extends Controller
             "min"=> "el  campo :attribute debe tener minimo :min",
         ];
        
-        $this->validate($req, $reglas, $mensajes)
+        $this->validate($req, $reglas, $mensajes);
        
-        $clase= new clase();
+        $claseNueva= new clase();
 
         $ruta=$req->file("archivo")->store("public");
-        $nombreArchivo=basename($ruta)
-         CUANDO HAYA BASE DE DATOS NO OLVIDAR DE HACE PHP:STORAGE LINK PARA QUE SEAN PUBLICAS EN EL HTML
+        $nombreArchivo=basename($ruta);
+        /* CUANDO HAYA BASE DE DATOS NO OLVIDAR DE HACE PHP:STORAGE LINK PARA QUE SEAN PUBLICAS EN EL HTML*/
         $claseNueva->nombre= $req["nombre"];
         $claseNueva->archivo=$nombreArchivo;
       
@@ -52,7 +52,7 @@ class ClasesController extends Controller
 
 
 
-*/
+
 
 
     };
