@@ -12,12 +12,21 @@ class ClasesController extends Controller
         return view("/clases");
     }
 
+    public function mostrarClases(){
+        $clases=clase::paginate(1);
+
+        $vac= compact("clases");
+
+        return view("clases",$vac);
+
+    }
 
     public function cargarClase(request $req){
+        
 
-        $reglas= [
+        $reglas=[
             "nombre"=>"string|min:3",
-            "archivo"=>"file",
+            "archivo"=>"file|required",
         ];
 
         $mensajes=[
@@ -29,9 +38,10 @@ class ClasesController extends Controller
        
         $claseNueva= new clase();
 
-        $ruta=$req->file("archivo")->store("public");
+
+        $ruta=$req->file('archivo')->store("public");
         $nombreArchivo=basename($ruta);
-        /* CUANDO HAYA BASE DE DATOS NO OLVIDAR DE HACE PHP:STORAGE LINK PARA QUE SEAN PUBLICAS EN EL HTML*/
+        
         $claseNueva->nombre= $req["nombre"];
         $claseNueva->archivo=$nombreArchivo;
       

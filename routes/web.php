@@ -34,12 +34,11 @@ Route::get('/novedades', function () {
 
 Route::get('/clases', "ClasesController@vista");
 
+Route::get('/clases', "ClasesController@mostrarClases");
+
 Route::post('/clases', "ClasesController@cargarClase");
 
-
-
 Route::get('/cronograma',"CronogramaController@vista");
-
 
 Route::get('/cuerpoDocente', function () {
     return view('cuerpoDocente');

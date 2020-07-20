@@ -30,37 +30,29 @@
             <article class="clase">
 
               <div class="video">
-              <iframe src="https://docs.google.com/viewer?srcid=1v2U0h14MMKsdOXEvX8pgHCN6-OLETX3N&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="80%" height="250px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <ul>
+                @forelse ($clases as $clase)
+                <li>
+                 <iframe src="/storage/{{$clase->archivo}}" width="600px" height="500px" type=""></iframe>
+                </li>
+                <li>
+                  <div class="descripcion">
+                    <p>{{$clase->nombre}}</p>
+                   </div>
+                </li>
+                    
+                @empty
+                    
+                @endforelse
+              </ul>
                 </div>
-
-                <div class="descripcion">
-                  <p>Clase 1</p>
-                  </div>
-
-            </article>
-            <!---   QUEDA BLOQUEADO HASTA AGREGAR PAGINACION FUNCIONAL!
-            <article class="clase2">
-              <div class="pdf">
-                <iframe src="https://docs.google.com/viewer?srcid=1QDqahbmx_CWZi_sS7bEfqSz8cKmk9lhS&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="90%" height="250px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                
-              </div>
-              
-                <div class="descripcion">
-                  <p>Clase 2</p>
-                  </div>
-            </article>
             
-            -->
       </section>
+      {{$clases->links()}}
 
 
       <section class="cargarClase">
 
-        <ul class="errores"> 
-          
-         <!--ACA VA A LA LOGICA DE BORRAR LA CLASE CUAND HAYA BASE DE DATOS!-->
-        </ul>
 
         <h3>Cargar una clase</h3>
         <br>
@@ -72,10 +64,10 @@
           </div>
 
           <div>
-            <label for="material"></label>
-            <input type="file" name="archivo" id="">
+            <label for="archivo"></label>
+            <input type="file" name="archivo" id="archivo">
             <div>
-              <input type="button" value="Cargar">
+              <input type="submit" value="Cargar">
               <input type="button" value="Borrar">
               </div>
           </div>
