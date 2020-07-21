@@ -30,8 +30,9 @@ class ClasesController extends Controller
         ];
 
         $mensajes=[
-            "string"=> "El campo :attribute debe ser un texto",
-            "min"=> "el  campo :attribute debe tener minimo :min",
+            "string"=> "El campo :attribute no puede estar vacio",
+            "min"=> "El  campo :attribute debe tener minimo :min",
+            "required"=>"Debe seleccionar un archivo",
         ];
        
         $this->validate($req, $reglas, $mensajes);
