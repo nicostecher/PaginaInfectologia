@@ -6,9 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cronograma extends Model
 {
-    public $table="" ;
-    public $primaryKey="";
-    /* TIMESTAMPS SOLO ACLARAR SI EXISTE EN LA TABLA*/
-    public $timeStamps="";
+    public $table="cronogramas" ;
+    //public $primaryKey="";//
+    //public $timeStamps="";//
     public $guarded=[];
 }

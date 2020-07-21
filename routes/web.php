@@ -40,6 +40,10 @@ Route::post('/clases', "ClasesController@cargarClase");
 
 Route::get('/cronograma',"CronogramaController@vista");
 
+Route::get("/cronograma","CronogramaController@mostrarCronograma");
+
+Route::post('/cronograma',"CronogramaController@cargarCronograma");
+
 Route::get('/cuerpoDocente', function () {
     return view('cuerpoDocente');
 });
