@@ -5,9 +5,21 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use \App\Http\Controllers\Auth\LoginController;
+use \App\Http\Controllers\Auth\RegisterController;
 
 class User extends Authenticatable
 {
+
+  public $table="users";
+  public $guarded=[];
+
+  public function getEmail(){
+    return $this->email;
+  }
+  public function setPassword(){
+    return $this->password;
+  }
     use Notifiable;
 
     /**
@@ -16,7 +28,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'nombre','apellido', 'libreta','email', 'password',
     ];
 
     /**
