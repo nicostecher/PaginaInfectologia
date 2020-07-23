@@ -73,7 +73,6 @@
             @enderror
             <div>
               <input type="submit" value="Cargar">
-              <input type="button" value="Borrar">
               </div>
           </div>
 
@@ -83,6 +82,7 @@
 
       </section>
 
+        
    <br>
    <br>
    <br>

@@ -53,16 +53,32 @@ class ClasesController extends Controller
     }
         
     
-    public function borrarClase(request $req){  
-         $clase=Clase::find($req["nombre"]);
+   public function borrarClases(request $form){ 
+        
+        $id=$form["id"];
+        
+         $clases=clase::find($id);
 
-         $clase->delete();
+         $clases->delete();
 
-         return redirect("/clases");
+         return redirect("/buscarClase");
         }
 
 
+        public function buscarClases(request $req){
 
+        $nombre=$req->get("buscarNombre");
+
+       
+
+        $clases=clase::where('nombre','like',"%$nombre%")->get();
+
+      
+
+        return view('buscarClase', compact("clases"));
+
+       
+    }
 
 
 

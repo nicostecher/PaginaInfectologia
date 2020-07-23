@@ -38,6 +38,12 @@ Route::get('/clases', "ClasesController@mostrarClases");
 
 Route::post('/clases', "ClasesController@cargarClase");
 
+route::get('/buscarClase', "ClasesController@buscarClases");
+
+Route::post('/buscarClase',"ClasesController@buscarClases");
+
+Route::post("/buscarClase", "ClasesController@borrarClases");
+
 Route::get('/cronograma',"CronogramaController@vista");
 
 Route::get("/cronograma","CronogramaController@mostrarCronograma");
