@@ -41,10 +41,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="libreta" class="col-md-4 col-form-label text-md-right">{{ __('Libreta universitaria') }}</label>
+                            <label for="legajo" class="col-md-4 col-form-label text-md-right">{{ __('Libreta universitaria') }}</label>
 
                             <div class="col-md-6">
-                                <input id="libreta" type="text" class="form-control @error('libreta') is-invalid @enderror" name="libreta" value="{{ old('libreta') }}" required autocomplete="libreta" autofocus>
+                                <input id="legajo" type="int" class="form-control @error('libreta') is-invalid @enderror" name="legajo" value="{{ old('legajo') }}" required autocomplete="libreta" autofocus>
 
                                 @error('legajo')
                                     <span class="invalid-feedback" role="alert">
@@ -69,12 +69,12 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Contraseña') }}</label>
+                            <label for="contrasena" class="col-md-4 col-form-label text-md-right">{{ __('Contraseña') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                                <input id="contrasena" type="password" class="form-control @error('contrasena') is-invalid @enderror" name="contrasena" required autocomplete="new-password">
 
-                                @error('password')
+                                @error('contrasena')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -83,10 +83,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirma la contraseña') }}</label>
+                            <label for="confirmar-contrasena" class="col-md-4 col-form-label text-md-right">{{ __('Confirma la contraseña') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                <input id="confirmar-contrasena" type="password" class="form-control" name="confirmar-contrasena" required autocomplete="new-password">
                             </div>
                         </div>
 
