@@ -83,6 +83,24 @@ class ClasesController extends Controller
             return view("/editarClase",$vac);
         }
 
+        public function actualizarClase(request $id){
+
+            $clases=request()->except('_token');
+
+            clase::where('id','=',$id)->update($clases);
+
+            $clases=clase::find($id);
+
+            $vac=compact("clases");
+
+            return view("/editarClase",$vac);
+
+
+
+
+
+        }
+
 
         /*public function buscarClases(request $req){
 

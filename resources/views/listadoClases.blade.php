@@ -30,8 +30,8 @@
                 <td>{{$clase->nombre}}</td>
                 <td><img src="/storage/{{$clase->archivo}}"  alt=""></td>
                 <td>
-                    <a href="/editarClase">enviar</a>
-                    
+                    <a href="/editarClase/{{$clase->id}}">enviar</a>
+
                    <form action="/listadoClases" method="post">
                     {{ csrf_field() }}
                     <input type="hidden" name="id" value="{{$clase->id}}">

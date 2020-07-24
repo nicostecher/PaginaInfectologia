@@ -6,11 +6,11 @@
   
         <h3>Cargar una clase</h3>
         <br>
-        <form action="/clases" method="post" enctype="multipart/form-data">
+        <form action="/editarClase" method="post" enctype="multipart/form-data">
           {{ csrf_field() }}
           <div>
           <label for="Nombre">Nombre:</label>
-          <input type="text" name="nombre" value="">
+          <input type="text" name="nombre" value="{{$clases->nombre}}">
           @error('nombre')
           <small class="error">{{$message}}</small>
             @enderror
@@ -18,12 +18,14 @@
 
           <div>
             <label for="archivo"></label>
+            <div>
+              <iframe src="/storage/{{$clases->archivo}}" frameborder="0"></iframe>
             <input type="file" name="archivo" id="archivo">
             @error('archivo')
             <small class="error">{{$message}}</small>  
             @enderror
             <div>
-              <input type="submit" value="Cargar">
+              <input type="submit" value="Guardar Cambios">
               </div>
           </div>
 

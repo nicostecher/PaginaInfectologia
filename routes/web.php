@@ -43,7 +43,7 @@ Route::post("/listadoClases", "ClasesController@borrarClases");
 
 Route::get("/editarClase/{id}","ClasesController@editarClase");
 
-Route::post("/editarClase","clasesController@editarClase");
+Route::post("/editarClase","clasesController@actualizarClase");
 
 Route::get('/cronograma',"CronogramaController@vista");
 
