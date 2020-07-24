@@ -4,17 +4,12 @@
 @section('main')
 
 
-<section class="buscar-clases">
+<section class="listado-clases">
 
     <div>
-      <h3>buscar clases</h3>
+      <h3>Listado clases</h3>
     </div>
 
-   <div class="buscador">
-    <form action="/buscarClase" method="post" enctype="multipart/form-data">
-      {{ csrf_field() }}
-      <input type="search" name="buscarNombre"  placeholder="buscar">
-    </form>
     
         
     <table class="table">
@@ -34,8 +29,10 @@
                 <td scope="row">{{$loop->iteration}}</td>
                 <td>{{$clase->nombre}}</td>
                 <td><img src="/storage/{{$clase->archivo}}"  alt=""></td>
-                <td>editar 
-                   <form action="/buscarClase" method="post">
+                <td>
+                    <a href="/editarClase">enviar</a>
+                    
+                   <form action="/listadoClases" method="post">
                     {{ csrf_field() }}
                     <input type="hidden" name="id" value="{{$clase->id}}">
                     <input type="submit" onclick="return confirm('Esta seguro de Borrar la clase?')"; value="borrar">

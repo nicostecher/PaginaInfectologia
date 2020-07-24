@@ -32,19 +32,18 @@ Route::get('/novedades', function () {
     return view('novedades');
 });
 
-Route::get('/clases', "ClasesController@vista");
 
 Route::get('/clases', "ClasesController@mostrarClases");
 
 Route::post('/clases', "ClasesController@cargarClase");
 
-route::get('/buscarClase', "ClasesController@buscarClases");
+Route::get('/listadoClases',"ClasesController@listadoClases");
 
-Route::post('/buscarClase',"ClasesController@buscarClases");
+Route::post("/listadoClases", "ClasesController@borrarClases");
 
-Route::get('/buscarClase',"ClasesController@borrarClases");
+Route::get("/editarClase/{id}","ClasesController@editarClase");
 
-Route::post("/buscarClase", "ClasesController@borrarClases");
+Route::post("/editarClase","clasesController@editarClase");
 
 Route::get('/cronograma',"CronogramaController@vista");
 
