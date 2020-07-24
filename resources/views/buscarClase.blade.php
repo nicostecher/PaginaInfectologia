@@ -13,10 +13,9 @@
    <div class="buscador">
     <form action="/buscarClase" method="post" enctype="multipart/form-data">
       {{ csrf_field() }}
-
       <input type="search" name="buscarNombre"  placeholder="buscar">
     </form>
-    </div>
+    
         
     <table class="table">
         <thead>

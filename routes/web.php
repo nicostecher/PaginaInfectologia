@@ -42,6 +42,8 @@ route::get('/buscarClase', "ClasesController@buscarClases");
 
 Route::post('/buscarClase',"ClasesController@buscarClases");
 
+Route::get('/buscarClase',"ClasesController@borrarClases");
+
 Route::post("/buscarClase", "ClasesController@borrarClases");
 
 Route::get('/cronograma',"CronogramaController@vista");
