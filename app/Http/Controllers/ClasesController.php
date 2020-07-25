@@ -83,17 +83,13 @@ class ClasesController extends Controller
             return view("/editarClase",$vac);
         }
 
-        public function actualizarClase(request $id){
+        public function actualizarClase(request $req,$id){
 
-            $clases=request()->except('_token');
+            $claseActualizada=request()->except('_token');
 
-            clase::where('id','=',$id)->update($clases);
+            $claseEditada=clase::where('id','=',$id)->update($claseActualizada);
 
-            $clases=clase::find($id);
-
-            $vac=compact("clases");
-
-            return view("/editarClase",$vac);
+            return redirect("listadoClases");
 
 
 

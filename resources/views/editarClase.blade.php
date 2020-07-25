@@ -6,7 +6,7 @@
   
         <h3>Cargar una clase</h3>
         <br>
-        <form action="/editarClase" method="post" enctype="multipart/form-data">
+        <form action="/editarClase/{{$clases->id}}" method="post" enctype="multipart/form-data">
           {{ csrf_field() }}
           <div>
           <label for="Nombre">Nombre:</label>
@@ -25,7 +25,7 @@
             <small class="error">{{$message}}</small>  
             @enderror
             <div>
-              <input type="submit" value="Guardar Cambios">
+              <input type="submit" onclick="return confirm('clase Editada con exito!')" value="Guardar Cambios">
               </div>
           </div>
 
