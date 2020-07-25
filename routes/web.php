@@ -71,5 +71,10 @@ Route::get('/comisiones', function () {
 
 Auth::routes();
 
+Route::get('/register', 'Auth\RegisterController@validator');
+Route::post('/register', 'RegisterController@crearUsuario');
+
+Route::get('/login', 'Auth\LoginController@validator');
+Route::post('/register', 'LoginController@traerUsuario');
 
 Route::get('/home', 'HomeController@index')->name('home');

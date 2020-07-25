@@ -33,7 +33,7 @@ class LoginController extends Controller
      *
      * @return void
      */
-     protected function validator(array $data)
+     public function validator(array $data)
      {
          $message=[
              "email.required" => 'El :attribute no puede estar vacio',
@@ -44,6 +44,16 @@ class LoginController extends Controller
              'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
              'contrasena' => ['required', 'string', 'min:8', 'confirmed'],
          ],$message);
+     }
+
+     public function traerUsuario(){
+         $usuarios=User::all();
+
+         $vac=compact("usuarios");
+
+
+      return view("login",$vac);
+
      }
 
     public function __construct()

@@ -44,7 +44,7 @@
                             <label for="legajo" class="col-md-4 col-form-label text-md-right">{{ __('Libreta universitaria') }}</label>
 
                             <div class="col-md-6">
-                                <input id="legajo" type="int" class="form-control @error('libreta') is-invalid @enderror" name="legajo" value="{{ old('legajo') }}" required autocomplete="libreta" autofocus>
+                                <input id="legajo" type="int" class="form-control @error('legajo') is-invalid @enderror" name="legajo" value="{{ old('legajo') }}" required autocomplete="legajo" autofocus>
 
                                 @error('legajo')
                                     <span class="invalid-feedback" role="alert">

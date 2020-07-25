@@ -14,12 +14,35 @@ class User extends Authenticatable
   public $table="users";
   public $guarded=[];
 
-  public function getEmail(){
-    return $this->email;
+  public function __construct($nombre, $apellido, $email, $contrasena, $legajo){
+     $this->nombre = $nombre;
+     $this->apellido = $apellido;
+     $this->email = $email;
+     $this->contrasena = $contrasena;
+     $this->legajo = $legajo;
+ }
+
+ public function getEmail(){
+// Devolvemos un atributo
+        return $this->email;
+    }
+
+    public function setEmail($email){
+//Le damos un valor a un atributo
+        $this->email = $email;
+    }
+
+  public function getContrasena(){
+    return $this->contrasena;
   }
-  public function setPassword(){
-    return $this->password;
+  public function setEmail($contrasena){
+//Le damos un valor a un atributo
+      $this->contrasena = $contrasena;
   }
+
+  $usuario = new $this($nombre, $apellido, $email, $contrasena, $legajo);
+  
+
     use Notifiable;
 
     /**
