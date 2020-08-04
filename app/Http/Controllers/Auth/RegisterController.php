@@ -47,9 +47,9 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+
     public function validator(array $data)
     {
-
       $message=[
             'nombre.required'=> 'El :attribute no puede estar vacio',
             "apellido.required" => 'El :attribute no puede estar vacio',
@@ -70,17 +70,15 @@ class RegisterController extends Controller
         ],$message);
     }
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return \App\User
-     */
+/**
+    *  @param  array  $data
+    *  @return \App\User
+*/
 
 
     public function crearUsuario(array $data)
     {
-        $usuarioNuevo User::users([
+        $usuarioNuevo =  User::create([
             'nombre' => $data['nombre'],
             'apellido' => $data['apellido'],
             'legajo' => $data['legajo'],
@@ -92,4 +90,6 @@ class RegisterController extends Controller
 
         return redirect("/index");
     }
+
+    
 }
