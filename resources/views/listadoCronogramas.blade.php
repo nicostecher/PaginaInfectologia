@@ -4,10 +4,10 @@
 @section('main')
 
 
-<section class="listado-clases">
+<section class="listado-cronogramas">
 
     <div>
-      <h3>Listado clases</h3>
+      <h3>Listado cronogramas</h3>
     </div>
 
     
@@ -22,19 +22,19 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($clases as $clase)
+            @foreach ($cronogramas as $cronograma)
                 
             
             <tr>
                 <td scope="row">{{$loop->iteration}}</td>
-                <td>{{$clase->nombre}}</td>
-                <td><img src="/storage/{{$clase->archivo}}"  alt=""></td>
+                <td>{{$cronograma->nombre}}</td>
+                <td><img src="/storage/{{$cronograma->archivo}}"  alt=""></td>
                 <td>
-                    <a href="/editarClase/{{$clase->id}}">Editar</a>
+                    <a href="/editarCronograma/{{$cronograma->id}}">Editar</a>
 
-                   <form action="/listadoClases" method="post">
+                   <form action="/listadoCronogramas" method="post">
                     {{ csrf_field() }}
-                    <input type="hidden" name="id" value="{{$clase->id}}">
+                    <input type="hidden" name="id" value="{{$cronograma->id}}">
                     <input type="submit" onclick="return confirm('Esta seguro de Borrar la clase?')"; value="borrar">
                     
                 </form>

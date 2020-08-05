@@ -92,9 +92,6 @@ class ClasesController extends Controller
             return redirect("listadoClases");
 
 
-
-
-
         }
 
 
@@ -103,7 +100,7 @@ class ClasesController extends Controller
             $nombre=$req->get("buscarNombre");
 
             
-            $clases=clase::where('nombre','like',"%$nombre%")->get();
+            $clases=clase::where('nombre','like',%"$nombre%")->get();
             
 
             return view('buscarClase', compact("clases"));

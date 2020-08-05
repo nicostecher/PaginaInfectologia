@@ -40,6 +40,8 @@
    
     </section>
 
+    {{$cronogramas->links()}}
+
     
     <section class="cargarCronograma">
         

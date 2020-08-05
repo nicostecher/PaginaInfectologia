@@ -51,6 +51,14 @@ Route::get("/cronograma","CronogramaController@mostrarCronograma");
 
 Route::post('/cronograma',"CronogramaController@cargarCronograma");
 
+Route::get('/listadoCronogramas',"CronogramaController@listadoCronogramas");
+
+Route::post('/listadoCronogramas', "CronogramaController@borrarCronograma");
+
+Route::get("/editarCronograma/{id}","CronogramaController@editarCronograma");
+
+Route::post("/editarCronograma/{id}","CronogramaController@actualizarCronograma");
+
 Route::get('/cuerpoDocente', function () {
     return view('cuerpoDocente');
 });

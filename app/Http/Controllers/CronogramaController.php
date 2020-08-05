@@ -13,7 +13,7 @@ class CronogramaController extends Controller
 
     
     public function mostrarCronograma(){
-        $cronogramas=cronograma::all();
+        $cronogramas=cronograma::paginate(1);
 
         $vac=compact("cronogramas");
 
@@ -50,4 +50,45 @@ class CronogramaController extends Controller
 
         return redirect("/cronograma");
     }
+
+    public function listadoCronogramas(){
+        $cronogramas=Cronograma::all();
+
+        $vac=compact("cronogramas");
+
+        return view ("listadoCronogramas",$vac);
+
+    }
+
+    public function editarCronograma($id){
+
+        $cronogramas=cronograma::find($id);
+
+        $vac=compact("cronogramas");
+
+        return view("/editarCronograma",$vac);
+    }
+
+    public function actualizarCronograma(request $req,$id){
+
+        $cronogramaActualizado=request()->except('_token');
+
+        $cronogramaEditado=cronograma::where('id','=',$id)->update($cronogramaActualizado);
+
+        return redirect("listadoCronogramas");
+
+    }
+
+    public function borrarCronograma(request $form){ 
+
+        $id=$form["id"];
+        
+         $cronogramas=cronograma::find($id);
+
+         $cronogramas->delete();
+
+         
+    
+    return redirect("/listadoCronogramas");
+        }
 }
