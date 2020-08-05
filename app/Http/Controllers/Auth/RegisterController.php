@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers\Auth\RegisterController;
 
 use App\User;
 use App\Http\Controllers\Controller;
@@ -47,6 +47,9 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+     function comprobar ($data){
+       var_dump($data);
+     }
 
     public function validator(array $data)
     {
@@ -91,5 +94,5 @@ class RegisterController extends Controller
         return redirect("/index");
     }
 
-    
+
 }
