@@ -47,31 +47,37 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
-     function comprobar ($data){
-       var_dump($data);
-     }
 
-    public function validator(array $data)
-    {
-      $message=[
-            'nombre.required'=> 'El :attribute no puede estar vacio',
-            "apellido.required" => 'El :attribute no puede estar vacio',
-            "legajo.required" => 'El :attribute no puede estar vacio',
-            "email.required" => 'El :attribute no puede estar vacio',
-            "contrasena.required" => 'El :attribute no puede esta vacio',
-            "contrasena.confirmed" =>"Las contraseñas no coinciden",
-            "contrasena.min" =>"La :attribute debe tener al menos 8 caracteres",
-        ];
+  /**
+    * function comprobar ($data){
+    *   var_dump($data);
+    * }
 
-        return Validator::make($data, [
-            'nombre' => ['required', 'string', 'max:255'],
-            'apellido' => ['required', 'string', 'max:255'],
-            'legajo' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'contrasena' => ['required', 'string', 'min:8', 'confirmed'],
-            'confirmar-contrasena' => ['required', 'string', 'min:8', 'confirmed'],
-        ],$message);
-    }
+
+  *  public function validador(array $data)
+  *  {
+  *    $message=[
+  *          'nombre.required'=> 'El :attribute no puede estar vacio',
+  *          "apellido.required" => 'El :attribute no puede estar vacio',
+    *        "legajo.required" => 'El :attribute no puede estar vacio',
+    *        "email.required" => 'El :attribute no puede estar vacio',
+    *        "contrasena.required" => 'El :attribute no puede esta vacio',
+    *        "contrasena.confirmed" =>"Las contraseñas no coinciden",
+    *        "contrasena.min" =>"La :attribute debe tener al menos 8 caracteres",
+    *    ];
+
+    *    return Validador::make($data, [
+    *        'nombre' => ['required', 'string', 'max:255'],
+    *        'apellido' => ['required', 'string', 'max:255'],
+    *        'legajo' => ['required', 'string', 'max:255'],
+    *        'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+    *        'contrasena' => ['required', 'string', 'min:8', 'confirmed'],
+    *        'confirmar-contrasena' => ['required', 'string', 'min:8', 'confirmed'],
+    *    ],$message);
+    *  }
+    */
+
+
 
 /**
     *  @param  array  $data
@@ -79,20 +85,20 @@ class RegisterController extends Controller
 */
 
 
-    public function crearUsuario(array $data)
-    {
-        $usuarioNuevo =  User::create([
-            'nombre' => $data['nombre'],
-            'apellido' => $data['apellido'],
-            'legajo' => $data['legajo'],
-            'email' => $data['email'],
-            'contrasena' => Hash::make($data['contrasena']),
-        ]);
+  /**  public function crearUsuario(array $data)
+  *   {
+  *       $usuarioNuevo =  User::create([
+  *           'nombre' => $data['nombre'],
+  *           'apellido' => $data['apellido'],
+  *           'legajo' => $data['legajo'],
+  *           'email' => $data['email'],
+  *           'contrasena' => Hash::make($data['contrasena']),
+  *       ]);
 
-        $usuarioNuevo->save();
+  *       $usuarioNuevo->save();
 
-        return redirect("/index");
-    }
-
+  *       return redirect("/index");
+  *   }
+*/
 
 }
