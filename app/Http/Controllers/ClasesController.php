@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Storage;
 use App\clase;
 
 class ClasesController extends Controller
@@ -87,12 +87,19 @@ class ClasesController extends Controller
 
             $claseActualizada=request()->except('_token');
 
+            if($req->hasFile('archivo')){
+
+                $clases=clase::find($id);
+                
+                Storage::delete("/public" . $clases->archivo);
+    
+                $claseActualizada["archivo"]=$req->file("archivo")->store("storage", "public");
+            };
+            
+
             $claseEditada=clase::where('id','=',$id)->update($claseActualizada);
 
             return redirect("listadoClases");
-
-
-
 
 
         }
@@ -103,7 +110,7 @@ class ClasesController extends Controller
             $nombre=$req->get("buscarNombre");
 
             
-            $clases=clase::where('nombre','like',"%$nombre%")->get();
+            $clases=clase::where('nombre','like',%"$nombre%")->get();
             
 
             return view('buscarClase', compact("clases"));
