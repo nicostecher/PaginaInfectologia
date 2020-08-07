@@ -75,7 +75,9 @@ Route::get('/comisiones', function () {
     return view('comisiones');
 });
 
-Auth::routes();
+
+Route::get('/register', 'RegiController@validator');
+/**Auth::routes();*/
 
 /**
 *Route::post('/register', 'RegisterController@crearUsuario');
