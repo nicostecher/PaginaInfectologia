@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Http\Controllers\Auth\RegisterController;
 
 class Register extends Model
 {
@@ -33,6 +34,6 @@ class Register extends Model
   public function setApellido(){
     return $this->apellido;
   }
-  
+
 
 }

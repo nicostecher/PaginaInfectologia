@@ -7,41 +7,40 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use \App\Http\Controllers\Auth\LoginController;
 use \App\Http\Controllers\Auth\RegisterController;
-
+require("App\Http\Controllers\BaseDeDatos");
 class User extends Authenticatable
 {
+//
+  //public $table="users";
+  //public $guarded=[];
 
-  public $table="users";
-  public $guarded=[];
-
-  public function __construct($nombre, $apellido, $email, $contrasena, $legajo){
-     $this->nombre = $nombre;
-     $this->apellido = $apellido;
-     $this->email = $email;
-     $this->contrasena = $contrasena;
-     $this->legajo = $legajo;
+  //public function __construct($nombre, $apellido, $email, $contrasena, $legajo){
+  //   $this->nombre = $nombre;
+  //   $this->apellido = $apellido;
+    // $this->email = $email;
+    // $this->contrasena = $contrasena;
+    // $this->legajo = $legajo;
  }
 
- public function getEmail(){
-// Devolvemos un atributo
-        return $this->email;
-    }
+//public function getEmail(){
+ //Devolvemos un atributo
 
-    public function setEmail($email){
+ //      return $this->email;  }
+  //  public function setEmail($email){
 //Le damos un valor a un atributo
-        $this->email = $email;
-    }
+    //    $this->email = $email;
 
-  public function getContrasena(){
-    return $this->contrasena;
-  }
-  public function setEmail($contrasena){
+    //}
+  //public function getContrasena(){
+    //return $this->contrasena;
+  //}
 //Le damos un valor a un atributo
-      $this->contrasena = $contrasena;
-  }
+//public function setEmail($contrasena){
+  //    $this->contrasena = $contrasena;
+  //}
 
   $usuario = new $this($nombre, $apellido, $email, $contrasena, $legajo);
-  
+
 
     use Notifiable;
 
