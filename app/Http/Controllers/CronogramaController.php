@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\cronograma;
 
 class CronogramaController extends Controller
@@ -56,6 +57,7 @@ class CronogramaController extends Controller
 
         $vac=compact("cronogramas");
 
+
         return view ("listadoCronogramas",$vac);
 
     }
@@ -69,11 +71,29 @@ class CronogramaController extends Controller
         return view("/editarCronograma",$vac);
     }
 
+
+
     public function actualizarCronograma(request $req,$id){
 
-        $cronogramaActualizado=request()->except('_token');
+    
 
-        $cronogramaEditado=cronograma::where('id','=',$id)->update($cronogramaActualizado);
+        $cronogramaViejo=request()->except('_token');
+        
+        if($req->hasFile('archivo')){
+
+            $cronograma=cronograma::find($id);
+            
+            Storage::delete("/public" . $cronograma->archivo);
+
+            $cronogramaViejo["archivo"]=$req->file("archivo")->store("storage", "public");
+        }
+        
+       
+        $cronogramaEditado=cronograma::where('id','=',$id)->update($cronogramaViejo);
+
+        
+        
+
 
         return redirect("listadoCronogramas");
 
