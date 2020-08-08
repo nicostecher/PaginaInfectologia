@@ -93,4 +93,3 @@ Auth::routes();
 *Route::post('/register', 'LoginController@traerUsuario');
 */
 Route::get('/home', 'HomeController@index')->name('home');
-

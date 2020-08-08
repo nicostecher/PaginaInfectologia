@@ -51,7 +51,7 @@ class RegisterController extends Controller
      * @return \Illuminate\Contracts\Validation\Validator
      */
 
-  
+
     /* function comprobar ($data){
     *   var_dump($data);
     * }*/
@@ -78,7 +78,7 @@ class RegisterController extends Controller
             'confirmar-contrasena' => ['required', 'string', 'min:8', 'confirmed'],
         ],$message);
       }
-  
+
 */
 
 
@@ -86,23 +86,22 @@ class RegisterController extends Controller
     *  @param  array  $data
     *  @return \App\User
 */
-/*
 
-   public function crearUsuario(array $data)
-    {
-        $usuarioNuevo =  User::create([
-            'nombre' => $data['nombre'],
-             'apellido' => $data['apellido'],
-             'legajo' => $data['legajo'],
-            'email' => $data['email'],
-            'contrasena' => Hash::make($data['contrasena']),
-         ]);
 
-        $usuarioNuevo->save();
 
-        return redirect("/index");
-    }
+   /**public function create(array $data)
+  *  {
+    *    $usuarioNuevo =  User::create([
+    *        'nombre' => $data['nombre'],
+    *         'apellido' => $data['apellido'],
+      *       'legajo' => $data['legajo'],
+      *      'email' => $data['email'],
+      *      'contrasena' => Hash::make($data['contrasena']),
+      *   ]);
+      *  $usuarioNuevo->save();
+  *  }
 
-    /*
-
-}
+    *public function agregarUsuario(){
+*
+    *}
+    */
