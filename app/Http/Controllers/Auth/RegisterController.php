@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Auth\RegisterController;
+//zoe, esta linea namespace la tenías escrita asi namespace App\Http\Controllers\Auth\loginController. le saque esa ultima parte y la deje como esta abajo, y ahi corrio.//
+
+namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
@@ -49,57 +51,58 @@ class RegisterController extends Controller
      * @return \Illuminate\Contracts\Validation\Validator
      */
 
-  /**
-    * function comprobar ($data){
+  
+    /* function comprobar ($data){
     *   var_dump($data);
-    * }
+    * }*/
 
+/*
+   public function validador(array $data)
+    {
+     $message=[
+            'nombre.required'=> 'El :attribute no puede estar vacio',
+           "apellido.required" => 'El :attribute no puede estar vacio',
+           "legajo.required" => 'El :attribute no puede estar vacio',
+            "email.required" => 'El :attribute no puede estar vacio',
+           "contrasena.required" => 'El :attribute no puede esta vacio',
+            "contrasena.confirmed" =>"Las contraseñas no coinciden",
+            "contrasena.min" =>"La :attribute debe tener al menos 8 caracteres",
+        ];
 
-  *  public function validador(array $data)
-  *  {
-  *    $message=[
-  *          'nombre.required'=> 'El :attribute no puede estar vacio',
-  *          "apellido.required" => 'El :attribute no puede estar vacio',
-    *        "legajo.required" => 'El :attribute no puede estar vacio',
-    *        "email.required" => 'El :attribute no puede estar vacio',
-    *        "contrasena.required" => 'El :attribute no puede esta vacio',
-    *        "contrasena.confirmed" =>"Las contraseñas no coinciden",
-    *        "contrasena.min" =>"La :attribute debe tener al menos 8 caracteres",
-    *    ];
-
-    *    return Validador::make($data, [
-    *        'nombre' => ['required', 'string', 'max:255'],
-    *        'apellido' => ['required', 'string', 'max:255'],
-    *        'legajo' => ['required', 'string', 'max:255'],
-    *        'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-    *        'contrasena' => ['required', 'string', 'min:8', 'confirmed'],
-    *        'confirmar-contrasena' => ['required', 'string', 'min:8', 'confirmed'],
-    *    ],$message);
-    *  }
-    */
-
+        return Validador::make($data, [
+            'nombre' => ['required', 'string', 'max:255'],
+            'apellido' => ['required', 'string', 'max:255'],
+            'legajo' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'contrasena' => ['required', 'string', 'min:8', 'confirmed'],
+            'confirmar-contrasena' => ['required', 'string', 'min:8', 'confirmed'],
+        ],$message);
+      }
+  
+*/
 
 
 /**
     *  @param  array  $data
     *  @return \App\User
 */
+/*
 
+   public function crearUsuario(array $data)
+    {
+        $usuarioNuevo =  User::create([
+            'nombre' => $data['nombre'],
+             'apellido' => $data['apellido'],
+             'legajo' => $data['legajo'],
+            'email' => $data['email'],
+            'contrasena' => Hash::make($data['contrasena']),
+         ]);
 
-  /**  public function crearUsuario(array $data)
-  *   {
-  *       $usuarioNuevo =  User::create([
-  *           'nombre' => $data['nombre'],
-  *           'apellido' => $data['apellido'],
-  *           'legajo' => $data['legajo'],
-  *           'email' => $data['email'],
-  *           'contrasena' => Hash::make($data['contrasena']),
-  *       ]);
+        $usuarioNuevo->save();
 
-  *       $usuarioNuevo->save();
+        return redirect("/index");
+    }
 
-  *       return redirect("/index");
-  *   }
-*/
+    /*
 
 }
