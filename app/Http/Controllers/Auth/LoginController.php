@@ -47,9 +47,9 @@ class LoginController extends Controller
      }
 
      public function traerUsuario(){
-         $usuarios=User::all();
+         $usuario=User::all();
 
-         $vac=compact("usuarios");
+         $vac=compact("usuario");
 
 
       return view("login",$vac);

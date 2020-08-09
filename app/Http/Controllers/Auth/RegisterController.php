@@ -12,6 +12,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Register;
 
+
 class RegisterController extends Controller
 {
     /*
@@ -52,12 +53,9 @@ class RegisterController extends Controller
      */
 
 
-    /* function comprobar ($data){
-    *   var_dump($data);
-    * }*/
 
-/*
-   public function validador(array $data)
+
+   public function validator(array $data)
     {
      $message=[
             'nombre.required'=> 'El :attribute no puede estar vacio',
@@ -69,7 +67,7 @@ class RegisterController extends Controller
             "contrasena.min" =>"La :attribute debe tener al menos 8 caracteres",
         ];
 
-        return Validador::make($data, [
+        return Validator::make($data, [
             'nombre' => ['required', 'string', 'max:255'],
             'apellido' => ['required', 'string', 'max:255'],
             'legajo' => ['required', 'string', 'max:255'],
@@ -79,7 +77,7 @@ class RegisterController extends Controller
         ],$message);
       }
 
-*/
+
 
 
 /**
@@ -89,19 +87,19 @@ class RegisterController extends Controller
 
 
 
-   /**public function create(array $data)
-  *  {
-    *    $usuarioNuevo =  User::create([
-    *        'nombre' => $data['nombre'],
-    *         'apellido' => $data['apellido'],
-      *       'legajo' => $data['legajo'],
-      *      'email' => $data['email'],
-      *      'contrasena' => Hash::make($data['contrasena']),
-      *   ]);
-      *  $usuarioNuevo->save();
-  *  }
+   public function create(array $data)
+    {
+       $usuarioNuevo =  User::create([
+          'nombre' => $data['nombre'],
+            'apellido' => $data['apellido'],
+          'legajo' => $data['legajo'],
+          'email' => $data['email'],
+          'contrasena' => Hash::make($data['contrasena']),
+         ]);
+       $usuarioNuevo->save();
+    }
 
-    *public function agregarUsuario(){
-*
-    *}
-    */
+    public function agregarUsuario(){
+
+    }
+    }

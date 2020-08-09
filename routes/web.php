@@ -75,11 +75,15 @@ Route::get('/comisiones', function () {
     return view('comisiones');
 });
 
-
 Auth::routes();
 
-/*Route::get('/register', 'RegiController@validator');*/
+/*Route::get('/register', function(){
+  return view ('app/resources/views/auth/register');
+});*/
 
+
+/*Route::get('/register', 'RegiController@validator');*/
+/*Route::post('/login', "UserController@traerUsuario");*/
 
 /*
 *Route::post('/register', 'RegisterController@crearUsuario');

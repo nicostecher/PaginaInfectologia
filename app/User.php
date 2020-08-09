@@ -10,9 +10,9 @@ use \App\Http\Controllers\Auth\RegisterController;
 require("App\Http\Controllers\BaseDeDatos");
 class User extends Authenticatable
 {
-//
-  //public $table="users";
-  //public $guarded=[];
+
+  public $table="users";
+  public $guarded=[];
 
   //public function __construct($nombre, $apellido, $email, $contrasena, $legajo){
   //   $this->nombre = $nombre;
