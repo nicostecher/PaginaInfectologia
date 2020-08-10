@@ -10,6 +10,10 @@
       <h3>Listado cronogramas</h3>
     </div>
 
+    <div class="cargar-cronograma">
+        <a href="/cargarCronograma"><button>Nuevo Cronograma</button></a>
+    </div>
+
     
         
     <table class="table">

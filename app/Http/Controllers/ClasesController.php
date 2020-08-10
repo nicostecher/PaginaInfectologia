@@ -18,6 +18,9 @@ class ClasesController extends Controller
 
     }
 
+    public function nuevaClase(){
+        return view("/nuevaClase");
+    }
 
     public function cargarClase(request $req){
         

@@ -35,6 +35,8 @@ Route::get('/novedades', function () {
 
 Route::get('/clases', "ClasesController@mostrarClases");
 
+Route::get('/nuevaClase', "ClasesController@nuevaClase");
+
 Route::post('/clases', "ClasesController@cargarClase");
 
 Route::get('/listadoClases',"ClasesController@listadoClases");
@@ -48,6 +50,8 @@ Route::post("/editarClase/{id}","clasesController@actualizarClase");
 Route::get('/cronograma',"CronogramaController@vista");
 
 Route::get("/cronograma","CronogramaController@mostrarCronograma");
+
+Route::get("/cargarCronograma", "CronogramaController@nuevoCronograma");
 
 Route::post('/cronograma',"CronogramaController@cargarCronograma");
 

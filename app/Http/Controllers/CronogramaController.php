@@ -22,6 +22,10 @@ class CronogramaController extends Controller
 
     }
 
+    public function nuevoCronograma(){
+        return view("/cargarCronograma");
+    }
+
 
     public function cargarCronograma( request $req){
 

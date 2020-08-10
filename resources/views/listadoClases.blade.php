@@ -10,6 +10,9 @@
       <h3>Listado clases</h3>
     </div>
 
+    <div class="cargar-cronograma">
+        <a href="/nuevaClase"><button>Cargar una Clase</button></a>
+    </div>
     
         
     <table class="table">
