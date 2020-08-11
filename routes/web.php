@@ -63,15 +63,24 @@ Route::get("/editarCronograma/{id}","CronogramaController@editarCronograma");
 
 Route::post("/editarCronograma/{id}","CronogramaController@actualizarCronograma");
 
+route::get("/index", "NovedadesController@mostrarNovedades");
+
 route::get("/cargarNovedades", "NovedadesController@nuevaNoticia");
 
-Route::get('/cuerpoDocente', function () {
+route::post("/index", "NovedadesController@cargarNoticia");
+
+route::get("/listadoNovedades", "NovedadesController@listadoNovedades");
+
+Route::get("/editarNovedades/{id}","NovedadesController@editarNovedades");
+
+Route::post("/editarNovedades/{id}","NovedadesController@actualizarNovedades");
+
+Route::post('/listadoNovedades', "NovedadesController@borrarNovedad");
+
+route::get('/cuerpoDocente', function () {
     return view('cuerpoDocente');
 });
 
-Route::get('/index', function () {
-    return view('index');
-});
 
 Route::get('/sitiosDeInteres', function () {
     return view('sitiosDeInteres');
