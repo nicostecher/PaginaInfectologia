@@ -63,6 +63,8 @@ Route::get("/editarCronograma/{id}","CronogramaController@editarCronograma");
 
 Route::post("/editarCronograma/{id}","CronogramaController@actualizarCronograma");
 
+route::get("/cargarNovedades", "NovedadesController@nuevaNoticia");
+
 Route::get('/cuerpoDocente', function () {
     return view('cuerpoDocente');
 });

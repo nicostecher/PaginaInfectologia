@@ -12,7 +12,10 @@ class ClasesController extends Controller
     public function mostrarClases(){
         $clases=clase::paginate(1);
 
+      
+
         $vac= compact("clases");
+
 
         return view("clases",$vac);
 
@@ -57,6 +60,8 @@ class ClasesController extends Controller
     public function listadoClases(){
         $clases=clase::all();
 
+        
+
         $vac=compact("clases");
 
         return view ("listadoClases",$vac);
@@ -80,6 +85,7 @@ class ClasesController extends Controller
         public function editarClase($id){
 
             $clases=clase::find($id);
+
 
             $vac=compact("clases");
 

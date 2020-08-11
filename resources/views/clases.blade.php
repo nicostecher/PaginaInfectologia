@@ -32,6 +32,8 @@
               <div class="video">
               <ul>
                 @forelse ($clases as $clase)
+
+                
                 <li>
                  <iframe src="/storage/{{$clase->archivo}}" width="600px" height="500px" type=""></iframe>
                 </li>
