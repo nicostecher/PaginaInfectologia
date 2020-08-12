@@ -30,59 +30,44 @@
 
 
 
-      <div class="novedades">
-                
-            <h6>22/6/2020</h6>
+      <article class="novedades">
 
-          <div class="noticia1">
-            <div class="titulo-noticia">
-              <h5>fechas de Parcial</h5>
-            </div>
-
-            <div class="descripcion-noticias">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, rem placeat! Porro praesentium nulla </p>
-            </div>
-
-          </div>
-
-          <div class="noticia2">
-              <h6>22/6/2020</h6>
-              <div class="titulo-noticia">
-                <h5>Cambios de Clase</h5></a>
-              </div>
-
-                <div class="descripcion-noticias">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime necessitatibus placeat, dolore autem voluptatem aut aliquam mollitia, facilis hic quae incidunt dolorum dicta libero iure. Officiis modi maiores fugit. nulla<p>
-                  </div>
-                </div>
-                
-
-                <div class="noticia2">
-                  <h6>22/6/2020</h6>
+        <ul>
+          @forelse ($novedades as $novedad)
+          <li>
+               <h6>{{$novedad->created_at->format('d.m.Y')}}</h6>
+               </li> 
+             
+           <li>
+                <div class="noticia1">
                   <div class="titulo-noticia">
-                    <h5>Otras Noticias</h5>
+                    <h5>{{$novedad->titulo}}</h5>
                   </div>
+                  </div>
+               </li>
+               
+           <li>
+                 
+          <div class="descripcion-noticias">
+            <p>{{$novedad->descripcion}}</p>
+          </div>
+               </li>
+               @empty
 
-                    <div class="descripcion-noticias">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime necessitatibus placeat, dolore autem voluptatem aut aliquam mollitia, facilis hic quae incidunt dolorum dicta libero iure. Officiis modi maiores fugit. nulla<p>
-                      </div>
-                    </div>
+               @endforelse
+                   
+                </ul>
 
-                    <div class="noticia2">
-                     <h6>22/6/2020</h6>
-                      <div class="titulo-noticia">
-                        <h5>Otras Noticias</h5>
-                      </div>
-    
-                        <div class="descripcion-noticias">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime necessitatibus placeat, dolore autem voluptatem aut aliquam mollitia, facilis hic quae incidunt dolorum dicta libero iure. Officiis modi maiores fugit. nulla<p>
-                          </div>
-                        </div>
+              </article>
+
+             
+          
+       
+                
 
 
 
-
-      </div>
+     
 
 
       <div class="categorias">
@@ -108,6 +93,8 @@
 
     </div>
   </div>
+
+</div>
 
   </body>
 </html>

@@ -11,7 +11,7 @@
     </div>
 
     <div class="cargar-cronograma">
-        <a href="/nuevaClase"><button>Cargar una Clase</button></a>
+        <a href="/nuevoCasoClinico"><button>Cargar un Caso Clinico</button></a>
     </div>
     
         
@@ -25,20 +25,20 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($clases as $clase)
+            @foreach ($casos as $caso)
                 
             
             <tr>
                 <td scope="row">{{$loop->iteration}}</td>
-                <td>{{$clase->nombre}}</td>
-                <td><img src="/storage/{{$clase->archivo}}"  alt=""></td>
+                <td>{{$caso->nombre}}</td>
+                <td><iframe src="/storage/{{$caso->archivo}}" frameborder="0"></iframe></td>
                 <td>
-                    <a href="/editarClase/{{$clase->id}}">Editar</a>
+                    <a href="/editarCasoClinico/{{$caso->id}}"><button>Editar<button></a>
 
-                   <form action="/listadoClases" method="post">
+                   <form action="/listadoCasosClinicos" method="post">
                     {{ csrf_field() }}
-                    <input type="hidden" name="id" value="{{$clase->id}}">
-                    <input type="submit" onclick="return confirm('Esta seguro de Borrar la clase?')"; value="borrar">
+                    <input type="hidden" name="id" value="{{$caso->id}}">
+                    <input type="submit" onclick="return confirm('Esta seguro de Borrar el caso?')"; value="borrar">
                     
                 </form>
                 </td>

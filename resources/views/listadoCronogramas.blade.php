@@ -10,6 +10,10 @@
       <h3>Listado cronogramas</h3>
     </div>
 
+    <div class="cargar-cronograma">
+        <a href="/cargarNovedades"><button>Nuevo Cronograma</button></a>
+    </div>
+
     
         
     <table class="table">
@@ -30,7 +34,7 @@
                 <td>{{$cronograma->nombre}}</td>
                 <td><img src="/storage/{{$cronograma->archivo}}"  alt=""></td>
                 <td>
-                    <a href="/editarCronograma/{{$cronograma->id}}">Editar</a>
+                   <a href="/editarCronograma/{{$cronograma->id}}">Editar</a>
 
                    <form action="/listadoCronogramas" method="post">
                     {{ csrf_field() }}

@@ -1,18 +1,18 @@
 @extends('plantilla')
 
-
 @section('main')
 
 
-<section class="listado-clases">
+<section class="listado-novedades">
 
     <div>
-      <h3>Listado clases</h3>
+      <h3>Listado Novedades</h3>
     </div>
 
-    <div class="cargar-cronograma">
-        <a href="/nuevaClase"><button>Cargar una Clase</button></a>
+    <div class="cargar-novedades">
+        <a href="/cargarNovedades"><button>Nueva Noticia</button></a>
     </div>
+
     
         
     <table class="table">
@@ -25,20 +25,20 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($clases as $clase)
+            @foreach ($novedades as $novedad)
                 
             
             <tr>
                 <td scope="row">{{$loop->iteration}}</td>
-                <td>{{$clase->nombre}}</td>
-                <td><img src="/storage/{{$clase->archivo}}"  alt=""></td>
+                <td>{{$novedad->titulo}}</td>
+                <td>{{$novedad->descripcion}}</td>
                 <td>
-                    <a href="/editarClase/{{$clase->id}}">Editar</a>
+                    <a href="/editarNovedades/{{$novedad->id}}">Editar</a>
 
-                   <form action="/listadoClases" method="post">
+                   <form action="/listadoNovedades" method="post">
                     {{ csrf_field() }}
-                    <input type="hidden" name="id" value="{{$clase->id}}">
-                    <input type="submit" onclick="return confirm('Esta seguro de Borrar la clase?')"; value="borrar">
+                    <input type="hidden" name="id" value="{{$novedad->id}}">
+                    <input type="submit" onclick="return confirm('Esta seguro de Borrar la noticia?')"; value="borrar">
                     
                 </form>
                 </td>
@@ -49,5 +49,4 @@
 
     </section>
     
-
 @endsection

@@ -26,14 +26,23 @@ Route::get('/bibliografia', function () {
     return view('bibliografia');
 });
 
-Route::get('/casosClinicos', "CasosClinicosController@vista");
+Route::get('/casosClinicos', "CasosClinicosController@mostrarCasosClinicos");
 
-Route::get('/novedades', function () {
-    return view('novedades');
-});
+Route::get('/nuevoCasoClinico',"CasosClinicosController@nuevoCasoClinico");
 
+Route::post('/casosClinicos', "CasosClinicosController@cargarCasoClinico");
+
+Route::get("/listadoCasosClinicos","CasosClinicosController@listadoCasosClinicos");
+
+Route::get("/editarCasoClinico/{id}","CasosClinicosController@editarcasoClinico");
+
+Route::post("/editarCasoClinico/{id}","CasosClinicosController@actualizarCasoClinico");
+
+Route::post("/listadoCasosClinicos","CasosClinicosController@borrarCasoClinico");
 
 Route::get('/clases', "ClasesController@mostrarClases");
+
+Route::get('/nuevaClase', "ClasesController@nuevaClase");
 
 Route::post('/clases', "ClasesController@cargarClase");
 
@@ -49,6 +58,8 @@ Route::get('/cronograma',"CronogramaController@vista");
 
 Route::get("/cronograma","CronogramaController@mostrarCronograma");
 
+Route::get("/cargarCronograma", "CronogramaController@nuevoCronograma");
+
 Route::post('/cronograma',"CronogramaController@cargarCronograma");
 
 Route::get('/listadoCronogramas',"CronogramaController@listadoCronogramas");
@@ -59,13 +70,29 @@ Route::get("/editarCronograma/{id}","CronogramaController@editarCronograma");
 
 Route::post("/editarCronograma/{id}","CronogramaController@actualizarCronograma");
 
-Route::get('/cuerpoDocente', function () {
+route::get("/index", "NovedadesController@mostrarNovedades");
+
+route::get("/cargarNovedades", "NovedadesController@nuevaNoticia");
+
+route::post("/index", "NovedadesController@cargarNoticia");
+
+route::get("/listadoNovedades", "NovedadesController@listadoNovedades");
+
+Route::get("/editarNovedades/{id}","NovedadesController@editarNovedades");
+
+Route::post("/editarNovedades/{id}","NovedadesController@actualizarNovedades");
+
+Route::post('/listadoNovedades', "NovedadesController@borrarNovedad");
+
+Route::get('/novedades', function () {
+    return view('novedades');
+});
+
+
+route::get('/cuerpoDocente', function () {
     return view('cuerpoDocente');
 });
 
-Route::get('/index', function () {
-    return view('index');
-});
 
 Route::get('/sitiosDeInteres', function () {
     return view('sitiosDeInteres');

@@ -6,10 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class CasosClinicos extends Model
 {
-    public $table="" ;
-    public $primaryKey="";
+    public $table="casos_clinicos" ;
+    //public $primaryKey="id";//
     /* TIMESTAMPS SOLO ACLARAR SI EXISTE EN LA TABLA*/
-    public $timeStamps="";
     public $guarded=[];
 }
 
