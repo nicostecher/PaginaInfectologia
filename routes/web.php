@@ -26,12 +26,19 @@ Route::get('/bibliografia', function () {
     return view('bibliografia');
 });
 
-Route::get('/casosClinicos', "CasosClinicosController@vista");
+Route::get('/casosClinicos', "CasosClinicosController@mostrarCasosClinicos");
 
-Route::get('/novedades', function () {
-    return view('novedades');
-});
+Route::get('/nuevoCasoClinico',"CasosClinicosController@nuevoCasoClinico");
 
+Route::post('/casosClinicos', "CasosClinicosController@cargarCasoClinico");
+
+Route::get("/listadoCasosClinicos","CasosClinicosController@listadoCasosClinicos");
+
+Route::get("/editarCasoClinico/{id}","CasosClinicosController@editarcasoClinico");
+
+Route::post("/editarCasoClinico/{id}","CasosClinicosController@actualizarCasoClinico");
+
+Route::post("/listadoCasosClinicos","CasosClinicosController@borrarCasoClinico");
 
 Route::get('/clases', "ClasesController@mostrarClases");
 
@@ -76,6 +83,11 @@ Route::get("/editarNovedades/{id}","NovedadesController@editarNovedades");
 Route::post("/editarNovedades/{id}","NovedadesController@actualizarNovedades");
 
 Route::post('/listadoNovedades', "NovedadesController@borrarNovedad");
+
+Route::get('/novedades', function () {
+    return view('novedades');
+});
+
 
 route::get('/cuerpoDocente', function () {
     return view('cuerpoDocente');

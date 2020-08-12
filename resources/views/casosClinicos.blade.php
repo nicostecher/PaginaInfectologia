@@ -13,11 +13,16 @@
   <div class="contenido-casosClinicos">
   
     <ul  class="listado-casosClinicos">
-      <li>Caso Clinico 1</li>
-      <li>Caso Clinico 2</li>
-      <li>Caso Clinico 3</li>
-      <li>Caso Clinico 4</li>
-      <li>Caso Clinico 5</li>
+      @foreach ($casos as $caso)
+      <li>
+        <p>{{$caso->nombre}}</p>
+      </li>
+
+      <li>
+        <iframe src="/storage/{{$caso->archivo}}"  width="600px" height="500px" frameborder="0"></iframe>
+      </li>
+          
+      @endforeach
     </ul>
 
     </div>
