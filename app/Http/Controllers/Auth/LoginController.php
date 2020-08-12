@@ -56,6 +56,21 @@ class LoginController extends Controller
 
      }
 
+     public function reconocerEmail($email){
+       $email = User::find($email);
+       $vac=compact("email");
+       if ($email == email) {
+         return view("login",$vac);
+       }
+     }
+
+     public function reconocerContrasena($contrasena){
+       $contrasena = User::find($contrasena);
+       if ($contrasena == contrasena) {
+         return view("index");
+       }
+     }
+
     public function __construct()
     {
         $this->middleware('guest')->except('logout');

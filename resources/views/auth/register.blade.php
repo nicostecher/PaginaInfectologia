@@ -10,7 +10,7 @@
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
-                        @csrf
+                        {{csrf_field()}}
 
                         <div class="form-group row">
                             <label for="nombre" class="col-md-4 col-form-label text-md-right">{{ __('Nombre') }}</label>
@@ -87,6 +87,11 @@
 
                             <div class="col-md-6">
                                 <input id="confirmar-contrasena" type="password" class="form-control" name="confirmar-contrasena" required autocomplete="new-password">
+                                @error('confirmar-contrasena')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                         </div>
 

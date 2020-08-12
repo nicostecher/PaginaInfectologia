@@ -63,8 +63,8 @@ class RegisterController extends Controller
            "legajo.required" => 'El :attribute no puede estar vacio',
             "email.required" => 'El :attribute no puede estar vacio',
            "contrasena.required" => 'El :attribute no puede esta vacio',
-            "contrasena.confirmed" =>"Las contraseñas no coinciden",
             "contrasena.min" =>"La :attribute debe tener al menos 8 caracteres",
+            "confirmar-contrasena.confirmed" =>"Las contraseñas no coinciden",
         ];
 
         return Validator::make($data, [
@@ -72,7 +72,7 @@ class RegisterController extends Controller
             'apellido' => ['required', 'string', 'max:255'],
             'legajo' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'contrasena' => ['required', 'string', 'min:8', 'confirmed'],
+            'contrasena' => ['required', 'string', 'min:8'],
             'confirmar-contrasena' => ['required', 'string', 'min:8', 'confirmed'],
         ],$message);
       }
