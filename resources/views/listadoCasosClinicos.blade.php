@@ -1,51 +1,45 @@
 @extends('plantilla')
 
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/css/listadoCasosClinicos.css">
 
 @section('main')
 
+    <div class="titulo">
+    <h3>listado de Casos Clinicos</h3>
+        </div>
 
-<section class="listado-clases">
+        <article class="listado">
+            <ul>
+                @foreach ($casos as $caso)
+                    <li>
+                        <div class="nombre">
+                            <p>{{$caso->nombre}}</p>
+                            </div>
+                        </li>
 
-    <div>
-      <h3>Listado clases</h3>
-    </div>
+                    <li>
+                       <div class="archivo">
+                        <iframe src="/storage/{{$caso->archivo}}"  frameborder="0"></iframe>
+                         </div> 
+                             </li>
 
-    <div class="cargar-cronograma">
-        <a href="/nuevoCasoClinico"><button>Cargar un Caso Clinico</button></a>
-    </div>
-    
-        
-    <table class="table">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Nombre</th>
-                <th>Archivo</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($casos as $caso)
-                
-            
-            <tr>
-                <td scope="row">{{$loop->iteration}}</td>
-                <td>{{$caso->nombre}}</td>
-                <td><iframe src="/storage/{{$caso->archivo}}" frameborder="0"></iframe></td>
-                <td>
-                    <a href="/editarCasoClinico/{{$caso->id}}"><button>Editar<button></a>
-
+                    <li>
+                        <a href="/editarCasoClinico/{{$caso->id}}"><button type="button" class="btn btn-success">Editar</button></a>
+                        
                    <form action="/listadoCasosClinicos" method="post">
                     {{ csrf_field() }}
                     <input type="hidden" name="id" value="{{$caso->id}}">
-                    <input type="submit" onclick="return confirm('Esta seguro de Borrar el caso?')"; value="borrar">
+                    <button class="btn btn-danger" type="submit" onclick="return confirm('Esta seguro de Borrar la clase?')"; value="borrar">Borrar</button>
                     
                 </form>
-                </td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
+                    
+                    </li>
+
+                @endforeach
+            </ul>
+        </article>
+
 
     </section>
     
