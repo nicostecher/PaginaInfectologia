@@ -95,8 +95,7 @@ class RegisterController extends Controller
           'legajo' => $data['legajo'],
           'email' => $data['email'],
           'contrasena' => Hash::make($data['contrasena']),
-         ]);
-       $usuarioNuevo->save();
+         ]);  
     }
 
     public function agregarUsuario(){
