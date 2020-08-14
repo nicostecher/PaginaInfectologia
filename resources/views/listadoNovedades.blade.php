@@ -1,52 +1,66 @@
 @extends('plantilla')
 
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/css/listadoDeEdicion.css">
+<meta charset="UTF-8">
+
+
 @section('main')
 
+    <div class="titulo">
+    <h3>Listado de Novedades</h3>
+        </div>
 
-<section class="listado-novedades">
+       <div class="claseNueva">
+        <a href="/cargarNovedades" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Cargar una nueva Noticia</a>
+       </div>
 
-    <div>
-      <h3>Listado Novedades</h3>
-    </div>
+       <div class="encabezados">
+           <ul>
+               <li>Nombre</li>
+               <li>Archivo</li>
+               <li>Acción</li>
+           </ul>
+       </div>
 
-    <div class="cargar-novedades">
-        <a href="/cargarNovedades"><button>Nueva Noticia</button></a>
-    </div>
+        <article class="listado">
+            @foreach ($novedades as $novedades)
+            <ul>
+                    <li>
+                        <div class="nombre">
+                            <p>{{$novedades->titulo}}</p>
+                            </div>
+                        </li>
 
-    
-        
-    <table class="table">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Nombre</th>
-                <th>Archivo</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($novedades as $novedad)
-                
-            
-            <tr>
-                <td scope="row">{{$loop->iteration}}</td>
-                <td>{{$novedad->titulo}}</td>
-                <td>{{$novedad->descripcion}}</td>
-                <td>
-                    <a href="/editarNovedades/{{$novedad->id}}">Editar</a>
+                    <li>
+                       <div class="archivo">
+                        <p>{{$novedades->descripcion}}</p>
+                         </div> 
+                             </li>
 
+                            <div class="botones">
+                    <li class="boton">
+                            
+                        <a href="/editarNovedades/{{$novedades->id}}"><button type="button" class="btn btn-success">Editar</button></a>
+                    </li>
+
+                    <li class="boton">
                    <form action="/listadoNovedades" method="post">
                     {{ csrf_field() }}
-                    <input type="hidden" name="id" value="{{$novedad->id}}">
-                    <input type="submit" onclick="return confirm('Esta seguro de Borrar la noticia?')"; value="borrar">
+                    <input type="hidden" name="id" value="{{$novedades->id}}">
+                    <button class="btn btn-danger" type="submit" onclick="return confirm('Esta seguro de Borrar la noticia?')"; value="borrar">Borrar</button>
                     
                 </form>
-                </td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
+
+                    </div>
+                    
+                    </li>
+                </ul>
+                @endforeach
+        </article>
+
 
     </section>
     
+
 @endsection

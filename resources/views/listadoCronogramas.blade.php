@@ -1,54 +1,63 @@
 @extends('plantilla')
-
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/css/listadoDeEdicion.css">
 
 @section('main')
 
+    <div class="titulo">
+    <h3>Listado de Cronogramas</h3>
+        </div>
 
-<section class="listado-cronogramas">
+       <div class="claseNueva">
+        <a href="/cargarCronograma" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Cargar un nuevo Cronograma</a>
+       </div>
 
-    <div>
-      <h3>Listado cronogramas</h3>
-    </div>
+       <div class="encabezados">
+           <ul>
+               <li>Nombre</li>
+               <li>Archivo</li>
+               <li>Acción</li>
+           </ul>
+       </div>
 
-    <div class="cargar-cronograma">
-        <a href="/cargarNovedades"><button>Nuevo Cronograma</button></a>
-    </div>
-
-    
-        
-    <table class="table">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Nombre</th>
-                <th>Archivo</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
+        <article class="listado">
             @foreach ($cronogramas as $cronograma)
-                
-            
-            <tr>
-                <td scope="row">{{$loop->iteration}}</td>
-                <td>{{$cronograma->nombre}}</td>
-                <td><img src="/storage/{{$cronograma->archivo}}"  alt=""></td>
-                <td>
-                   <a href="/editarCronograma/{{$cronograma->id}}">Editar</a>
+            <ul>
+                    <li>
+                        <div class="nombre">
+                            <p>{{$cronograma->nombre}}</p>
+                            </div>
+                        </li>
 
+                    <li>
+                       <div class="archivo">
+                        <iframe src="/storage/{{$cronograma->archivo}}"  ></iframe>
+                         </div> 
+                             </li>
+
+                            <div class="botones">
+                    <li class="boton">
+                            
+                        <a href="/editarCronograma/{{$cronograma->id}}"><button type="button" class="btn btn-success">Editar</button></a>
+                    </li>
+
+                    <li class="boton">
                    <form action="/listadoCronogramas" method="post">
                     {{ csrf_field() }}
                     <input type="hidden" name="id" value="{{$cronograma->id}}">
-                    <input type="submit" onclick="return confirm('Esta seguro de Borrar la clase?')"; value="borrar">
+                    <button class="btn btn-danger" type="submit" onclick="return confirm('Esta seguro de Borrar la clase?')"; value="borrar">Borrar</button>
                     
                 </form>
-                </td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
+
+                    </div>
+                    
+                    </li>
+                </ul>
+
+                @endforeach
+        </article>
+
 
     </section>
-    
 
 @endsection

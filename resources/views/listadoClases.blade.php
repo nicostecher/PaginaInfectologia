@@ -1,51 +1,63 @@
 @extends('plantilla')
 
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/css/listadoDeEdicion.css">
 
 @section('main')
 
+    <div class="titulo">
+    <h3>Listado de Clases</h3>
+        </div>
 
-<section class="listado-clases">
+       <div class="claseNueva">
+        <a href="/nuevaClase" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Cargar una Clase Nueva</a>
+       </div>
 
-    <div>
-      <h3>Listado clases</h3>
-    </div>
+       <div class="encabezados">
+           <ul>
+               <li>Nombre</li>
+               <li>Archivo</li>
+               <li>Acción</li>
+           </ul>
+       </div>
 
-    <div class="cargar-cronograma">
-        <a href="/nuevaClase"><button>Cargar una Clase</button></a>
-    </div>
-    
-        
-    <table class="table">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Nombre</th>
-                <th>Archivo</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
+        <article class="listado">
             @foreach ($clases as $clase)
-                
-            
-            <tr>
-                <td scope="row">{{$loop->iteration}}</td>
-                <td>{{$clase->nombre}}</td>
-                <td><img src="/storage/{{$clase->archivo}}"  alt=""></td>
-                <td>
-                    <a href="/editarClase/{{$clase->id}}">Editar</a>
+            <ul>
+                    <li>
+                        <div class="nombre">
+                            <p>{{$clase->nombre}}</p>
+                            </div>
+                        </li>
 
+                    <li>
+                       <div class="archivo">
+                        <iframe src="/storage/{{$clase->archivo}}"  ></iframe>
+                         </div> 
+                             </li>
+
+                            <div class="botones">
+                    <li class="boton">
+                            
+                        <a href="/editarclases/{{$clase->id}}"><button type="button" class="btn btn-success">Editar</button></a>
+                    </li>
+
+                    <li class="boton">
                    <form action="/listadoClases" method="post">
                     {{ csrf_field() }}
                     <input type="hidden" name="id" value="{{$clase->id}}">
-                    <input type="submit" onclick="return confirm('Esta seguro de Borrar la clase?')"; value="borrar">
+                    <button class="btn btn-danger" type="submit" onclick="return confirm('Esta seguro de Borrar la clase?')"; value="borrar">Borrar</button>
                     
                 </form>
-                </td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
+
+                    </div>
+                    
+                    </li>
+                </ul>
+
+                @endforeach
+        </article>
+
 
     </section>
     
