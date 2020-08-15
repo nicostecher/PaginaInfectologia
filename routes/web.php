@@ -104,23 +104,4 @@ Route::get('/comisiones', function () {
 
 Auth::routes();
 
-/*Route::get('/register', function(){
-  return view ('app/resources/views/auth/register');
-});*/
-
-
-/*Route::get('/register', 'RegiController@validator');*/
-/*Route::post('/login', "UserController@traerUsuario");*/
-
-/*
-*Route::post('/register', 'RegisterController@crearUsuario');
-*Route::post('/register', 'RegisterController@comprobar');
-*Route::get('/register', 'Auth\RegisterController@validator');
-*Route::post('/register', 'Auth\RegisterController@validator');
-*Route::post('/register', 'RegisterController@crearUsuario');
-
-*Route::get('/login', 'Auth\LoginController@validator');
-*Route::post('/login', 'Auth\LoginController@validator');
-*Route::post('/register', 'LoginController@traerUsuario');
-*/
 Route::get('/home', 'HomeController@index')->name('home');
