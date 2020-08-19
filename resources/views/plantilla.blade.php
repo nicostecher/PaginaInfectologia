@@ -65,18 +65,38 @@
 
 
           <div class="usuario-escritorio">
+            @guest
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Usuario
+            </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <ul type="bullet">
+                  <li>Cambiar contraseña</li>
+                  <li id="sesion"> Cerrar sesión</li>
+                  </ul>
+              </div>
+            </div>
+            @else
                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                 Usuario
+                {{auth::user()->nombre}}
+                {{auth::user()->apellido}}
                </button>
                <div class="collapse" id="collapseExample">
                  <div class="card card-body">
                    <ul type="bullet">
                      <li>Cambiar contraseña</li>
-                     <li id="sesion"> Cerrar sesión</li>
+                     <li id="sesion"> <form id="logout-form" action="{{ url('logout') }}" method="POST">
+                      {{ csrf_field() }}
+              <button type="submit">Logout</button>
+          </form>
+                  </a>
+                  </li>
                      </ul>
                  </div>
                </div>
            </div>
+           @endguest
 
              <nav id="menu-escritorio" class="navbar navbar-expand-lg navbar-light">
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

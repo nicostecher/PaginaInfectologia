@@ -11,22 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/header', function(){
-    return view("header");
-});
 Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/bibliografia', function () {
-    return view('bibliografia');
-});
 
-Route::get('/casosClinicos', "CasosClinicosController@mostrarCasosClinicos");
+
 
 Route::get('/nuevoCasoClinico',"CasosClinicosController@nuevoCasoClinico");
 
@@ -40,7 +31,7 @@ Route::post("/editarCasoClinico/{id}","CasosClinicosController@actualizarCasoCli
 
 Route::post("/listadoCasosClinicos","CasosClinicosController@borrarCasoClinico");
 
-Route::get('/clases', "ClasesController@mostrarClases");
+
 
 Route::get('/nuevaClase', "ClasesController@nuevaClase");
 
@@ -56,8 +47,6 @@ Route::post("/editarClase/{id}","clasesController@actualizarClase");
 
 Route::get('/cronograma',"CronogramaController@vista");
 
-Route::get("/cronograma","CronogramaController@mostrarCronograma");
-
 Route::get("/cargarCronograma", "CronogramaController@nuevoCronograma");
 
 Route::post('/cronograma',"CronogramaController@cargarCronograma");
@@ -70,7 +59,6 @@ Route::get("/editarCronograma/{id}","CronogramaController@editarCronograma");
 
 Route::post("/editarCronograma/{id}","CronogramaController@actualizarCronograma");
 
-route::get("/index", "NovedadesController@mostrarNovedades");
 
 route::get("/cargarNovedades", "NovedadesController@nuevaNoticia");
 
@@ -88,18 +76,44 @@ Route::get('/novedades', function () {
     return view('novedades');
 });
 
+Route::group(['middleware' => 'auth'], function () {
 
-route::get('/cuerpoDocente', function () {
-    return view('cuerpoDocente');
+
+    
+Route::get('/bibliografia', function () {
+    return view('bibliografia');
 });
 
+    Route::get('/', function () {
+        return view('welcome');
+    });
+    
+    Route::get('/header', function(){
+        return view("header");
+    });
+    
+    route::get('/cuerpoDocente', function () {
+        return view('cuerpoDocente');
+    });
+    
+    
+    Route::get('/sitiosDeInteres', function () {
+        return view('sitiosDeInteres');
+    });
+    
+    Route::get('/comisiones', function () {
+        return view('comisiones');
+    });
 
-Route::get('/sitiosDeInteres', function () {
-    return view('sitiosDeInteres');
-});
+    Route::get('/casosClinicos', "CasosClinicosController@mostrarCasosClinicos");
+    
+    Route::get('/clases', "ClasesController@mostrarClases");
 
-Route::get('/comisiones', function () {
-    return view('comisiones');
+    Route::get("/cronograma","CronogramaController@mostrarCronograma");
+
+    route::get("/index", "NovedadesController@mostrarNovedades");
+
+    
 });
 
 Auth::routes();

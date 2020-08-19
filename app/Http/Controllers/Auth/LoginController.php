@@ -33,11 +33,14 @@ class LoginController extends Controller
      *
      * @return void
      */
-     public function validator(array $data)
+
+     /*
+     protected function validator(array $data)
      {
          $message=[
              "email.required" => 'El :attribute no puede estar vacio',
-             "contrasena.required" => 'El :attribute no puede esta vacio'
+             "contrasena.required" => 'El :attribute no puede esta vacio',
+             "email.unique" => 'El :attribute no puede esta vacio'
          ];
 
          return Validator::make($data, [
@@ -45,6 +48,9 @@ class LoginController extends Controller
              'contrasena' => ['required', 'string', 'min:8', 'confirmed'],
          ],$message);
      }
+
+*/
+
 
 
     public function __construct()
