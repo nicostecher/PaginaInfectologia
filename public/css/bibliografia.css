@@ -4,7 +4,7 @@
     list-style-type: none;
     box-sizing: border-box;
     text-decoration: none;
-    color: black;  
+    color: black;
 }
 
 body{
@@ -16,9 +16,10 @@ header{
 }
 
 .contenedor-bibliografia{
+    height: 198px;
     width: 90%;
     margin: 0 auto;
-    background-color:rgb(255, 255, 255,0.9); 
+    background-color:rgb(255, 255, 255,0.9);
     border:  1px solid black;
      box-shadow:  0 0 5px black;
      margin-bottom: 15px;
@@ -47,7 +48,7 @@ header{
 
 .listado-bibliografia a{
    color: black;
-  
+
 }
 
 /* VERSIÓN ESCRIORIO */
@@ -58,23 +59,21 @@ header{
         width: 90%;
     }
 
-    
+
     .titulo-bibliografia h2{
         font-size: 35px;
     }
 
     .listado-bibliografia{
         margin-top: 15px;
-       
+
     }
 
- 
+
     .listado-bibliografia li{
        padding-bottom: 10px ;
        text-align: center;
-      
+
     }
 
 }
-
-

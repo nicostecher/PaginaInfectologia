@@ -17,9 +17,11 @@ header{
 }
 
 .contenedor-casosClinicos{
+    height: 300px;
     width: 90%;
+    height: 240px;
     margin: 0 auto;
-    background-color:rgb(255, 255, 255,0.9); 
+    background-color:rgb(255, 255, 255,0.9);
     border:  1px solid black;
     box-shadow: 0 0 5px black;
    margin-bottom: 50px;
@@ -38,13 +40,13 @@ header{
 
 .contenido-casosClinicos{
     text-align: center;
-    
+
 }
 
 .listado-casosClinicos{
     display: inline-block;
     margin: 0 auto;
-    
+
 }
 
 
@@ -66,22 +68,21 @@ header{
        box-shadow: 0 0 5px black;
     }
 
-    
+
     .titulo-casosClinicos h2{
         font-size: 35px;
     }
 
     .listado-casosClinicos{
         margin-top: 15px;
-       
+
     }
 
- 
+
     .listado-casosClinicos li{
        padding-bottom: 10px ;
        text-align: center;
-      
+
     }
 
 }
-

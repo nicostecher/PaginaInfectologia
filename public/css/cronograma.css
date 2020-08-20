@@ -17,13 +17,14 @@
 
 
 section.contenedor-cronograma{
+    height: 330px;
     background-image: url("../imagenes/fondo.jpg");
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
     z-index: -1;
     padding-bottom: 15px;
-    
+
 }
 
 
@@ -58,7 +59,7 @@ section.contenedor-cronograma{
 
 .imagen-cronograma img{
     width: 100%;
-   
+
 }
 
 
@@ -85,6 +86,6 @@ section.contenedor-cronograma{
     width: 80%;
     margin: 0 auto;
 }
- 
+
 
 }

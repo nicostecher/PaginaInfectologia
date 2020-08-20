@@ -87,7 +87,7 @@ class RegisterController extends Controller
 
 
 
-   public function create(array $data)
+   public function crearUsuario(array $data)
     {
        $usuarioNuevo =  User::create([
           'nombre' => $data['nombre'],
@@ -95,7 +95,8 @@ class RegisterController extends Controller
           'legajo' => $data['legajo'],
           'email' => $data['email'],
           'contrasena' => Hash::make($data['contrasena']),
-         ]);  
+         ]);
+       $usuarioNuevo->save();
     }
 
     public function agregarUsuario(){
