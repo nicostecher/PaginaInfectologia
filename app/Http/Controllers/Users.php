@@ -18,5 +18,4 @@ class Users extends Controller
 
       $usuarioNuevo->save();
     }
-}
-*/
+}/*

@@ -4,8 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use App\User;
-use app\login;
+
 class LoginController extends Controller
 {
     /*
@@ -34,7 +33,14 @@ class LoginController extends Controller
      * @return void
      */
 
-     /*
+ 
+
+    public function __construct()
+    {
+        $this->middleware('guest')->except('logout');
+    }
+
+    /*
      protected function validator(array $data)
      {
          $message=[
@@ -45,16 +51,11 @@ class LoginController extends Controller
 
          return Validator::make($data, [
              'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-             'contrasena' => ['required', 'string', 'min:8', 'confirmed'],
+             'password' => ['required', 'string', 'min:8', 'confirmed'],
          ],$message);
      }
 
 */
 
 
-
-    public function __construct()
-    {
-        $this->middleware('guest')->except('logout');
-    }
 }
