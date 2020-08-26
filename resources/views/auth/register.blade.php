@@ -57,7 +57,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="legajo" class="col-md-4 col-form-label text-md-right">{{ __('Libreta') }}</label>
+                            <label for="legajo" class="col-md-4 col-form-label text-md-right">{{ __('Libreta Universitaria') }}</label>
 
                             <div class="col-md-6">
                                 <input id="legajo" type="text" class="form-control @error('legajo') is-invalid @enderror" name="legajo" value="{{ old('legajo') }}" required autocomplete="email">
@@ -83,7 +83,6 @@
                                 @enderror
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirmar Constraseña') }}</label>
 

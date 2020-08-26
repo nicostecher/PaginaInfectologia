@@ -9,7 +9,7 @@ class NovedadesController extends Controller
 {
 
     public function mostrarNovedades(){
-        $novedades=novedades::all();
+        $novedades=novedades::orderBy('id', 'DESC')->get();
 
         $vac=compact("novedades");
 

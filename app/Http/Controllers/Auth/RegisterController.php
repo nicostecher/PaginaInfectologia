@@ -71,37 +71,5 @@ class RegisterController extends Controller
 
     }
 
-<<<<<<< HEAD
-   public function crearUsuario(array $data)
-=======
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return \App\User
-     */
-    protected function create(array $data)
->>>>>>> 776c8f2b943f3d32b07ab262b5289a1e112dd5d2
-    {
-        return User::create([
-            'nombre' => $data['nombre'],
-            'apellido' => $data['apellido'],
-<<<<<<< HEAD
-          'legajo' => $data['legajo'],
-          'email' => $data['email'],
-          'contrasena' => Hash::make($data['contrasena']),
-         ]);
-       $usuarioNuevo->save();
-    }
-
-    public function agregarUsuario(){
-
-    }
-=======
-            'legajo' => $data['legajo'],
-            'email' => $data['email'],
-            'contrasena' => Hash::make($data['contrasena']),
-        ]);
->>>>>>> 776c8f2b943f3d32b07ab262b5289a1e112dd5d2
-    }
+ 
 }

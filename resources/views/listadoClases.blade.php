@@ -39,7 +39,7 @@
                             <div class="botones">
                     <li class="boton">
                             
-                        <a href="/editarclases/{{$clase->id}}"><button type="button" class="btn btn-success">Editar</button></a>
+                        <a href="/editarClase/{{$clase->id}}"><button type="button" class="btn btn-success">Editar</button></a>
                     </li>
 
                     <li class="boton">

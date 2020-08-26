@@ -22,7 +22,7 @@
         </div>
 
         <div class="titulo-principal-escritorio">
-          <a href="/home"><h4>Cursada de Infectología <br>Hospital de Clínicas <br>Facultad de Medicina, Universidad de Buenos Aires</h4></a>
+          <a href="/home"><h4>Cursada de Infectología <br>Hospital de Clínicas, "Jose de San Martin" <br>Facultad de Medicina, Universidad de Buenos Aires</h4></a>
       </div>
 
       <div class="imagen-clinicas">
@@ -45,8 +45,25 @@
                   <li class="text-muted"><a href="/sitiosDeInteres">Sitios de Interes</a></li>
 
                   <div class="usuario-mobile">
+                    @guest
+                        
                     <li class="text-muted"><a href="/bibliografia">Cambiar contraseña</a></li>
                     <li class="text-muted"><a href="/bibliografia">Cerrar sesión</a></li>
+                    @else
+                    <li class="text-muted">{{auth::user()->nombre}}</li> 
+                    <li class="text-muted">{{auth::user()->apellido}}</li>
+                    <li class="text-muted">Cambiar contraseña</li>
+                    <li id="sesion"><a href="{{ route('logout') }}"
+                     onclick="event.preventDefault();
+                                   document.getElementById('logout-form').submit();">
+                      {{ __('Cerrar sesión') }}
+                  </a>
+
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                  </form>
+                 </li>     
+                    @endguest
                     </div>
 
                  </div>
@@ -86,11 +103,15 @@
                  <div class="card card-body">
                    <ul type="bullet">
                      <li>Cambiar contraseña</li>
-                     <li id="sesion"> <form id="logout-form" action="{{ url('logout') }}" method="POST">
-                      {{ csrf_field() }}
-              <button type="submit">Logout</button>
-          </form>
-                  </a>
+                     <li id="sesion"><a href="{{ route('logout') }}"
+                      onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                       {{ __('Cerrar sesión') }}
+                   </a>
+
+                   <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                       @csrf
+                   </form>
                   </li>
                      </ul>
                  </div>

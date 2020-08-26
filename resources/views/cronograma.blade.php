@@ -28,7 +28,7 @@
                     @forelse ($cronogramas as $cronograma)
                     <li>
                       <div class="imagen-cronograma">
-                        <img src="/storage/{{$cronograma->archivo}}" alt="">
+                        <iframe src="/storage/{{$cronograma->archivo}}" alt=""></iframe>
                       </li>
                       @empty
                     @endforelse
