@@ -33,7 +33,7 @@ class LoginController extends Controller
      *
      * @return void
      */
-    
+    /*
         
          protected function validator(array $data)
          {
