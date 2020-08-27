@@ -5,7 +5,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="/css/fontawesome/css/all.css" rel="stylesheet"> 
+    <link href="/css/fontawesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/index.css">
     <title></title>
   </head>
@@ -23,7 +23,7 @@
               <i class="fas fa-search"></i>
             </div>
               <p class="busqueda">Buscar</p>
-              
+
           </a>
         </nav>
       </div>
@@ -36,8 +36,8 @@
           @forelse ($novedades as $novedad)
           <li>
                <h6>{{$novedad->created_at->format('d.m.Y')}}</h6>
-               </li> 
-             
+               </li>
+
            <li>
                 <div class="noticia1">
                   <div class="titulo-noticia">
@@ -45,9 +45,9 @@
                   </div>
                   </div>
                </li>
-               
+
            <li>
-                 
+
           <div class="descripcion-noticias">
             <p>{{$novedad->descripcion}}</p>
           </div>
@@ -55,19 +55,19 @@
                @empty
 
                @endforelse
-                   
+
                 </ul>
 
               </article>
 
-             
-          
-       
-                
 
 
 
-     
+
+
+
+
+
 
 
       <div class="categorias">
@@ -85,6 +85,9 @@
           </div>
           <div class="categoria-cuerpoDocente">
             <a href="/cuerpoDocente">Cuerpo Docente</a>
+          </div>
+          <div class="categoria-admin">
+            <a href="/admin">Administrador</a>
           </div>
 
       </div>

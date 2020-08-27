@@ -15,20 +15,19 @@ header{
     margin-bottom: 50px;
 }
 
-.contenedor-bibliografia{
-    height: 198px;
-    width: 90%;
-    margin: 0 auto;
-    background-color:rgb(255, 255, 255,0.9);
-    border:  1px solid black;
-     box-shadow:  0 0 5px black;
-     margin-bottom: 15px;
-}
 
 .titulo-bibliografia{
     margin-top: 15px;
 }
 
+.contenedor-bibliografia{
+  background-color: white;
+  opacity: 0.8;
+  width: 200px;
+  margin-left: 89px;
+  height: 300px;
+  margin-bottom: 20px;
+}
 
 .titulo-bibliografia h2{
     font-family: 'Roboto', sans-serif;
@@ -56,7 +55,12 @@ header{
 
 @media (min-width:1024px){
     .contenedor-bibliografia{
-        width: 90%;
+      background-color: white;
+      opacity: 0.8;
+      width: 1200px;
+      margin-left: 100px;
+      height: 300px;
+      margin-bottom: 20px;
     }
 
 
