@@ -14,22 +14,22 @@
 
   <div class="categorias">
     <div class="cargarNovedades">
-      <a href="/cargarNovedades">Cargar Novedades</a>
+      <a href="/listadoNovedades">novedaes</a>
     </div>
     <div class="cargarCronograma">
-      <a href="/CargarCronograma">Cargar Cronograma</a>
+      <a href="/listadoCronogramas">cronogramas</a>
     </div>
     <div class="editarClase">
-      <a href="/editarClase">Editar Clase</a>
+      <a href="/listadoClases">Clases</a>
     </div>
     <div class="editarCasoClinico">
-      <a href="/editarCasoClinico">Editar Clases Clinicos</a>
+      <a href="/listadoCasosClinicos"> Casos Clinicos</a>
     </div>
     <div class="editarCronograma">
-      <a href="/editarCronograma">Editar cronograma</a>
+      <a href="/listadoDocentes">Docentes</a>
     </div>
     <div class="editarNovedades">
-      <a href="/editarNovedades">Editar Novedades</a>
+      <a href="/listadoBibliografias">bibliografias</a>
     </div>
   </div>
 </div>

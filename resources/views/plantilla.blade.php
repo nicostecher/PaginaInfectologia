@@ -14,19 +14,19 @@
     <header>
 
       <div class="imagen-uba">
-        <a href="/home"><img src="/imagenes/logo-UBA.png"  width="100px" height="95px" alt="uba"></a>
+        <a href="/index"><img src="/imagenes/logo-UBA.png"  width="100px" height="95px" alt="uba"></a>
       </div>
 
         <div class="titulo-principal-mobile">
-            <a href="/home"><h4 id="letra-1">Cursada de Infectología <br>Hospital de Clínicas</h4><h4 id="letra-2">Facultad de Medicina <br> Universidad de Buenos Aires</h4></a>
+            <a href="/index"><h4 id="letra-1">Cursada de Infectología <br>Hospital de Clínicas</h4><h4 id="letra-2">Facultad de Medicina <br> Universidad de Buenos Aires</h4></a>
         </div>
 
         <div class="titulo-principal-escritorio">
-          <a href="/home"><h4>Cursada de Infectología <br>Hospital de Clínicas, "Jose de San Martin" <br>Facultad de Medicina, Universidad de Buenos Aires</h4></a>
+          <a href="/index"><h4>Cursada de Infectología <br>Hospital de Clínicas, "Jose de San Martin" <br>Facultad de Medicina, Universidad de Buenos Aires</h4></a>
       </div>
 
       <div class="imagen-clinicas">
-        <a href="/home"><img src="/imagenes/logo-clinicas-transparente-.jpg"  width="100px" height="95px" alt="uba"></a>
+        <a href="/index"><img src="/imagenes/logo-clinicas-transparente-.jpg"  width="100px" height="95px" alt="uba"></a>
       </div>
 
 

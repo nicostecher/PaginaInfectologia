@@ -16,19 +16,6 @@
 
     <div class="container">
 
-      <div class="barra-busqueda">
-        <nav id="buscador" class="navbar navbar-light bg-light" class="menu-busqueda">
-          <a class="navbar-brand" href="#">
-            <div class="lupita">
-              <i class="fas fa-search"></i>
-            </div>
-              <p class="busqueda">Buscar</p>
-
-          </a>
-        </nav>
-      </div>
-
-
 
       <article class="novedades">
 
@@ -69,8 +56,11 @@
 
 
 
-
-      <div class="categorias">
+      
+             
+                  
+            
+      <div class="categorias">  
           <div class="categoria-cronograma">
             <a href="/cronograma">Cronograma</a>
           </div>
@@ -86,9 +76,11 @@
           <div class="categoria-cuerpoDocente">
             <a href="/cuerpoDocente">Cuerpo Docente</a>
           </div>
+          @if(auth::user()->administrador==1)
           <div class="categoria-admin">
             <a href="/admin">Administrador</a>
           </div>
+          @endif
 
       </div>
 

@@ -16,11 +16,16 @@
   <div class="contenido-bibliografia"></div>
 
     <ul type= "circle" class="listado-bibliografia">
-      <li><a href="https://www.sadi.org.ar/"> - Sociedad Argentina de Infectologia</a></li>
-      <li><a href="https://www.who.int/es"> - Organización Mundial de la Salud</a></li>
-      <li><a href=""> - bibliografia 3</a></li>
-      <li><a href=""> - bibliografia 4</a></li>
-      <li><a href=""> - bibliografia 5</a></li>
+      @foreach ($bibliografias as $bibliografia)
+      <li>
+        <p>{{$bibliografia->titulo}}</p>
+      </li>
+
+      <li>
+        <a href="/bibliografia/{{$bibliografia->id}}">descarga</a>
+      </li>
+          
+      @endforeach
     </ul>
 
 </section>

@@ -87,6 +87,27 @@ Route::group(['middleware' => ['admin']], function () {
     Route::post('/listadoNovedades', "NovedadesController@borrarNovedad");
 
     route::get("/listadoAlumnos", "AlumnosController@mostrarAlumnos");
+
+    route::get("/cargarDocente","DocentesController@nuevoDocente");
+
+    route::post("/cuerpoDocente","DocentesController@cargarDocente");
+
+    route::get("listadoDocentes","DocentesController@listadoDocentes");
+
+    route::get("/editarDocente/{id}","DocentesController@editarDocente");
+
+    route::post("/editarDocente/{id}","DocentesController@actualizarDocente");
+
+    route::post("/listadoDocentes","DocentesController@borrarDocente");
+
+    route::get("/cargarBibliografia","bibliografiaController@nuevaBibliografia");
+
+    route::post("/cargarBibliografia","bibliografiaController@cargarBibliografia");
+
+    route::get("/bibliografia/{id}","bibliografiaController@descargarBibliografia");
+
+    route::get("/listadoBibliografias","bibliografiaController@listadoBibliografia");
+    
 });
 
 Route::get('/cronograma',"CronogramaController@vista");
@@ -104,9 +125,7 @@ Route::group(['middleware' => 'auth'], function () {
     return view('admin');
   });
 
-Route::get('/bibliografia', function () {
-    return view('bibliografia');
-});
+    Route::get('/bibliografia', "bibliografiaController@vista");
 
     Route::get('/', function () {
         return view('welcome');
@@ -116,9 +135,7 @@ Route::get('/bibliografia', function () {
         return view("header");
     });
 
-    route::get('/cuerpoDocente', function () {
-        return view('cuerpoDocente');
-    });
+    route::get('/cuerpoDocente',"DocentesController@vista");
 
 
     Route::get('/sitiosDeInteres', function () {
