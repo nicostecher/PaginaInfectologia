@@ -166,3 +166,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 route::get("/respuesta", function(){
     return view("respuesta");
 });
+
+Route::get("/activacion/{codigo}","InvitadosController@activar");
+
+Route::post("/complete/{id}", "invitadosController@complete");

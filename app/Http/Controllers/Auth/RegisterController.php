@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Mail;
 
 class RegisterController extends Controller
 {
@@ -90,15 +91,29 @@ class RegisterController extends Controller
     */
     protected function create(array $data)
      {
-         $code= $this->generarCodigo(6);
+         $codigo = $this->generarCodigo(6);
+         
+         $dates = array("nombre"=>$data["nombre"],
+                        "apellido"=>$data["apellido"],
+                        "email"=>$data["email"],
+                        "codigo"=>$codigo);
+         $this->Email($dates);
         return User::create([
         'nombre' => $data['nombre'],
         'apellido' => $data['apellido'],
         'legajo' => $data['legajo'],
         'email' => $data['email'],
-        'code' =>$code,
+        'codigo' =>$codigo,
         /*'contrasena' => Hash::make($data['contrasena']),*/
          ]);  
+    }
+
+    public function Email($dates){
+        mail::send("emails.plantilla",$dates,function($message){
+            $message->subject("Solicitud de Acceso a la Cursada");
+            $message->to("nicostcher1@gmail.com");
+            $message->from("no-reply@cursada.com", "cursada");
+        });
     }
  
 }
