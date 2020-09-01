@@ -46,11 +46,11 @@
 
                   <div class="usuario-mobile">
                     @guest
-                        
+
                     <li class="text-muted"><a href="/bibliografia">Cambiar contraseña</a></li>
                     <li class="text-muted"><a href="/bibliografia">Cerrar sesión</a></li>
                     @else
-                    <li class="text-muted">{{auth::user()->nombre}}</li> 
+                    <li class="text-muted">{{auth::user()->nombre}}</li>
                     <li class="text-muted">{{auth::user()->apellido}}</li>
                     <li class="text-muted">Cambiar contraseña</li>
                     <li id="sesion"><a href="{{ route('logout') }}"
@@ -62,7 +62,7 @@
                   <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                       @csrf
                   </form>
-                 </li>     
+                 </li>
                     @endguest
                     </div>
 

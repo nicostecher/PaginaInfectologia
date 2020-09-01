@@ -9,8 +9,8 @@
 
     /*HEADER EN MOBILE*/
   header{
-      background-color:black;
-      opacity: 0.9;
+      background-color:white;
+      opacity: 0.8;
       overflow: hidden;
       width: 100%;
       box-sizing: border-box;
@@ -125,7 +125,7 @@
 
     .titulo-principal-escritorio h4{
         text-align: center;
-        color: white;
+        color: black;
     }
 
     .titulo-principal-escritorio a{
@@ -179,7 +179,7 @@
     .card.card-body ul li{
         padding-top:3px;
         margin: 0 auto;
-        color: white;
+        color: black;
     }
 
 
@@ -195,17 +195,10 @@
           display: initial;
          left: 95px;
          padding-top:5px;
-          color: white;
+          color: black;
           margin-top: 33px;
           margin-left: 25px;
         }
-
-
-    #menu-escritorio ul li a {
-        color: white;
-
-
-    }
 
     .navbar-light .navbar-nav .nav-link {
         color:
@@ -220,6 +213,11 @@
     .dropdown-menu show {
       z-index:99;
         }
+
+    #menu-escritorio .dropdown-menu .dropdown-item a{
+           color: white;
+        }
+
     .dropdown-menu a:hover{
        background-color: rgb(31, 29, 29);
     }
