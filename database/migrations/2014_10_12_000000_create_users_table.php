@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('apellido',50);
             $table->string('legajo')->unique();
             $table->string('email')->unique();
-            $table->string('contrasena',200);
+            $table->string('contrasena',200)->nullable()->change();
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();

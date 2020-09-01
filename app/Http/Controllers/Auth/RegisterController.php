@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/index';
+    protected $redirectTo = '/respuesta';
 
     /**
      * Create a new controller instance.
@@ -46,6 +46,17 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+
+     function generarCodigo($longitud){
+         $key = '';
+         $pattern = "1234567890abcdefghijklmnopqrstuvwxyz";
+         $max =strlen($pattern)-1;
+         for($i=0; $i < $longitud; $i++) $key .=$pattern{mt_rand(0,$max)};
+
+         return $key;
+            
+         
+     }
     protected function validator(array $data)
     {
       $message=[
@@ -55,9 +66,9 @@ class RegisterController extends Controller
         "email.unique" => 'El :attribute ya se encuentra registrado',
         "legajo.required" => 'El :attribute no puede estar vacio',
         "legajo.unique" => 'N° de libreta ya registrado',
-        "contrasena.required" => 'El :attribute no puede esta vacio',
+       /* "contrasena.required" => 'El :attribute no puede esta vacio',
         "contrasena.confirmed" =>"Las contraseñas no coinciden",
-        "contrasena.min" =>"La :attribute debe tener al menos 8 caracteres",
+        "contrasena.min" =>"La :attribute debe tener al menos 8 caracteres",*/
 
     ];
 
@@ -65,7 +76,7 @@ class RegisterController extends Controller
         'nombre' => ['required', 'string', 'max:255'],
         'apellido' => ['required', 'string', 'max:255'],
         'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-        'contrasena' => ['required', 'string', 'min:8', 'confirmed'],
+       
         'legajo'=> ['required','int','unique:users'],
     ],$message);
 
@@ -79,12 +90,14 @@ class RegisterController extends Controller
     */
     protected function create(array $data)
      {
+         $code= $this->generarCodigo(6);
         return User::create([
         'nombre' => $data['nombre'],
         'apellido' => $data['apellido'],
         'legajo' => $data['legajo'],
         'email' => $data['email'],
-        'contrasena' => Hash::make($data['contrasena']),
+        'code' =>$code,
+        /*'contrasena' => Hash::make($data['contrasena']),*/
          ]);  
     }
  
