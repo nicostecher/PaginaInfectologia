@@ -47,8 +47,8 @@
   .titulo-principal-mobile a{
       text-decoration: none;
   }
-  
- 
+
+
   .imagen-uba, .imagen-clinicas{
       display: none;
   }
@@ -64,7 +64,7 @@
  }
 
 
- 
+
  .fixed-top{
      position: relative;;
      float: right;
@@ -81,7 +81,7 @@
  .listado-mobile li a{
      text-decoration: none;
      color: white;
- 
+
  }
 
  .text-muted{
@@ -110,7 +110,7 @@
     .menu-mobile{
         display:none;
 
-    }   
+    }
 
     .titulo-principal-mobile{
         display: none;
@@ -119,8 +119,8 @@
     .titulo-principal-escritorio{
         display: inline-block;
         margin-left: 22%;
-        margin-top: 10px; 
-        margin-bottom: -25; 
+        margin-top: 10px;
+        margin-bottom: -25;
     }
 
     .titulo-principal-escritorio h4{
@@ -132,8 +132,8 @@
         text-decoration: none;
     }
 
-    
-    
+
+
     .imagen-uba{
         float: left;
         margin-top:5px;
@@ -156,7 +156,7 @@
        margin-top: 30px;
        margin-right:70px;
        box-sizing: border-box;
-      
+
 
     }
 
@@ -203,21 +203,23 @@
 
     #menu-escritorio ul li a {
         color: white;
-        
+
 
     }
 
     .navbar-light .navbar-nav .nav-link {
-        color: 
+        color:
     }
 
     .dropdown-menu{
         background-color: black;
-       margin-top: 25px;
-      
-        
+        margin-top: 25px;
+        z-index: 10;
     }
 
+    .dropdown-menu show {
+      z-index:99;
+        }
     .dropdown-menu a:hover{
        background-color: rgb(31, 29, 29);
     }
@@ -225,7 +227,7 @@
     .card.card-body li a{
         font-weight: lighter;
     }
-        
+
     }
 
 

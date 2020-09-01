@@ -148,7 +148,8 @@ body{
     border-radius: 0px;
     height: 300px;
     width:750px;
-    margin-left: 130px;
+    margin-left: 170px;
+    z-index: 1;
   }
 
   .busqueda p{
