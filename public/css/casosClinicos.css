@@ -66,6 +66,7 @@ header{
         width: 90%;
        box-shadow: 0 0 30px #fff;
        box-shadow: 0 0 5px black;
+       overflow: hidden;
     }
 
 
@@ -83,6 +84,11 @@ header{
        padding-bottom: 10px ;
        text-align: center;
 
+    }
+
+    .documento{
+        width: 100%;
+        margin-bottom: 25px;
     }
 
 }

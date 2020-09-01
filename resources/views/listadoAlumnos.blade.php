@@ -56,7 +56,7 @@
                             <div class="botones">
 
                     <li class="boton">
-                   <form action="/listadoClases" method="post">
+                   <form action="/listadoAlumnos" method="post">
                     {{ csrf_field() }}
                     <input type="hidden" name="id" value="{{$alumno->id}}">
                     <button class="btn btn-danger" type="submit" onclick="return confirm('los datos se eliminaran completamente, esta seguro de continuar?')"; value="borrar">Borrar</button>

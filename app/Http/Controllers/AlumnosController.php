@@ -14,4 +14,17 @@ class AlumnosController extends Controller
 
         return view("/listadoAlumnos",$vac);
     }
+    public function borrarAlumno(request $form){ 
+
+        $id=$form["id"];
+        
+         $alumno=user::find($id);
+
+         $alumno->delete();
+
+         
+    
+    return redirect("/listadoAlumnos");
+        }
+
 }

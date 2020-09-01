@@ -88,6 +88,8 @@ Route::group(['middleware' => ['admin']], function () {
 
     route::get("/listadoAlumnos", "AlumnosController@mostrarAlumnos");
 
+    route::post("/listadoAlumnos", "AlumnosController@borrarAlumno");
+
     route::get("/cargarDocente","DocentesController@nuevoDocente");
 
     route::post("/cuerpoDocente","DocentesController@cargarDocente");
