@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Foundation\Auth\RegistersUsers;
 use App\User;
 
 class InvitadosController extends Controller
@@ -22,22 +24,6 @@ class InvitadosController extends Controller
     };
 }
 
-protected function validator(array $data)
-{
-  $message=[
-  
-    "contrasena.required" => 'El :attribute no puede esta vacio',
-    "contrasena.confirmed" =>"Las contraseñas no coinciden",
-    "contrasena.min" =>"La :attribute debe tener al menos 8 caracteres",
-
-];
-
-return Validator::make($data, [
-    'contrasena' => ['required', 'string', 'min:8', 'confirmed'],
-   
-],$message);
-
-}
 
 
 public function complete(Request $request, $id){
@@ -47,6 +33,6 @@ public function complete(Request $request, $id){
     
     $usuario->save();
 
-    return redirect("/login");
+    return redirect("/index");
 }
 }

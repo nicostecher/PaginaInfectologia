@@ -67,9 +67,6 @@ class RegisterController extends Controller
         "email.unique" => 'El :attribute ya se encuentra registrado',
         "legajo.required" => 'El :attribute no puede estar vacio',
         "legajo.unique" => 'N° de libreta ya registrado',
-       /* "contrasena.required" => 'El :attribute no puede esta vacio',
-        "contrasena.confirmed" =>"Las contraseñas no coinciden",
-        "contrasena.min" =>"La :attribute debe tener al menos 8 caracteres",*/
 
     ];
 
@@ -77,7 +74,6 @@ class RegisterController extends Controller
         'nombre' => ['required', 'string', 'max:255'],
         'apellido' => ['required', 'string', 'max:255'],
         'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-       
         'legajo'=> ['required','int','unique:users'],
     ],$message);
 
@@ -104,13 +100,12 @@ class RegisterController extends Controller
         'legajo' => $data['legajo'],
         'email' => $data['email'],
         'codigo' =>$codigo,
-        /*'contrasena' => Hash::make($data['contrasena']),*/
          ]);  
     }
 
     public function Email($dates){
         mail::send("emails.plantilla",$dates,function($message){
-            $message->subject("Solicitud de Acceso a la Cursada");
+            $message->subject("Solicitúd de Acceso a la Cursada");
             $message->to("nicostcher1@gmail.com");
             $message->from("no-reply@cursada.com", "cursada");
         });
