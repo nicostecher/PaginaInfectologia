@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/plantilla.css">
+    <link rel="stylesheet" href="/css/header.css">
     <title>Cursada de Infectología</title>
   </head>
   <body>
@@ -126,21 +126,21 @@
                <div class="collapse navbar-collapse" id="navbarNavDropdown">
                  <ul class="navbar-nav">
                    <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <a id="sec" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        Secciones
                      </a>
                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="/cronograma">Cronograma</a>
-                      <a class="dropdown-item" href="/clases">Clases</a>
-                       <a class="dropdown-item" href="/casosClinicos">Casos Clinicos</a>
-                       <a class="dropdown-item" href="/cuerpoDocente">Cuerpo Docente</a>
-                       <a class="dropdown-item" href="/bibliografia">Bibliografía</a>
-                       <a class="dropdown-item" href="/sitiosDeInteres">Sitios de Interes</a>
-                       <a class="dropdown-item" href="/comisiones">Comisiones</a>
+                      <a id="crono"class="dropdown-item" href="/cronograma">Cronograma</a>
+                      <a id="clases"class="dropdown-item" href="/clases">Clases</a>
+                       <a id="casos" class="dropdown-item" href="/casosClinicos">Casos Clinicos</a>
+                       <a id="cuerpo"class="dropdown-item" href="/cuerpoDocente">Cuerpo Docente</a>
+                       <a id="biblio"class="dropdown-item" href="/bibliografia">Bibliografía</a>
+                       <a id="sitio"class="dropdown-item" href="/sitiosDeInteres">Sitios de Interes</a>
+                       <a id="comi" class="dropdown-item" href="/comisiones">Comisiones</a>
                      </div>
                    </li>
                    <li class="nav-item">
-                     <a class="nav-link" href="/comisiones">Comisiones</a>
+                     <a id="com" class="nav-link" href="/comisiones">Comisiones</a>
                    </li>
                  </ul>
                </div>

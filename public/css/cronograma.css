@@ -68,6 +68,9 @@ section.contenedor-cronograma{
 
 @media (min-width:1024px){
 
+  section .contenedor-cronograma{
+    height: 450px;
+  }
  .titulo-cronograma h2{
     font-size: 50px;
  }

@@ -9,8 +9,8 @@
     background-color: rgb(255, 255, 255,0.9);
     border: 1px solid black;
     box-shadow: 0 0 5px black;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 120px;
 }
 
 .titulo-sitio{
@@ -34,6 +34,11 @@ p.alumnos{
   margin-left: 40px;
 }
 @media (min-width:1024px){
+
+  .contenedor-sitio{
+    height: 370px;
+    margin-bottom: 30px;
+  }
 .comision1y2{
 position: relative;
 margin-left: 300px;

@@ -190,6 +190,13 @@
 
     /*BARRA DE NAVEGACION*/
 
+    #sec{
+      color: black;
+    }
+
+    #com{
+      color:black;
+    }
     #menu-escritorio{
           position: absolute;
           display: initial;
@@ -218,6 +225,29 @@
            color: white;
         }
 
+    #crono{
+      color: white;
+    }
+
+    #clases{
+      color: white;
+    }
+
+    #casos{
+      color: white;
+    }
+    #cuerpo{
+      color: white;
+    }
+    #biblio{
+      color: white;
+    }
+    #sitio{
+      color: white;
+    }
+    #comi{
+      color: white;
+    }
     .dropdown-menu a:hover{
        background-color: rgb(31, 29, 29);
     }
