@@ -1,0 +1,28 @@
+.cargarNovedades{
+  margin-bottom: 50px;
+}
+
+h3{
+  text-align: center;
+  margin-top: 50px;
+}
+
+form{
+  width:70%;
+  margin-left: 600px;
+}
+
+#biblio{
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+#crono{
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+#cuerpo{
+  height: 200px;
+  margin-bottom: 30px;
+}

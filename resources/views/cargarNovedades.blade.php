@@ -2,8 +2,15 @@
 
 @section('main')
 
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/cargar.css">
+    <title></title>
+  </head>
+  <body>
 <section class="cargarNovedades">
-        
+
     <h3>Cargar una Noticia</h3>
     <br>
     <form action="/index" method="post">
@@ -30,10 +37,9 @@
       </div>
 
     </form>
-  
-    
-
 
   </section>
-    
+</body>
+</html>
+
 @endsection

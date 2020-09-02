@@ -2,10 +2,16 @@
 
 
 @section('main')
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/cargar.css">
+    <title></title>
+  </head>
+  <body>
 
+<section id="biblio" class="cargarCronograma">
 
-<section class="cargarCronograma">
-        
     <h3>Cargar una Bibliografía</h3>
     <br>
     <form action="/cargarBibliografia" method="post" enctype="multipart/form-data">
@@ -22,7 +28,7 @@
         <label for="documento"></label>
         <input type="file" name="documento" id="documento">
         @error('documento')
-        <small class="error">{{$message}}</small>  
+        <small class="error">{{$message}}</small>
         @enderror
         <div>
           <input type="submit" value="Cargar">
@@ -31,11 +37,10 @@
       </div>
 
     </form>
-    
-
 
   </section>
+</body>
+</html>
 
 
-    
 @endsection

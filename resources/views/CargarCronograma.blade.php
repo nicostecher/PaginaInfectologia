@@ -3,9 +3,10 @@
 
 @section('main')
 
+<link rel="stylesheet" href="/css/cargar.css">
 
-<section class="cargarCronograma">
-        
+<section id="crono" class="cargarCronograma">
+
     <h3>Cargar un Cronograma</h3>
     <br>
     <form action="/cronograma" method="post" enctype="multipart/form-data">
@@ -22,7 +23,7 @@
         <label for="archivo"></label>
         <input type="file" name="archivo" id="archivo">
         @error('archivo')
-        <small class="error">{{$message}}</small>  
+        <small class="error">{{$message}}</small>
         @enderror
         <div>
           <input type="submit" value="Cargar">
@@ -31,11 +32,11 @@
       </div>
 
     </form>
-    
+
 
 
   </section>
 
 
-    
+
 @endsection
