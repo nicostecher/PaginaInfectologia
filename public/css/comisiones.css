@@ -3,51 +3,50 @@
     }
 
 .contenedor-sitio{
-  position: relative;
-  width: 90%;
+    width: 90%;
     margin: 0 auto;
     background-color: rgb(255, 255, 255,0.9);
     border: 1px solid black;
     box-shadow: 0 0 5px black;
     margin-top: 30px;
     margin-bottom: 120px;
+    overflow: hidden;
 }
 
 .titulo-sitio{
-  margin-top: 10px;
-  display: block;
+    margin-top: 10px;
+     display: block;
     text-align: center;
     position: relative;
 }
 
-.comisiones-{
-  margin-left: 20px;
-margin-top: 10px;
-z-index: 1;
+.comisiones{
+    width: 100%;
+    margin-left: 20px;
+  margin-top: 10px;
+  z-index: 1;
 }
 
 p.titulo-comision{
   margin-left: 10px;
 }
 
-p.alumnos{
-  margin-left: 40px;
+.imagen-comision{
+  width: 100%;
+ 
 }
+
+
 @media (min-width:1024px){
 
   .contenedor-sitio{
-    height: 370px;
     margin-bottom: 30px;
+    overflow: hidden;
   }
-.comision1y2{
-position: relative;
-margin-left: 300px;
-}
 
-.comision3y4{
-  position: relative;
-  float: right;
-  margin-top: -238px;
-  margin-right: 300px;
-}
+  .imagen-comision{
+    text-align: center;
+  }
+
+
 }
