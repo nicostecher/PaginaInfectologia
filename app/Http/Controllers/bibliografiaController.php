@@ -52,14 +52,13 @@ class bibliografiaController extends Controller
     }
     
     public function descargarBibliografia($id) {
-       $descarga= bibliografia::find($id);
-        
-       $ruta="/storage" .$descarga->documento;
-       
-        return response()->download(storage_path("app/public/{$ruta}"));
+      
+        $descarga= bibliografia::find($id);
+    
+         return response()->download(storage_path("app/public/{$descarga->documento}"));
 
-     
       }
+
 
       public function listadobibliografia(){
           $bibliografias=bibliografia::all();
@@ -68,4 +67,38 @@ class bibliografiaController extends Controller
 
           return view("/listadoBibliografias",$vac);
       }
+
+      public function editarBibliografia($id){
+
+        $bibliografia=bibliografia::find($id);
+
+        $vac=compact("bibliografia");
+
+        return view("/editarBibliografia",$vac);
+    }
+
+    public function actualizarBibliografia(request $req,$id){
+
+    
+
+        $bibliografiaVieja=request()->except('_token');
+        
+        if($req->hasFile('documento')){
+
+            $bibliografia=bibliografia::find($id);
+            
+            Storage::delete("/public" . $bibliografia->documento);
+
+            $bibliografiaVieja["documento"]=$req->file("documento")->store("storage", "public");
+        }
+        
+       
+        $bibliografiaEditada=bibliografia::where('id','=',$id)->update($bibliografiaVieja);
+
+        
+
+
+        return redirect("/listadoBibliografias");
+
+    }
 }

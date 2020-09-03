@@ -110,6 +110,25 @@ Route::group(['middleware' => ['admin']], function () {
 
     route::get("/listadoBibliografias","bibliografiaController@listadoBibliografia");
 
+    route::get("/editarBibliografia/{id}","bibliografiacontroller@editarBibliografia");
+
+    route::post("/editarBibliografia/{id}","bibliografiaController@actualizarBibliografia");
+
+    route::get("/cargarComision", "comisionescontroller@nuevaComision");
+
+    route::post("/comisiones", "comisionescontroller@cargarComision");
+
+    route::get("/listadoComisiones", "comisionesController@listadoComisiones");
+
+    route::post("/listadoComisiones", "comisionesController@borrarComision");
+
+    route::get("editarComisiones/{id}","comisionesController@editarComisiones");
+
+    route::post("editarComisiones/{id}","comisionesController@actualizarComision");
+
+    
+
+   
 });
 
 Route::get('/cronograma',"CronogramaController@vista");
@@ -144,9 +163,7 @@ Route::group(['middleware' => 'auth'], function () {
         return view('sitiosDeInteres');
     });
 
-    Route::get('/comisiones', function () {
-        return view('comisiones');
-    });
+    route::get("/comisiones","comisionesController@vista");
 
     Route::get('/casosClinicos', "CasosClinicosController@mostrarCasosClinicos");
 
