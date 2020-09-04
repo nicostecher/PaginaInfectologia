@@ -44,7 +44,6 @@ Route::group(['middleware' => ['admin']], function () {
 
     Route::post("/editarCronograma/{id}","CronogramaController@actualizarCronograma");
 
-
     route::post("/index", "NovedadesController@cargarNoticia");
 
     route::get("/listadoNovedades", "NovedadesController@listadoNovedades");
@@ -68,7 +67,6 @@ Route::group(['middleware' => ['admin']], function () {
 
     route::get("/cargarDocente","DocentesController@nuevoDocente");
 
-
     Route::post('/cronograma',"CronogramaController@cargarCronograma");
 
     Route::get('/listadoCronogramas',"CronogramaController@listadoCronogramas");
@@ -78,8 +76,6 @@ Route::group(['middleware' => ['admin']], function () {
     Route::get("/editarCronograma/{id}","CronogramaController@editarCronograma");
 
     Route::post("/editarCronograma/{id}","CronogramaController@actualizarCronograma");
-
-
 
     route::post("/index", "NovedadesController@cargarNoticia");
 
@@ -94,7 +90,6 @@ Route::group(['middleware' => ['admin']], function () {
     route::get("/listadoAlumnos", "AlumnosController@mostrarAlumnos");
 
     route::post("/listadoAlumnos", "AlumnosController@borrarAlumno");
-
 
     route::post("/cuerpoDocente","DocentesController@cargarDocente");
 
@@ -126,7 +121,19 @@ Route::group(['middleware' => ['admin']], function () {
 
     route::post("editarComisiones/{id}","comisionesController@actualizarComision");
 
-    
+    route::get("/cargarSitio", "interesController@cargarSitio");
+
+    route::post("/sitiosDeInteres", "InteresController@nuevoSitio");
+
+    route::get("/listadoSitios", "interesController@listadoSitios");
+
+    route::post("/listadoSitios","interesController@borrarSitio");
+
+    route::get("/editarSitio/{id}", "interesController@editarSitios");
+
+    route::post("/editarSitio/{id}", "interesController@actualizarSitio");
+
+  
 
    
 });
@@ -158,11 +165,6 @@ Route::group(['middleware' => 'auth'], function () {
 
     route::get('/cuerpoDocente',"DocentesController@vista");
 
-
-    Route::get('/sitiosDeInteres', function () {
-        return view('sitiosDeInteres');
-    });
-
     route::get("/comisiones","comisionesController@vista");
 
     Route::get('/casosClinicos', "CasosClinicosController@mostrarCasosClinicos");
@@ -173,6 +175,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     route::get("/index", "NovedadesController@mostrarNovedades");
 
+    route::get("/sitiosDeInteres", "interesController@vista");
 });
 
 
