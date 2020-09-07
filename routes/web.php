@@ -44,7 +44,6 @@ Route::group(['middleware' => ['admin']], function () {
 
     Route::post("/editarCronograma/{id}","CronogramaController@actualizarCronograma");
 
-
     route::post("/index", "NovedadesController@cargarNoticia");
 
     route::get("/listadoNovedades", "NovedadesController@listadoNovedades");
@@ -68,7 +67,6 @@ Route::group(['middleware' => ['admin']], function () {
 
     route::get("/cargarDocente","DocentesController@nuevoDocente");
 
-
     Route::post('/cronograma',"CronogramaController@cargarCronograma");
 
     Route::get('/listadoCronogramas',"CronogramaController@listadoCronogramas");
@@ -78,8 +76,6 @@ Route::group(['middleware' => ['admin']], function () {
     Route::get("/editarCronograma/{id}","CronogramaController@editarCronograma");
 
     Route::post("/editarCronograma/{id}","CronogramaController@actualizarCronograma");
-
-
 
     route::post("/index", "NovedadesController@cargarNoticia");
 
@@ -95,7 +91,6 @@ Route::group(['middleware' => ['admin']], function () {
 
     route::post("/listadoAlumnos", "AlumnosController@borrarAlumno");
 
-
     route::post("/cuerpoDocente","DocentesController@cargarDocente");
 
     route::get("listadoDocentes","DocentesController@listadoDocentes");
@@ -110,6 +105,37 @@ Route::group(['middleware' => ['admin']], function () {
 
     route::get("/listadoBibliografias","bibliografiaController@listadoBibliografia");
 
+    route::get("/editarBibliografia/{id}","bibliografiacontroller@editarBibliografia");
+
+    route::post("/editarBibliografia/{id}","bibliografiaController@actualizarBibliografia");
+
+    route::get("/cargarComision", "comisionescontroller@nuevaComision");
+
+    route::post("/comisiones", "comisionescontroller@cargarComision");
+
+    route::get("/listadoComisiones", "comisionesController@listadoComisiones");
+
+    route::post("/listadoComisiones", "comisionesController@borrarComision");
+
+    route::get("editarComisiones/{id}","comisionesController@editarComisiones");
+
+    route::post("editarComisiones/{id}","comisionesController@actualizarComision");
+
+    route::get("/cargarSitio", "interesController@cargarSitio");
+
+    route::post("/sitiosDeInteres", "InteresController@nuevoSitio");
+
+    route::get("/listadoSitios", "interesController@listadoSitios");
+
+    route::post("/listadoSitios","interesController@borrarSitio");
+
+    route::get("/editarSitio/{id}", "interesController@editarSitios");
+
+    route::post("/editarSitio/{id}", "interesController@actualizarSitio");
+
+  
+
+   
 });
 
 Route::get('/cronograma',"CronogramaController@vista");
@@ -139,14 +165,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     route::get('/cuerpoDocente',"DocentesController@vista");
 
-
-    Route::get('/sitiosDeInteres', function () {
-        return view('sitiosDeInteres');
-    });
-
-    Route::get('/comisiones', function () {
-        return view('comisiones');
-    });
+    route::get("/comisiones","comisionesController@vista");
 
     Route::get('/casosClinicos', "CasosClinicosController@mostrarCasosClinicos");
 
@@ -156,6 +175,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     route::get("/index", "NovedadesController@mostrarNovedades");
 
+    route::get("/sitiosDeInteres", "interesController@vista");
 });
 
 

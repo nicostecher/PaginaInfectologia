@@ -16,11 +16,13 @@
   <div class="contenido-sitio"></div>
   
     <ul type= "circle" class="listado-sitio">
-      <li><a href="https://www.sadi.org.ar/"> - Sociedad Argentina de Infectologia</a></li>
-      <li><a href="https://www.who.int/es"> - Organización Mundial de la Salud</a></li>
-      <li><a href=""> - sitio de Interes 3</a></li>
-      <li><a href=""> - sitio de Interes 4</a></li>
-      <li><a href=""> - sitio de Interes 5</a></li>
+      
+         @foreach ($sitios as $sitio)
+    <li>
+      <a href="{{$sitio->links}}">{{$sitio->nombre}}</a>
+      </li> 
+          @endforeach
+          
     </ul>
 
 </section>

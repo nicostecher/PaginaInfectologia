@@ -28,9 +28,17 @@
     <div class="editarCronograma">
       <a href="/listadoDocentes">Docentes</a>
     </div>
-    <div class="editarNovedades">
-      <a href="/listadoBibliografias">bibliografias</a>
+    <div class="editaralumnos">
+      <a href="/listadoAlumnos">alumnos</a>
     </div>
+    <div class="editarSitios">
+      <a href="/listadoSitios">Sitios de Interes</a>
+    </div>
+    <div class="editarbibliografias">
+      <a href="/listadoBibliografias">Bibliografias</a>
+    </div>
+    
+
   </div>
 </div>
 

@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Http\Requests\InvitadosRequest;
 use App\User;
 
 class InvitadosController extends Controller
@@ -26,7 +26,7 @@ class InvitadosController extends Controller
 
 
 
-public function complete(Request $request, $id){
+public function complete(InvitadosRequest $request, $id){
     $usuario = user::find($id);
     $usuario->contrasena = Hash::make($request['contrasena']);
     $usuario->activo = 1;

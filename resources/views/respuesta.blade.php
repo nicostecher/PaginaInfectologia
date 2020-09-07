@@ -9,7 +9,7 @@
                 <div class="card-header">Solicitud de Acceso Recibida</div>
 
                 <div class="card-body">
-                    En la brevedad se le enviara un mail para continuar con su registro.
+                    Gracias por registrarte. Una vez que corroboremos tu inclusión en esta cursada te enviaremos un mail de confirmación  para que completes el proceso de inscripción. Te informamos que este trámite puede demorar 24 horas.
                 </div>
             </div>
         </div>

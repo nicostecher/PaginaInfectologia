@@ -21,8 +21,8 @@
       </li>
 
       <li>
-        <div class="documento">
-        <iframe src="/storage/{{$caso->archivo}}" width="300px" height="300px"frameborder="0" ></iframe>
+        <div class="archivo">
+        <iframe src="/storage/{{$caso->archivo}}" width="500px" height="600px"frameborder="0" ></iframe>
       </div>
       </li>
           

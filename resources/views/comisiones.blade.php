@@ -8,45 +8,29 @@
     <link rel="stylesheet" href="/css/comisiones.css">
     <title></title>
   </head>
+  
   <body>
+
     <section class="contenedor-sitio">
       <div class="titulo-sitio">
           <h2>Comisiones</h2>
       </div>
 
-      <div class="comisiones-">
-        <div class="comision1y2">
-        <div class="comision-1">
-          <p class="titulo-comision">Comisión 1</p>
-          <div class="alumnos">
-            <p class="alumnos">Gonzalo Peréz</p>
-            <p class="alumnos">Camilo Borgors</p>
-          </div>
-        </div>
-        <div class="comision-2">
-          <p class="titulo-comision">Comisión 2</p>
-          <div class="alumnos">
-            <p class="alumnos">Karina Jelinek</p>
-            <p class="alumnos">Jorge Luis Borges</p>
-          </div>
-          </div>
-          </div>
-          <div class="comision3y4">
-          <div class="comision-3">
-            <p class="titulo-comision">Comisión 3</p>
-            <div class="alumnos">
-              <p class="alumnos">Camila Gonzales</p>
-              <p class="alumnos">Catalina Peréz</p>
-            </div>
-        </div>
-        <div class="comision-4">
-          <p class="titulo-comision">Comisión 4</p>
-          <div class="alumnos">
-            <p class="alumnos">Diana Aisenberg</p>
-            <p class="alumnos">Nicolas Stecher</p>
-          </div>
-      </div>
-      </div>
+      <div class="comisiones">
+        
+        <ul>
+          @foreach ($comisiones as $comision)
+          <li>
+            <div class="imagen-comision">
+              <img src="/storage/{{$comision->archivo}}" alt="imagen comision">
+              </div>
+          </li>
+         
+          @endforeach
+         
+        </ul>
+      
+          
       </div>
     </section>
   </body>

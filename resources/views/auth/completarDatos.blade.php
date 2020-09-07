@@ -21,8 +21,8 @@
                                 <input id="password" type="password" class="form-control @error('contrasena') is-invalid @enderror" name="contrasena" required autocomplete="new-password">
 
                                 @error('contrasena')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                    <span class="invalid-feedback"  role="alert">
+                                        <strong style="color:red">{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
@@ -41,7 +41,6 @@
                                     {{ __('Finalizar inscripción') }}
                                 </button>
                             </button>
-                            <input type="reset" value="Borrar">
                         </div>
 
                             </div>
