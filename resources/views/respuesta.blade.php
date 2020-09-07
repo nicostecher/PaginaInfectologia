@@ -1,5 +1,5 @@
 @extends("plantilla")
-
+<link rel="stylesheet" href="/css/respuesta.css">
 @section('main')
 
 <div class="container">
