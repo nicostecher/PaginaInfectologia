@@ -54,8 +54,12 @@ class bibliografiaController extends Controller
     public function descargarBibliografia($id) {
       
         $descarga= bibliografia::find($id);
+
+        $ruta= storage_path("app/public/{$descarga->documento}");
+
+        $nombre ="hola miguel";
     
-         return response()->download(storage_path("app/public/{$descarga->documento}"));
+         return response()->download($ruta, $nombre);
 
       }
 

@@ -17,11 +17,11 @@
           </div>
 
           <div>
-            <label for="documento"></label>
+            <label for="archivo"></label>
             <div>
-              <iframe src="/storage/{{$comisiones->documento}}" frameborder="0"></iframe>
-            <input type="file" name="documento" id="documento">
-            @error('documento')
+              <iframe src="/storage/{{$comisiones->archivo}}" frameborder="0"></iframe>
+            <input type="file" name="archivo" id="archivo">
+            @error('archivo')
             <small class="error">{{$message}}</small>  
             @enderror
             <div>
