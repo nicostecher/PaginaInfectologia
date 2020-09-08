@@ -1,4 +1,4 @@
-@extends('plantilla');
+@extends('plantilla')
 
 @section('main')
 
@@ -10,7 +10,7 @@
     <form id="cuerpo" action="/cuerpoDocente" method="post" enctype="multipart/form-data">
       {{ csrf_field() }}
       <div>
-      <label for="Nombre">Nombre:</label>
+      <label id="no" for="Nombre">Nombre:</label>
       <input type="text" name="nombre" value="">
       @error('nombre')
       <small class="error">{{$message}}</small>

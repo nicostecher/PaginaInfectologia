@@ -16,8 +16,6 @@ Route::group(['middleware' => ['admin']], function () {
 
     Route::get("/listadoCasosClinicos","CasosClinicosController@listadoCasosClinicos");
 
-    Route::get("/editarCasoClinico/{id}","CasosClinicosController@editarcasoClinico");
-
     Route::post("/editarCasoClinico/{id}","CasosClinicosController@actualizarCasoClinico");
 
     Route::post("/listadoCasosClinicos","CasosClinicosController@borrarCasoClinico");
@@ -30,8 +28,6 @@ Route::group(['middleware' => ['admin']], function () {
 
     Route::post("/listadoClases", "ClasesController@borrarClases");
 
-    Route::get("/editarClase/{id}","ClasesController@editarClase");
-
     Route::post("/editarClase/{id}","clasesController@actualizarClase");
 
     Route::post('/cronograma',"CronogramaController@cargarCronograma");
@@ -40,32 +36,19 @@ Route::group(['middleware' => ['admin']], function () {
 
     Route::post('/listadoCronogramas', "CronogramaController@borrarCronograma");
 
-    Route::get("/editarCronograma/{id}","CronogramaController@editarCronograma");
-
     Route::post("/editarCronograma/{id}","CronogramaController@actualizarCronograma");
 
     route::post("/index", "NovedadesController@cargarNoticia");
 
     route::get("/listadoNovedades", "NovedadesController@listadoNovedades");
 
-    Route::get("/editarNovedades/{id}","NovedadesController@editarNovedades");
-
     Route::post("/editarNovedades/{id}","NovedadesController@actualizarNovedades");
 
     Route::post('/listadoNovedades', "NovedadesController@borrarNovedad");
 
-    Route::get('/nuevoCasoClinico',"CasosClinicosController@nuevoCasoClinico");
-
     Route::post('/casosClinicos', "CasosClinicosController@cargarCasoClinico");
 
-    Route::get("/cargarCronograma", "CronogramaController@nuevoCronograma");
-    route::get("/cargarNovedades", "NovedadesController@nuevaNoticia");
-
-    route::get("/cargarBibliografia","bibliografiaController@nuevaBibliografia");
-
     route::post("/cargarBibliografia","bibliografiaController@cargarBibliografia");
-
-    route::get("/cargarDocente","DocentesController@nuevoDocente");
 
     Route::post('/cronograma',"CronogramaController@cargarCronograma");
 
@@ -95,8 +78,6 @@ Route::group(['middleware' => ['admin']], function () {
 
     route::get("listadoDocentes","DocentesController@listadoDocentes");
 
-    route::get("/editarDocente/{id}","DocentesController@editarDocente");
-
     route::post("/editarDocente/{id}","DocentesController@actualizarDocente");
 
     route::post("/listadoDocentes","DocentesController@borrarDocente");
@@ -105,11 +86,7 @@ Route::group(['middleware' => ['admin']], function () {
 
     route::get("/listadoBibliografias","bibliografiaController@listadoBibliografia");
 
-    route::get("/editarBibliografia/{id}","bibliografiacontroller@editarBibliografia");
-
     route::post("/editarBibliografia/{id}","bibliografiaController@actualizarBibliografia");
-
-    route::get("/cargarComision", "comisionescontroller@nuevaComision");
 
     route::post("/comisiones", "comisionescontroller@cargarComision");
 
@@ -117,11 +94,7 @@ Route::group(['middleware' => ['admin']], function () {
 
     route::post("/listadoComisiones", "comisionesController@borrarComision");
 
-    route::get("editarComisiones/{id}","comisionesController@editarComisiones");
-
     route::post("editarComisiones/{id}","comisionesController@actualizarComision");
-
-    route::get("/cargarSitio", "interesController@cargarSitio");
 
     route::post("/sitiosDeInteres", "InteresController@nuevoSitio");
 
@@ -129,13 +102,27 @@ Route::group(['middleware' => ['admin']], function () {
 
     route::post("/listadoSitios","interesController@borrarSitio");
 
-    route::get("/editarSitio/{id}", "interesController@editarSitios");
-
     route::post("/editarSitio/{id}", "interesController@actualizarSitio");
 
-  
 
-   
+
+    Route::get("/editarCasoClinico/{id}","CasosClinicosController@editarcasoClinico");
+    Route::get("/editarClase/{id}","ClasesController@editarClase");
+    Route::get("/editarCronograma/{id}","CronogramaController@editarCronograma");
+    Route::get("/editarNovedades/{id}","NovedadesController@editarNovedades");
+    route::get("/editarDocente/{id}","DocentesController@editarDocente");
+    route::get("/editarBibliografia/{id}","bibliografiacontroller@editarBibliografia");
+    route::get("editarComisiones/{id}","comisionesController@editarComisiones");
+    route::get("/editarSitio/{id}", "interesController@editarSitios");
+
+    Route::get('/nuevoCasoClinico',"CasosClinicosController@nuevoCasoClinico");
+    Route::get("/cargarCronograma", "CronogramaController@nuevoCronograma");
+    route::get("/cargarNovedades", "NovedadesController@nuevaNoticia");
+    route::get("/cargarBibliografia","bibliografiaController@nuevaBibliografia");
+    route::get("/cargarDocente","DocentesController@nuevoDocente");
+    route::get("/cargarComision", "comisionescontroller@nuevaComision");
+    route::get("/cargarSitio", "interesController@cargarSitio");
+
 });
 
 Route::get('/cronograma',"CronogramaController@vista");

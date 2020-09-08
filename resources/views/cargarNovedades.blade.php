@@ -9,7 +9,7 @@
     <title></title>
   </head>
   <body>
-<section class="cargarNovedades">
+<section id="n" class="cargarNovedades">
 
     <h3>Cargar una Noticia</h3>
     <br>

@@ -1,10 +1,10 @@
 @extends('plantilla')
-
+<link rel="stylesheet" href="/css/cargar.css">
 @section('main')
 
-<section class="cargarCasosClinicos">
-        
-    <h3>Cargar un Caso Clinico</h3>
+<section id="ca" class="cargarCasosClinicos">
+
+    <h3 id="c">Cargar un Caso Clinico</h3>
     <br>
     <form action="/casosClinicos" method="post" enctype="multipart/form-data">
       {{ csrf_field() }}
@@ -20,7 +20,7 @@
         <label for="archivo"></label>
         <input type="file" name="archivo" id="archivo">
         @error('archivo')
-        <small class="error">{{$message}}</small>  
+        <small class="error">{{$message}}</small>
         @enderror
         <div>
           <input type="submit" value="Cargar">
@@ -29,9 +29,9 @@
       </div>
 
     </form>
-    
+
 
   </section>
 
-    
+
 @endsection
