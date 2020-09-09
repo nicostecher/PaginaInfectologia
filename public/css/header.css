@@ -164,8 +164,6 @@
        margin-top: 30px;
        margin-right:70px;
        box-sizing: border-box;
-
-
     }
 
     /* BOTON DE USUARIO*/
@@ -184,11 +182,15 @@
         padding-bottom: 0px;
     }
 
-    .card.card-body ul li{
+    .card.card-body ul li {
         padding-top:3px;
-        margin: 0 auto;
-        color: black;
+        padding-left: 14px;
+        color: white;
     }
+
+    .card.card-body ul li a{
+      color: white;
+  }
 
 
 

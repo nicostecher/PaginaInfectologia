@@ -27,10 +27,6 @@ body{
 }
 
 
-.barra-busqueda{
-  margin-top: 10px;
-
-}
 
 .navbar{
       padding: 0px;
@@ -44,18 +40,8 @@ body{
   margin-right: 0px;
 }
 
-.lupita{
-  display: inline-block;
-  float: left;
-  margin-left: 15px;
-}
 
 
-.busqueda{
-  display: inline;
-  font-size: 13px;
-  margin-right: 40px;
-}
 
 
 .novedades{

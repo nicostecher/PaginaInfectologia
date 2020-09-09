@@ -101,7 +101,7 @@
                </button>
                <div class="collapse" id="collapseExample">
                  <div class="card card-body">
-                   <ul type="bullet">
+                   <ul class="sesion-usuario" type="bullet">
                      <li>Cambiar contraseña</li>
                      <li id="sesion"><a href="{{ route('logout') }}"
                       onclick="event.preventDefault();
