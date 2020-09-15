@@ -37,6 +37,9 @@
     <div class="editarbibliografias">
       <a href="/listadoBibliografias">Bibliografias</a>
     </div>
+    <div class="editarComisiones">
+      <a href="/listadoComisiones">comisiones</a>
+    </div>
     
 
   </div>

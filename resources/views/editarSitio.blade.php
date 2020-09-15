@@ -2,7 +2,9 @@
 
 @section('main')
 
-<section class="editar-noticias">
+<link rel="stylesheet" href="/css/edicion.css">
+
+<section class="contenido-principal">
   
     <h3>Editar un Sitio</h3>
     <br>

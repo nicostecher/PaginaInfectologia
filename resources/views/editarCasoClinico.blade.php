@@ -2,13 +2,16 @@
 
 @section('main')
 
-<section class="editar-caso-clinico">
+<link rel="stylesheet" href="/css/edicion.css">
+
+<section class="contenido-principal">
   
-        <h3>editar un caso Clinico</h3>
+        <h3>Editar un caso Clinico</h3>
         <br>
         <form action="/editarCasoClinico/{{$casos->id}}" method="post" enctype="multipart/form-data">
           {{ csrf_field() }}
-          <div>
+
+          <div class="nombre">
           <label for="Nombre">Nombre:</label>
           <input type="text" name="nombre" value="{{$casos->nombre}}">
           @error('nombre')
@@ -16,17 +19,19 @@
             @enderror
           </div>
 
-          <div>
+          <div class="archivo">
             <label for="archivo"></label>
-            <div>
+            
               <iframe src="/storage/{{$casos->archivo}}" frameborder="0"></iframe>
+              <br>
             <input type="file" name="archivo" id="archivo">
             @error('archivo')
             <small class="error">{{$message}}</small>  
             @enderror
-            <div>
-              <input type="submit" onclick="return confirm('caso Editado con exito!')" value="Guardar Cambios">
+            <div class="boton">
+              <button type="submit" class="btn btn-success" onclick="return confirm('Novedad Editada con exito!')">Guardar Cambios</button>
               </div>
+          
           </div>
 
         </form>
