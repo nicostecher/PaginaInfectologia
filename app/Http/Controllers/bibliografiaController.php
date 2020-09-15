@@ -57,7 +57,7 @@ class bibliografiaController extends Controller
 
         $ruta= storage_path("app/public/{$descarga->documento}");
 
-        $nombre ="hola miguel";
+        $nombre =$descarga->titulo;
     
          return response()->download($ruta, $nombre);
 

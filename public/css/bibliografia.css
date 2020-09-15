@@ -23,13 +23,14 @@ header{
 .contenedor-bibliografia{
   background-color: white;
   opacity: 0.8;
+  box-shadow:  0 0 5px black;
   width: 200px;
   margin-left: 89px;
   height: 300px;
   margin-bottom: 20px;
   display: block;
-  z-index: -1;
   overflow: hidden;
+ 
 }
 
 .titulo-bibliografia h2{
@@ -58,13 +59,14 @@ header{
 
 @media (min-width:1024px){
     .contenedor-bibliografia{
-      background-color: white;
-      opacity: 0.8;
-      width: 1200px;
-      margin-left: 100px;
-      height: 370px;
-      margin-bottom: 30px;
-      position: relative;
+
+    background-color: white;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    position: relative;
+        
     }
 
 

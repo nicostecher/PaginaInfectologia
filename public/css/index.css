@@ -117,7 +117,7 @@ body{
 @media (min-width:1024px){
 
   .container{
-    position: relative;
+   overflow: hidden;
   }
 
   .barra-busqueda{
@@ -135,7 +135,6 @@ body{
     height: 300px;
     width:750px;
     margin-left: 170px;
-    z-index: 1;
   }
 
   .busqueda p{

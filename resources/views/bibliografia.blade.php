@@ -13,7 +13,7 @@
   </div>
 
 
-  <div class="contenido-bibliografia"></div>
+  <div class="contenido-bibliografia">
 
     <ul type= "circle" class="listado-bibliografia">
       @foreach ($bibliografias as $bibliografia)
@@ -27,6 +27,7 @@
           
       @endforeach
     </ul>
+  </div>
 
 </section>
 
