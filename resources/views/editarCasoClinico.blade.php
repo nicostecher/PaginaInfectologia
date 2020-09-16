@@ -21,7 +21,7 @@
 
           <div class="archivo">
             <label for="archivo"></label>
-            
+              
               <iframe src="/storage/{{$casos->archivo}}" frameborder="0"></iframe>
               <br>
             <input type="file" name="archivo" id="archivo">

@@ -21,16 +21,17 @@
 
         <ul>
           @forelse ($novedades as $novedad)
+          <div class="noticia1">
           <li>
                <h6>{{$novedad->created_at->format('d.m.Y')}}</h6>
                </li>
 
            <li>
-                <div class="noticia1">
+                
                   <div class="titulo-noticia">
                     <h5>{{$novedad->titulo}}</h5>
                   </div>
-                  </div>
+                  
                </li>
 
            <li>
@@ -39,10 +40,11 @@
             <p>{{$novedad->descripcion}}</p>
           </div>
                </li>
+              </div>
                @empty
 
                @endforelse
-
+              
                 </ul>
 
               </article>

@@ -14,10 +14,10 @@
 
   <div class="categorias">
     <div class="cargarNovedades">
-      <a href="/listadoNovedades">novedaes</a>
+      <a href="/listadoNovedades">Novedaes</a>
     </div>
     <div class="cargarCronograma">
-      <a href="/listadoCronogramas">cronogramas</a>
+      <a href="/listadoCronogramas">Cronogramas</a>
     </div>
     <div class="editarClase">
       <a href="/listadoClases">Clases</a>
@@ -29,7 +29,7 @@
       <a href="/listadoDocentes">Docentes</a>
     </div>
     <div class="editaralumnos">
-      <a href="/listadoAlumnos">alumnos</a>
+      <a href="/listadoAlumnos">Alumnos</a>
     </div>
     <div class="editarSitios">
       <a href="/listadoSitios">Sitios de Interes</a>
@@ -38,7 +38,7 @@
       <a href="/listadoBibliografias">Bibliografias</a>
     </div>
     <div class="editarComisiones">
-      <a href="/listadoComisiones">comisiones</a>
+      <a href="/listadoComisiones">Comisiones</a>
     </div>
     
 

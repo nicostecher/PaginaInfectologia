@@ -13,6 +13,7 @@
 .transparencia{
     background-color: rgb(255, 255, 255,0.3);
     padding-top:50px;
+    
 }
 
 
@@ -42,6 +43,7 @@ section.contenedor-cronograma{
 }
 
 .caja-cronograma{
+    overflow: hidden;
     border-radius:1%;
     background-color: rgb(255, 255, 255,0.3);
     width: 80%;
@@ -49,17 +51,6 @@ section.contenedor-cronograma{
     box-shadow:  0 0 5px black;
 }
 
-.imagen-cronograma{
-    width:90%;
-    margin: 0 auto;
-    top: left;
-    margin-bottom: 25px;
-}
-
-.imagen-cronograma img{
-    width: 100%;
-
-};
 
 
 /* VERSION ESCRITORIO*/
@@ -75,19 +66,9 @@ section.contenedor-cronograma{
     font-size: 50px;
  }
 
- .imagen-cronograma{
-     width: 80%;
-     margin: 0 auto;
- }
- .imagen-cronograma img{
-     width: 70%;
-     margin-left: 15%;
- }
 
  .caja-cronograma{
-    background-color: rgb(255, 255, 255,0.3);
-    width: 80%;
-    margin: 0 auto;
+   text-align: center;
     
 }
 

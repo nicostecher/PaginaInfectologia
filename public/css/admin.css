@@ -11,39 +11,58 @@ main{
 .cajita{
   background-color: white;
   opacity: 0.8;
-  width: 200px;
-  margin-left: 89px;
-  height: 300px;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
+
 .editarVistas{
-  padding: 30px;
-  margin-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 10px;
+ 
+}
+
+.categorias{
+  text-align: center;
 }
 
 @media (min-width:1024px){
 
   .titulo{
+    display: inline-block;
     text-align: center;
+    width: 100%;
+    padding-right: 10%;
   }
+
   .categorias{
-    margin-left: 20px;
+    text-align: center;
+    
   }
 
   .cajita{
     background-color: white;
     opacity: 0.8;
-    width: 300px;
-    margin-left: 100px;
-    height: 300px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;;
     margin-bottom: 20px;
+    overflow: hidden;
+    z-index: -1;
   }
+  
   .editarVistas{
-    padding: 30px;
-    margin-left: 30px;
+    padding: 10px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
+
+  .editarComisiones{
+    margin-bottom: 10px;
+  }
+
+  .dropdown-menu.show{
+    position: relative;
+    z-index: 1000;
+  }
+
 }
