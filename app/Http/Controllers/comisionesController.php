@@ -42,7 +42,7 @@ class comisionesController extends Controller
 
         $comisionNueva= new comisiones();
 
-        $ruta=$req->file("archivo")->store("public");
+        $ruta=$req->file("archivo")->store("upload","public");
         $nombreArchivo=basename($ruta);
 
         $comisionNueva->nombre=$req["nombre"];
@@ -85,9 +85,13 @@ class comisionesController extends Controller
 
             $comisiones=comisiones::find($id);
             
-            Storage::delete("/public" . $comisiones->archivo);
+            Storage::delete("/public/upload/" . $comisiones->archivo);
 
-            $comisionVieja["archivo"]=$req->file("archivo")->store("storage", "public");
+            $comisionVieja["archivo"]=$req->file("archivo")->store("upload", "public");
+
+            $nuevoArchivo=basename($comisionVieja["archivo"]);
+
+            $comisionVieja["archivo"]=$nuevoArchivo;
         }
         
        

@@ -32,7 +32,7 @@
 
                     <li>
                        <div class="archivo">
-                        <iframe src="/storage/{{$comision->archivo}}"  ></iframe>
+                        <iframe src="/storage/upload/{{$comision->archivo}}"  ></iframe>
                          </div> 
                              </li>
 

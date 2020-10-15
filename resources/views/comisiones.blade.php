@@ -22,7 +22,7 @@
           @foreach ($comisiones as $comision)
           <li>
             <div class="imagen-comision">
-              <img src="/storage/{{$comision->archivo}}" alt="imagen comision">
+              <img src="/storage/upload/{{$comision->archivo}}" alt="imagen comision">
               </div>
           </li>
          

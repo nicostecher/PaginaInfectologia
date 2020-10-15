@@ -84,11 +84,11 @@ class DocentesController extends Controller
             
             Storage::delete("/public/upload/" . $docenteViejo->foto);
 
-            $docenteViejo["foto"]=$req->file("foto")->store("upload","public");
+            $docenteActualizado["foto"]=$req->file("foto")->store("upload","public");
 
-            $nombreArchivo=basename($docenteViejo["foto"]);
+            $nombreArchivo=basename($docenteActualizado["foto"]);
 
-            $docenteViejo["foto"]=$nombreArchivo;        
+            $docenteActualizado["foto"]=$nombreArchivo;        
         };
         
         
