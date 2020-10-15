@@ -10,7 +10,7 @@ use App\casosClinicos;
 class CasosClinicosController extends Controller
 {
     public function mostrarCasosClinicos(){
-        $casos=casosClinicos::all();
+        $casos=casosClinicos::paginate(1);
 
         $vac=compact("casos");
 
@@ -42,7 +42,7 @@ class CasosClinicosController extends Controller
         $nuevoCaso= new casosClinicos();
 
 
-        $ruta=$req->file('archivo')->store("public");
+        $ruta=$req->file('archivo')->store("upload","public");
         $nombreArchivo=basename($ruta);
         
         $nuevoCaso->nombre= $req["nombre"];
@@ -51,7 +51,7 @@ class CasosClinicosController extends Controller
 
         $nuevoCaso->save();
 
-        return redirect("/CasosClinicos");
+        return redirect("/casosClinicos");
     }
 
     public function listadoCasosClinicos(){
@@ -80,9 +80,13 @@ class CasosClinicosController extends Controller
 
             $casos=casosClinicos::find($id);
             
-            Storage::delete("/public" . $casos->archivo);
+            Storage::delete("/public/upload/" . $casos->archivo);
 
-            $casoActualizado["archivo"]=$req->file("archivo")->store("storage", "public");
+            $casoActualizado["archivo"]=$req->file("archivo")->store("upload", "public");
+
+            $nombreArchivo=basename($casoActualizado["archivo"]);
+
+            $casoActualizado["archivo"]=$nombreArchivo;
         };
         
 

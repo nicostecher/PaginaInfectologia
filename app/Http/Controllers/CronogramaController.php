@@ -45,7 +45,7 @@ class CronogramaController extends Controller
 
         $cronogramaNuevo= new cronograma();
 
-        $ruta=$req->file("archivo")->store("public");
+        $ruta=$req->file("archivo")->store("upload","public");
         $nombreArchivo=basename($ruta);
 
         $cronogramaNuevo->nombre=$req["nombre"];
@@ -87,9 +87,13 @@ class CronogramaController extends Controller
 
             $cronograma=cronograma::find($id);
             
-            Storage::delete("/public" . $cronograma->archivo);
+            Storage::delete("/public/upload/" . $cronograma->archivo);
 
-            $cronogramaViejo["archivo"]=$req->file("archivo")->store("storage", "public");
+            $cronogramaViejo["archivo"]=$req->file("archivo")->store("upload", "public");
+
+            $nombreArchivo=basename($cronogramaViejo["archivo"]);
+
+            $cronogramaViejo["archivo"]=$nombreArchivo;
         }
         
        

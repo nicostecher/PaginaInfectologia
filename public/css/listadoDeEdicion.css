@@ -12,6 +12,8 @@ body{
     width: 100%;
 }
 
+
+
 .titulo{
     text-align: center;
     margin-top: 5px;
@@ -20,22 +22,28 @@ body{
 .encabezados{
     display: none;
 }
+
 .listado{
     overflow: hidden;
 }
 
 .nombre{
+    margin-top: 20px;
     text-align: center;
 }
 
+.archivo  {
+        margin-top: 15px;
+}
 
 .boton{
     display: block;
     float: left;
-    margin-top: 10px;
     margin-left: 5px;
     margin-bottom: 20px;
 }
+
+
 
 @media (min-width:1024px){
 
@@ -44,6 +52,7 @@ body{
     }
 
     .claseNueva{
+        text-align: none;
         margin-top: 5px;
         margin-left: 25px;
         margin-bottom: 20px;
@@ -86,5 +95,10 @@ body{
 
    .botones{
        padding-top: 3%;
+   }
+
+   .archivo p{
+       text-align: center;
+      padding-top: 10%;
    }
 }

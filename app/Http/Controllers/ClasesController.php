@@ -44,7 +44,7 @@ class ClasesController extends Controller
         $claseNueva= new clase();
 
 
-        $ruta=$req->file('archivo')->store("public");
+        $ruta=$req->file('archivo')->store("upload","public");
         $nombreArchivo=basename($ruta);
         
         $claseNueva->nombre= $req["nombre"];
@@ -100,9 +100,13 @@ class ClasesController extends Controller
 
                 $clases=clase::find($id);
                 
-                Storage::delete("/public" . $clases->archivo);
+                Storage::delete("/public/upload/" . $clases->archivo);
     
-                $claseActualizada["archivo"]=$req->file("archivo")->store("storage", "public");
+                $claseActualizada["archivo"]=$req->file("archivo")->store("upload", "public");
+
+                $nombreArchivo=basename($claseActualizada["archivo"]);
+
+                $claseActualizada["archivo"]=$nombreArchivo;
             };
             
 

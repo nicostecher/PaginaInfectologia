@@ -38,11 +38,13 @@ class bibliografiaController extends Controller
         $nuevaBibliografia= new bibliografia();
 
 
-        $ruta=$req->file('documento')->store("public");
+        $ruta=$req->file('documento')->store("upload","public");
         $nombreArchivo=basename($ruta);
         
         $nuevaBibliografia->titulo= $req["titulo"];
         $nuevaBibliografia->documento=$nombreArchivo;
+
+        
       
 
         $nuevaBibliografia->save();
@@ -90,10 +92,16 @@ class bibliografiaController extends Controller
         if($req->hasFile('documento')){
 
             $bibliografia=bibliografia::find($id);
-            
-            Storage::delete("/public" . $bibliografia->documento);
 
-            $bibliografiaVieja["documento"]=$req->file("documento")->store("storage", "public");
+            Storage::delete("public/upload/".$bibliografia->documento);
+
+            $bibliografiaVieja["documento"]=$req->file("documento")->store("upload","public");
+            $nombreArchivo=basename($bibliografiaVieja["documento"]);
+
+            $bibliografiaVieja["documento"]=$nombreArchivo;
+
+            
+        
         }
         
        
@@ -101,6 +109,18 @@ class bibliografiaController extends Controller
 
         
 
+
+        return redirect("/listadoBibliografias");
+
+    }
+
+    public function BorrarBibliografia(request $form){
+
+        $id=$form["id"];
+
+        $bibliografia=bibliografia::find($id);
+
+        $bibliografia->delete();
 
         return redirect("/listadoBibliografias");
 

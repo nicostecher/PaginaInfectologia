@@ -32,30 +32,25 @@
 
                     <li>
                        <div class="archivo">
-                        <iframe src="/storage/{{$caso->archivo}}"  ></iframe>
+                        <iframe src="/storage/upload/{{$caso->archivo}}" ></iframe>
                          </div> 
                              </li>
 
                             <div class="botones">
-                    <li class="boton">
-                            
-                        <a href="/editarCasoClinico/{{$caso->id}}"><button type="button" class="btn btn-success">Editar</button></a>
-                    </li>
+                                <li class="boton">
+                                        
+                                    <a href="/editarCasoClinico/{{$caso->id}}"><button type="button" class="btn btn-success">Editar</button></a>
+                                </li>
 
-                    <li class="boton">
-                   <form action="/listadoCasosClinicos" method="post">
-                    {{ csrf_field() }}
-                    <input type="hidden" name="id" value="{{$caso->id}}">
-                    <button class="btn btn-danger" type="submit" onclick="return confirm('Esta seguro de Borrar la clase?')"; value="borrar">Borrar</button>
-                    
-                </form>
-
-                    </div>
-                    
-                    </li>
-
-                
-
+                                <li class="boton">
+                            <form action="/listadoCasosClinicos" method="post">
+                                {{ csrf_field() }}
+                                <input type="hidden" name="id" value="{{$caso->id}}">
+                                <button class="btn btn-danger" type="submit" onclick="return confirm('Esta seguro de Borrar la clase?')"; value="borrar">Borrar</button>
+                                
+                                        </form>
+                                </li>
+                             </div>
                 @endforeach
             </ul>
         </article>

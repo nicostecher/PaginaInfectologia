@@ -22,12 +22,14 @@
 
       <li>
         <div class="archivo">
-        <iframe src="/storage/{{$caso->archivo}}" width="500px" height="600px"frameborder="0" ></iframe>
+        <iframe src="/storage/upload/{{$caso->archivo}}" width="500px" height="600px"frameborder="0" ></iframe>
       </div>
       </li>
           
       @endforeach
     </ul>
     </div>
+    {{$casos->links()}}
 </section>
+
 @endsection

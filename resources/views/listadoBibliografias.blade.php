@@ -42,7 +42,7 @@
                     </li>
 
                     <li class="boton">
-                   <form action="/listadobibliografia" method="post">
+                   <form action="/listadoBibliografias" method="post">
                     {{ csrf_field() }}
                     <input type="hidden" name="id" value="{{$bibliografia->id}}">
                     <button class="btn btn-danger" type="submit" onclick="return confirm('Esta seguro de Borrar la bibliografia?')"; value="borrar">Borrar</button>

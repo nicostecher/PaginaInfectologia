@@ -31,7 +31,7 @@
 
                     <li>
                        <div class="archivo">
-                        <iframe src="/storage/{{$cronograma->archivo}}"  ></iframe>
+                        <iframe src="/storage/upload/{{$cronograma->archivo}}"  ></iframe>
                          </div> 
                              </li>
 

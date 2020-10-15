@@ -35,7 +35,7 @@
 
                 
                 <li>
-                 <iframe src="/storage/{{$clase->archivo}}" width="600px" height="500px" type=""></iframe>
+                 <iframe src="/storage/upload/{{$clase->archivo}}" width="600px" height="500px" type=""></iframe>
                 </li>
                 <li>
                   <div class="descripcion">

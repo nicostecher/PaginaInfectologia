@@ -76,7 +76,7 @@ Route::group(['middleware' => ['admin']], function () {
 
     route::post("/cuerpoDocente","DocentesController@cargarDocente");
 
-    route::get("listadoDocentes","DocentesController@listadoDocentes");
+    route::get("/listadoDocentes","DocentesController@listadoDocentes");
 
     route::post("/editarDocente/{id}","DocentesController@actualizarDocente");
 
@@ -87,6 +87,8 @@ Route::group(['middleware' => ['admin']], function () {
     route::get("/listadoBibliografias","bibliografiaController@listadoBibliografia");
 
     route::post("/editarBibliografia/{id}","bibliografiaController@actualizarBibliografia");
+
+    route::post("/listadoBibliografias", "bibliografiaController@borrarBibliografia");
 
     route::post("/comisiones", "comisionescontroller@cargarComision");
 
@@ -104,23 +106,34 @@ Route::group(['middleware' => ['admin']], function () {
 
     route::post("/editarSitio/{id}", "interesController@actualizarSitio");
 
-
-
     Route::get("/editarCasoClinico/{id}","CasosClinicosController@editarcasoClinico");
+
     Route::get("/editarClase/{id}","ClasesController@editarClase");
+
     Route::get("/editarCronograma/{id}","CronogramaController@editarCronograma");
+
     Route::get("/editarNovedades/{id}","NovedadesController@editarNovedades");
+
     route::get("/editarDocente/{id}","DocentesController@editarDocente");
+
     route::get("/editarBibliografia/{id}","bibliografiacontroller@editarBibliografia");
+
     route::get("editarComisiones/{id}","comisionesController@editarComisiones");
+
     route::get("/editarSitio/{id}", "interesController@editarSitios");
 
     Route::get('/nuevoCasoClinico',"CasosClinicosController@nuevoCasoClinico");
+
     Route::get("/cargarCronograma", "CronogramaController@nuevoCronograma");
+
     route::get("/cargarNovedades", "NovedadesController@nuevaNoticia");
+
     route::get("/cargarBibliografia","bibliografiaController@nuevaBibliografia");
+
     route::get("/cargarDocente","DocentesController@nuevoDocente");
+
     route::get("/cargarComision", "comisionescontroller@nuevaComision");
+
     route::get("/cargarSitio", "interesController@cargarSitio");
 
 });

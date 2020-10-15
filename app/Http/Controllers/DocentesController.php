@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\docentes;
 
 class DocentesController extends Controller
@@ -39,7 +40,7 @@ class DocentesController extends Controller
         $nuevoDocente= new docentes();
 
 
-        $ruta=$req->file('foto')->store("public");
+        $ruta=$req->file('foto')->store("upload","public");
         $nombreArchivo=basename($ruta);
         
         $nuevoDocente->nombre=$req["nombre"];
@@ -79,18 +80,22 @@ class DocentesController extends Controller
 
         if($req->hasFile('foto')){
 
-            $clases=clase::find($id);
+            $docenteViejo=docentes::find($id);
             
-            Storage::delete("/public" . $docente->foto);
+            Storage::delete("/public/upload/" . $docenteViejo->foto);
 
-            $claseActualizada["foto"]=$req->file("foto")->store("storage", "public");
+            $docenteViejo["foto"]=$req->file("foto")->store("upload","public");
+
+            $nombreArchivo=basename($docenteViejo["foto"]);
+
+            $docenteViejo["foto"]=$nombreArchivo;        
         };
         
-
+        
         $DocenteEditado=docentes::where('id','=',$id)->update($docenteActualizado);
 
 
-        return redirect("listadoDocentes");
+        return redirect("/listadoDocentes");
 
 
     }

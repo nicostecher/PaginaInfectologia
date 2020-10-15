@@ -17,7 +17,7 @@
           
             <li>
               <div class="imagen-docente">
-                <img src="/storage/{{$docente->foto}}" alt="imagen">
+                <img src="/storage/upload/{{$docente->foto}}" alt="imagen">
               </div>
               </li>  
               <li>

@@ -29,7 +29,7 @@
           
           <div class="archivo">
             <label for="archivo"></label>
-              <img src="/storage/{{$docentes->foto}}">
+              <img src="/storage/upload/{{$docentes->foto}}">
               <br>
               <br>
             <input type="file" name="foto" id="foto">

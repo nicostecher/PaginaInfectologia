@@ -22,7 +22,7 @@
           <div class="archivo">
             <label for="archivo"></label>
             <div>
-              <iframe src="/storage/{{$cronogramas->archivo}}" frameborder="0"></iframe>
+              <iframe src="/storage/upload/{{$cronogramas->archivo}}" frameborder="0"></iframe>
               <br>
             <input type="file" name="archivo" id="archivo">
             @error('archivo')
