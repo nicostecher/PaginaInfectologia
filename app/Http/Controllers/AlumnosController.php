@@ -15,7 +15,7 @@ class AlumnosController extends Controller
         return view("/listadoAlumnos",$vac);
     }
 
-    
+
     public function borrarAlumno(request $form){ 
 
         $id=$form["id"];
@@ -26,7 +26,7 @@ class AlumnosController extends Controller
 
          
     
-    return redirect("/listadoAlumnos");
+        return redirect("/listadoAlumnos");
         }
 
 }

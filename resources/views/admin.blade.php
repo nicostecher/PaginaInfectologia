@@ -1,55 +1,35 @@
 @extends('plantilla')
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/admin.css">
+
 @section('main')
+
+<div class="contenedor-principal">
 
   <div class="titulo">
     <h3>Administrador</h3>
   </div>
 
-<div class="cajita">
-  <div class="editarVistas">
-    <h4>Editar las vistas</h3>
+  <div class="cajita">
+
+    <div class="comisiones">  
+      <ul>
+          <li><a href="/listadoNovedades"><button type="button" class="btn btn-info">Novedades</button></a></li>
+          <li><a href="/listadoNovedades"><button type="button" class="btn btn-info">Cronogramas</button></a></li>
+          <li><a href="/listadoNovedades"><button type="button" class="btn btn-info">Clases</button></a></li>
+          <li><a href="/listadoNovedades"><button type="button" class="btn btn-info">Casos Clinicos</button></a></li>
+          <li><a href="/listadoNovedades"><button type="button" class="btn btn-info">Docentes</button></a></li>
+          <li><a href="/listadoNovedades"><button type="button" class="btn btn-info">Alumnos</button></a></li>
+          <li><a href="/listadoNovedades"><button type="button" class="btn btn-info">Sitios de Interes</button></a></li>
+          <li><a href="/listadoNovedades"><button type="button" class="btn btn-info">Bibliografias</button></a></li>
+          <li><a href="/listadoNovedades"><button type="button" class="btn btn-info">Comisiones</button></a></li>
+          <li class="inicio"><a href="/listadoNovedades"><button type="button" class="btn btn-info">Volver al inicio</button></a></li>
+        </ul>
+
+    </div>
   </div>
 
-  <div class="categorias">
-    <div class="cargarNovedades">
-      <a href="/listadoNovedades">Novedaes</a>
-    </div>
-    <div class="cargarCronograma">
-      <a href="/listadoCronogramas">Cronogramas</a>
-    </div>
-    <div class="editarClase">
-      <a href="/listadoClases">Clases</a>
-    </div>
-    <div class="editarCasoClinico">
-      <a href="/listadoCasosClinicos"> Casos Clinicos</a>
-    </div>
-    <div class="editarCronograma">
-      <a href="/listadoDocentes">Docentes</a>
-    </div>
-    <div class="editaralumnos">
-      <a href="/listadoAlumnos">Alumnos</a>
-    </div>
-    <div class="editarSitios">
-      <a href="/listadoSitios">Sitios de Interes</a>
-    </div>
-    <div class="editarbibliografias">
-      <a href="/listadoBibliografias">Bibliografias</a>
-    </div>
-    <div class="editarComisiones">
-      <a href="/listadoComisiones">Comisiones</a>
-    </div>
-    
-
-  </div>
 </div>
-
-
-
-
-
-
 
 
 
