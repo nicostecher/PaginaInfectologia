@@ -37,38 +37,38 @@
                             <p>{{$alumno->apellido}}</p>
                             </div>
                         </li> 
-                             </li>
-
-                             <li>
-                                <div class="nombre">
-                                    <p>{{$alumno->email}}</p>
-                                    </div>
-                                </li> 
-                                     </li>
+                             
                 </ul> 
-            <ul>              
-                             <li>
-                                <div class="nombre">
-                                    <p>{{$alumno->created_at->format('d.m.Y')}}</p>
-                                    </div>
-                                </li> 
-                                     </li>
+            <ul>                
+                <li>
+                    <div class="nombre">
+                        <p>{{$alumno->email}}</p>
+                        </div>
+                    </li> 
+             </ul> 
+            
+             <ul>              
+                <li>
+                <div class="nombre">
+                    <p>{{$alumno->created_at->format('d.m.Y')}}</p>
+                    </div>
+                </li> 
+             </ul>                  
         
+                <ul class="borrado-alumno">
+                    <div class="botones">
 
-                            <div class="botones">
-
-                    <li class="boton">
-                   <form action="/listadoAlumnos" method="post">
-                    {{ csrf_field() }}
-                    <input type="hidden" name="id" value="{{$alumno->id}}">
-                    <button class="btn btn-danger" type="submit" onclick="return confirm('los datos se eliminaran completamente, esta seguro de continuar?')"; value="borrar">Borrar</button>
-                    
-                </form>
+                        <li class="boton">
+                    <form action="/listadoAlumnos" method="post">
+                        {{ csrf_field() }}
+                        <input type="hidden" name="id" value="{{$alumno->id}}">
+                        <button class="btn btn-danger" type="submit" onclick="return confirm('los datos se eliminaran completamente, esta seguro de continuar?')"; value="borrar">Borrar</button>
+                        
+                         </form>
 
                     </div>
-                    
                     </li>
-            </ul>
+                    </ul>
 
                 @endforeach
         </article>

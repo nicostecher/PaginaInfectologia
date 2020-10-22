@@ -21,7 +21,7 @@
             <br>
           <label for="Nombre">Descripción:</label>
           <br>
-          <textarea name="" id="" cols="50" rows="10" placeholder="{{$docentes->descripcion}}"></textarea>
+          <textarea name="descripcion" id="descripcion" cols="50" rows="10" placeholder="{{$docentes->descripcion}}"></textarea>
           @error('descripcion')
           <small class="error">{{$message}}</small>
             @enderror

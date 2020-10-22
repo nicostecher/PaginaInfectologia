@@ -11,9 +11,15 @@
     <h3>Listado de Novedades</h3>
         </div>
 
-       <div class="claseNueva">
-        <a href="/cargarNovedades" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Cargar una nueva Noticia</a>
+        <div class="menu-edicion">
+            <div class="claseNueva">
+             <a href="/cargarNovedades" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Cargar una noticia</a>
             </div>
+     
+            <div class="volverMenu">
+             <a href="/admin" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Volver al menu</a>
+            </div>
+        </div>
 
         <div class="encabezados">
             <ul>
