@@ -23,36 +23,38 @@
         <article class="listado">
             @foreach ($cronogramas as $cronograma)
             <ul>
-                    <li>
-                        <div class="nombre">
-                            <p>{{$cronograma->nombre}}</p>
-                            </div>
-                        </li>
+                <li>
+                <div class="nombre">
+                    <p>{{$cronograma->nombre}}</p>
+                    </div>
+                </li>
+            </ul>
 
-                    <li>
-                       <div class="archivo">
-                        <iframe src="/storage/upload/{{$cronograma->archivo}}"  ></iframe>
-                         </div> 
-                             </li>
+        <ul>
+            <li>
+        <div class="archivo">
+            <iframe src="/storage/upload/{{$cronograma->archivo}}"></iframe>
+            </div> 
+                </li>
+            </ul>
 
-                            <div class="botones">
+                
+            <ul>
+                <div class="botones">
                     <li class="boton">
                             
-                        <a href="/editarCronograma/{{$cronograma->id}}"><button type="button" class="btn btn-success">Editar</button></a>
+                        <a href="/editarNovedades/{{$cronograma->id}}"><button type="button" class="btn btn-success">Editar</button></a>
                     </li>
 
                     <li class="boton">
-                   <form action="/listadoCronogramas" method="post">
-                    {{ csrf_field() }}
-                    <input type="hidden" name="id" value="{{$cronograma->id}}">
-                    <button class="btn btn-danger" type="submit" onclick="return confirm('Esta seguro de Borrar la clase?')"; value="borrar">Borrar</button>
-                    
-                </form>
-
-                    </div>
-                    
+                        <form action="/listadoNovedades" method="post">
+                            {{ csrf_field() }}
+                            <input type="hidden" name="id" value="{{$cronograma->id}}">
+                            <button class="btn btn-danger" type="submit" onclick="return confirm('Esta seguro de Borrar la noticia?')"; value="borrar">Borrar</button> 
+                            </form>
                     </li>
-                </ul>
+                </div>
+            </ul>
 
                 @endforeach
         </article>

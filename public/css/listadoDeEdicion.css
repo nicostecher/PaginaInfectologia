@@ -13,10 +13,13 @@ body{
 }
 
 
-
+.claseNueva{
+    margin-top: 30px;
+    text-align: center;
+}
 .titulo{
     text-align: center;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 .encabezados{
@@ -24,23 +27,23 @@ body{
 }
 
 .listado{
-    overflow: hidden;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: space-around;
+    
 }
 
-.nombre{
-    margin-top: 20px;
+.listado ul{
+    width: 200px;
+    height:150px;
     text-align: center;
 }
 
-.archivo  {
-        margin-top: 15px;
-}
-
-.boton{
-    display: block;
-    float: left;
-    margin-left: 5px;
-    margin-bottom: 20px;
+.listado iframe{
+    width: 100%;
 }
 
 
@@ -52,10 +55,8 @@ body{
     }
 
     .claseNueva{
-        text-align: none;
-        margin-top: 5px;
-        margin-left: 25px;
-        margin-bottom: 20px;
+      text-align: start;
+      margin-left: 25px;
     }
 
     .encabezados{
@@ -69,36 +70,45 @@ body{
         flex-direction: row;
         justify-content: space-around;
         border-top: 1px solid #dee2e6;
+        border-bottom: 1px solid #dee2e6;
+        
     }
 
     .encabezados ul li{
         font-weight: bold;
     }
-  
-    .listado ul{   
-        width: 100%;
-        padding-top: 10px;
+
+    .listado{
+       
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        border-top: 1px solid #dee2e6;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items: space-around;
+        
         
     }
-   .listado ul li{
-      float: left;
+
+    .alumnos{
+       
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items: space-around;
+
+        
     }
 
-    
-   .nombre{
-       padding-top: 26%;
-   }
+    .listado ul{
+        width: 400px;
+        height:200px;
+        text-align: center;
+    }
 
-   .botones{
-       padding-top: 3%;
-   }
+    .boton{
+        display: inline-block;
+    }
 
-   .archivo p{
-       text-align: center;
-      padding-top: 10%;
-   }
+
 }

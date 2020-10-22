@@ -21,7 +21,7 @@
            </ul>
        </div>
 
-        <article class="listado">
+        <article class="alumnos">
             @foreach ($alumnos as $alumno)
             <ul>
                     <li>
@@ -29,7 +29,9 @@
                             <p>{{$alumno->nombre}}</p>
                             </div>
                         </li>
-
+                </ul> 
+                
+            <ul>   
                     <li>
                         <div class="nombre">
                             <p>{{$alumno->apellido}}</p>
@@ -43,8 +45,8 @@
                                     </div>
                                 </li> 
                                      </li>
-
-                                     
+                </ul> 
+            <ul>              
                              <li>
                                 <div class="nombre">
                                     <p>{{$alumno->created_at->format('d.m.Y')}}</p>
@@ -66,7 +68,7 @@
                     </div>
                     
                     </li>
-                </ul>
+            </ul>
 
                 @endforeach
         </article>
