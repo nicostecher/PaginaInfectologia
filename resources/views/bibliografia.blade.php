@@ -22,7 +22,8 @@
       </li>
 
       <li>
-        <button><a href="/bibliografia/{{$bibliografia->id}}">descarga</a></button>
+       <a href="/bibliografia/{{$bibliografia->id}}"><button type="button" class="btn btn-info">descarga
+      </button></a>
       </li>
           
       @endforeach

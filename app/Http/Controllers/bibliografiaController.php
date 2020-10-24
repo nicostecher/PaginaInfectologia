@@ -57,7 +57,7 @@ class bibliografiaController extends Controller
       
         $descarga= bibliografia::find($id);
 
-        $ruta= storage_path("app/public/{$descarga->documento}");
+        $ruta= storage_path("app/public/upload/{$descarga->documento}");
 
         $nombre =$descarga->titulo;
     

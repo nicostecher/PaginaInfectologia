@@ -1,42 +1,40 @@
-@extends("plantilla")
-
-
+@extends('plantilla')
 @section('main')
 
 <link rel="stylesheet" href="/css/cargar.css">
+<section id="contenedor">
 
-<section id="crono" class="cargarCronograma">
+<div class="titulo">
+<h3>Cargar un Cronograma</h3>
+</div>
 
-    <h3>Cargar un Cronograma</h3>
-    <br>
-    <form action="/cronograma" method="post" enctype="multipart/form-data">
-      {{ csrf_field() }}
-      <div>
-      <label for="Nombre">Nombre:</label>
-      <input type="text" name="nombre" value="">
-      @error('nombre')
-      <small class="error">{{$message}}</small>
-        @enderror
-      </div>
+<div class="contenido-carga" id="contenido-archivos">
+<div class="nombre">
+  <form action="/cronograma" method="post" enctype="multipart/form-data">
+    {{ csrf_field() }}
+    <label for="nombre">nombre:</label>
+    <input type="text" name="nombre" value="">
+    @error('nombre')
+    <small class="error">{{$message}}</small>
+      @enderror
+    </div>
 
-      <div>
-        <label for="archivo"></label>
-        <input type="file" name="archivo" id="archivo">
-        @error('archivo')
-        <small class="error">{{$message}}</small>
-        @enderror
-        <div>
-          <input type="submit" value="Cargar">
-          <input type="button" value="Borrar">
-          </div>
-      </div>
+    <div class="archivo">
+      <label for="archivo"></label>
+      <input type="file" name="archivo" id="archivo">
+      @error('archivo')
+      <small class="error">{{$message}}</small>  
+      @enderror
+    </div>
 
+    <div class="botones" id="botones-archivos">
+        <button type="submit" class="btn btn-success">Cargar</button>
+        <button type="reset" class="btn btn-danger">Borrar</button>
+        <a href="/listadoCronogramas"><button type="button" class="btn btn-info">Volver</button></a>
+        </div>
     </form>
-
-
-
-  </section>
-
+  </div>
+</section>
 
 
 @endsection

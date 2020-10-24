@@ -1,64 +1,190 @@
-section{
-  margin-top: 44px;
-    margin-bottom: 30px;
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.ca{
-    height: 200px;
+#contenedor{
+  background-color: white;
+  width:100%;
+  margin-top: 30px;
+  height: 500px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 5px black;
+
 }
 
-h3{
-  width: 170px;
+#contenedor.contenedor-docente{
+  height: 720px;
+}
+
+
+.titulo{
   text-align: center;
-  margin-left: 30px;
+ padding-top: 20px;
 }
 
-.n{
-  height: 431px;
+.titulo h3{
+  font-size: 20px;
 }
 
-.no{
+.contenido-carga{
+  text-align: center;
+  margin-top: 25px;
+}
+
+#contenido-archivos{
+  margin-top: 50px;
+  height: 100px;
+}
+
+.archivo{
+  margin-top: 50px;
+}
+
+label{
+  font-size: 15px;
+}
+textarea{
+  width: 100%;
+}
+
+.foto{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.links{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.links label{
   margin-left: 25px;
 }
 
+.botones{
+  margin-top: 15px;
+}
+
+#botones-archivos{
+  margin-top: 60px;
+}
+
+#botones-archivos button{
+  margin-top: 10px;
+  width: 100%;
+}
+
+.error{
+  font-weight: bolder;
+  color: red;
+  display: block;
+}
+
+
+
+
+
 @media (min-width:1024px){
 
-.cargarNovedades{
-  margin-bottom: 50px;
-}
+  #contenedor{
+    background-color: white;
+    width:80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 500px;
+    margin-bottom: 30px;
+  }
 
-h3{
+  #contenedor.contenedor-docente{
+    height: 650px;
+  }
+  
+  .titulo{
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  .titulo h3{
+    font-size: 2em;
+  }
+  
+
+  .contenido-carga{
+    text-align: center;
+  }
+
+  #contenido-archivos{
+    margin-top: 50px;
+  }
+
+  label{
+    font-size: 20px;
+  }
+  .nombre{
+    margin-top: 30px;
+  }
+
+  .descripcion{
+    overflow: hidden;
+    margin-top: 20px;
+  }
+
+
+  .titulo-descripcion{
+    display: block;
+  }
+
+  .archivo{
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 50px;
+  }
+
+  textarea{
+    width: 80%;
+  }
+
+.foto{
+  margin-top: 30px;
   text-align: center;
-  margin-top: 50px;
 }
 
-form{
-  width:70%;
-  margin-left: 600px;
-}
-
-#biblio{
-  height: 300px;
-  margin-bottom: 30px;
-}
-
-#crono{
-  height: 300px;
-  margin-bottom: 30px;
-}
-
-#cuerpo{
-  height: 200px;
-  margin-bottom: 30px;
-}
-
-.cargarCasosClinicos{
-  height: 370;
-}
-
-#c{
+.links{
+  margin-top: 30px;
   text-align: center;
-  margin-top: 50px;
 }
 
+.links label{
+  margin-left: 35px;
+}
+
+
+  .botones{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .botones button{
+    margin-left: 25px;
+    width:10%;
+  }
+
+  #botones-archivos{
+    margin-top: 60px;
+
+  }
+
+#botones-archivos button{
+    margin-left: 25px;
+    width: 10%;
+  }
+
+
+ 
 }

@@ -31,7 +31,7 @@ class CronogramaController extends Controller
 
         $reglas=[
             "nombre" =>"string|min:3|required",
-            "archivo"=>"file|required"
+            "archivo"=>"file|required|mimes:jpg,pdf",
     ];
 
         $mensajes=[

@@ -6,7 +6,7 @@
 
 <section class="contenido-principal">
   
-        <h3>Cargar una clase</h3>
+        <h3>Editar una clase</h3>
         <br>
         <form action="/editarClase/{{$clases->id}}" method="post" enctype="multipart/form-data">
           {{ csrf_field() }}

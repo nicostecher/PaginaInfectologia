@@ -1,37 +1,42 @@
-@extends('plantilla');
-
+@extends('plantilla')
 @section('main')
 
+<link rel="stylesheet" href="/css/cargar.css">
 
-<section class="cargarClase">
-        
-    <h3>Cargar una clase</h3>
-    <br>
+
+<section id="contenedor">
+  
+  <div class="titulo">
+  <h3>Cargar una Clase</h3>
+  </div>
+
+  <div class="contenido-carga" id="contenido-archivos">
+  <div class="nombre">
     <form action="/clases" method="post" enctype="multipart/form-data">
       {{ csrf_field() }}
-      <div>
-      <label for="Nombre">Nombre:</label>
+      <label for="nombre">Nombre:</label>
       <input type="text" name="nombre" value="">
       @error('nombre')
       <small class="error">{{$message}}</small>
         @enderror
       </div>
 
-      <div>
+      <div class="archivo">
         <label for="archivo"></label>
         <input type="file" name="archivo" id="archivo">
         @error('archivo')
         <small class="error">{{$message}}</small>  
         @enderror
-        <div>
-          <input type="submit" value="Cargar">
-          </div>
       </div>
 
-    </form>
-    
+      <div class="botones" id="botones-archivos">
+          <button type="submit" class="btn btn-success">Cargar</button>
+          <button type="reset" class="btn btn-danger">Borrar</button>
+          <a href="/listadoClases"><button type="button" class="btn btn-info">Volver</button></a>
+          </div>
+      </form>
+    </div>
+</section>
 
 
-  </section>
-    
 @endsection

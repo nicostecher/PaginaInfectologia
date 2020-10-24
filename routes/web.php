@@ -48,25 +48,11 @@ Route::group(['middleware' => ['admin']], function () {
 
     Route::post('/casosClinicos', "CasosClinicosController@cargarCasoClinico");
 
-    route::post("/cargarBibliografia","bibliografiaController@cargarBibliografia");
-
-    Route::post('/cronograma',"CronogramaController@cargarCronograma");
-
-    Route::get('/listadoCronogramas',"CronogramaController@listadoCronogramas");
-
-    Route::post('/listadoCronogramas', "CronogramaController@borrarCronograma");
+    route::post("/bibliografia","bibliografiaController@cargarBibliografia");
 
     Route::get("/editarCronograma/{id}","CronogramaController@editarCronograma");
 
-    Route::post("/editarCronograma/{id}","CronogramaController@actualizarCronograma");
-
-    route::post("/index", "NovedadesController@cargarNoticia");
-
-    route::get("/listadoNovedades", "NovedadesController@listadoNovedades");
-
     Route::get("/editarNovedades/{id}","NovedadesController@editarNovedades");
-
-    Route::post("/editarNovedades/{id}","NovedadesController@actualizarNovedades");
 
     Route::post('/listadoNovedades', "NovedadesController@borrarNovedad");
 
@@ -109,10 +95,6 @@ Route::group(['middleware' => ['admin']], function () {
     Route::get("/editarCasoClinico/{id}","CasosClinicosController@editarcasoClinico");
 
     Route::get("/editarClase/{id}","ClasesController@editarClase");
-
-    Route::get("/editarCronograma/{id}","CronogramaController@editarCronograma");
-
-    Route::get("/editarNovedades/{id}","NovedadesController@editarNovedades");
 
     route::get("/editarDocente/{id}","DocentesController@editarDocente");
 

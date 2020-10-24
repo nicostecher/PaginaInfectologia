@@ -2,44 +2,43 @@
 
 @section('main')
 
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
     <link rel="stylesheet" href="/css/cargar.css">
-    <title></title>
-  </head>
-  <body>
-<section id="n" class="cargarNovedades">
+  
+ 
+<section id="contenedor">
 
+  <div class="titulo">
     <h3>Cargar una Noticia</h3>
-    <br>
-    <form action="/index" method="post">
-      {{ csrf_field() }}
-      <div>
-      <label for="titulo">Titulo</label>
-      <input type="text" name="titulo" value="">
-      @error('titulo')
-      <small class="error">{{$message}}</small>
-        @enderror
-      </div>
+  </div>
 
-      <div>
-        <label for="descripcion">Descripción</label>
-        <br>
-        <textarea name="descripcion"  cols="30" rows="10" value=""></textarea>
-        @error('descripcion')
+  <div class="contenido-carga">
+    <div class="nombre">
+      <form action="/index" method="post">
+        {{ csrf_field() }}
+        <label for="titulo">Titulo:</label>
+        <input type="text" name="titulo" value="">
+        @error('titulo')
         <small class="error">{{$message}}</small>
           @enderror
-        <div>
-          <input type="submit" value="Cargar">
-          <input type="button" value="Borrar">
-          </div>
+        </div>
+
+        <div class="descripcion">
+          <label class="titulo-descripcion"  for="descripcion">Descripción:</label>
+          <textarea name="descripcion"  cols="80" rows="10" value=""></textarea>
+          @error('descripcion')
+          <small class="error">{{$message}}</small>
+            @enderror
+        </div>
+
+        <div class="botones">
+            <button type="submit" class="btn btn-success">Cargar</button>
+            <button type="button" class="btn btn-danger">Borrar</button>
+            <a href="/listadoNovedades"><button type="button" class="btn btn-info">Volver</button></a>
+            </div>
+           
+        </form>
       </div>
-
-    </form>
-
   </section>
-</body>
-</html>
+
 
 @endsection

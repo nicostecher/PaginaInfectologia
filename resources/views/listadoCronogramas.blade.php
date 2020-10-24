@@ -49,11 +49,11 @@
             <div class="botones">
                 <li class="boton">
                         
-                    <a href="/editarNovedades/{{$cronograma->id}}"><button type="button" class="btn btn-success">Editar</button></a>
+                    <a href="/editarCronograma/{{$cronograma->id}}"><button type="button" class="btn btn-success">Editar</button></a>
                 </li>
 
                 <li class="boton">
-                    <form action="/listadoNovedades" method="post">
+                    <form action="/listadoCronogramas" method="post">
                         {{ csrf_field() }}
                         <input type="hidden" name="id" value="{{$cronograma->id}}">
                         <button class="btn btn-danger" type="submit" onclick="return confirm('Esta seguro de Borrar la noticia?')"; value="borrar">Borrar</button> 

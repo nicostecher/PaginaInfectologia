@@ -1,46 +1,40 @@
-@extends("plantilla")
-
-
+@extends('plantilla')
 @section('main')
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/cargar.css">
-    <title></title>
-  </head>
-  <body>
 
-<section id="biblio" class="cargarCronograma">
+<link rel="stylesheet" href="/css/cargar.css">
+<section id="contenedor">
 
-    <h3>Cargar una Bibliografía</h3>
-    <br>
-    <form action="/cargarBibliografia" method="post" enctype="multipart/form-data">
-      {{ csrf_field() }}
-      <div>
-      <label for="titulo">Titulo:</label>
-      <input type="text" name="titulo" value="">
-      @error('titulo')
-      <small class="error">{{$message}}</small>
-        @enderror
-      </div>
+<div class="titulo">
+<h3>Cargar una Bibliografia</h3>
+</div>
 
-      <div>
-        <label for="documento"></label>
-        <input type="file" name="documento" id="documento">
-        @error('documento')
-        <small class="error">{{$message}}</small>
-        @enderror
-        <div>
-          <input type="submit" value="Cargar">
-          <input type="button" value="Borrar">
-          </div>
-      </div>
+<div class="contenido-carga" id="contenido-archivos">
+<div class="nombre">
+  <form action="/bibliografia" method="post" enctype="multipart/form-data">
+    {{ csrf_field() }}
+    <label for="titulo">Titulo</label>
+    <input type="text" name="titulo" id="titulo" value="">
+    @error('titulo')
+    <small class="error">{{$message}}</small>
+      @enderror
+    </div>
 
+    <div class="archivo">
+      <label for="documento"></label>
+      <input type="file" name="documento" id="documento">
+      @error('documento')
+      <small class="error">{{$message}}</small>  
+      @enderror
+    </div>
+
+    <div class="botones" id="botones-archivos">
+        <button type="submit" class="btn btn-success">Cargar</button>
+        <button type="reset" class="btn btn-danger">Borrar</button>
+        <a href="/listadoBibliografias"><button type="button" class="btn btn-info">Volver</button></a>
+        </div>
     </form>
-
-  </section>
-</body>
-</html>
+  </div>
+</section>
 
 
 @endsection

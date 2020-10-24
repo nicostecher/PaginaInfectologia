@@ -1,37 +1,41 @@
 @extends('plantilla')
-<link rel="stylesheet" href="/css/cargar.css">
 @section('main')
 
-<section id="ca" class="cargarCasosClinicos">
+<link rel="stylesheet" href="/css/cargar.css">
+<section id="contenedor">
 
-    <h3 id="c">Cargar un Caso Clinico</h3>
-    <br>
-    <form action="/casosClinicos" method="post" enctype="multipart/form-data">
-      {{ csrf_field() }}
-      <div>
-      <label for="nombre">Nombre:</label>
-      <input type="text" name="nombre" value="">
-      @error('nombre')
-      <small class="error">{{$message}}</small>
-        @enderror
-      </div>
+<div class="titulo">
+<h3>Cargar un Caso Clinico</h3>
+</div>
 
-      <div>
-        <label for="archivo"></label>
-        <input type="file" name="archivo" id="archivo">
-        @error('archivo')
-        <small class="error">{{$message}}</small>
-        @enderror
-        <div>
-          <input type="submit" value="Cargar">
-          <input type="button" value="Borrar">
-          </div>
-      </div>
+<div class="contenido-carga" id="contenido-archivos">
+<div class="nombre">
+  <form action="/casosClinicos" method="post" enctype="multipart/form-data">
+    {{ csrf_field() }}
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" value="">
+    @error('nombre')
+    <small class="error">{{$message}}</small>
+      @enderror
+    </div>
 
+    <div class="archivo">
+      <label for="archivo"></label>
+      <input type="file" name="archivo" id="archivo">
+      @error('archivo')
+      <small class="error">{{$message}}</small>  
+      @enderror
+    </div>
+
+    <div class="botones" id="botones-archivos">
+        <button type="submit" class="btn btn-success">Cargar</button>
+        <button type="reset" class="btn btn-danger">Borrar</button>
+        <a href="/listadoCasosClinicos"><button type="button" class="btn btn-info">Volver</button></a>
+        </div>
     </form>
-
-
-  </section>
+  </div>
+</section>
 
 
 @endsection
+

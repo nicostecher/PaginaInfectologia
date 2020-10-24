@@ -1,38 +1,40 @@
 @extends('plantilla')
-
 @section('main')
 
 <link rel="stylesheet" href="/css/cargar.css">
-<section class="cargarClase">
+<section id="contenedor">
 
-    <h3>Cargar un nuevo Sitio de Interes</h3>
-    <br>
-    <form id="cuerpo" action="/sitiosDeInteres" method="post">
-      {{ csrf_field() }}
-      <div>
-      <label for="Nombre">Nombre:</label>
-      <input type="text" name="nombre" value="">
-      @error('nombre')
-      <small class="error">{{$message}}</small>
-        @enderror
-      </div>
+<div class="titulo">
+<h3>Cargar un Sitio</h3>
+</div>
 
+<div class="contenido-carga" id="contenido-archivos">
+<div class="nombre">
+  <form action="/sitiosDeInteres" method="post">
+    {{ csrf_field() }}
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" value="">
+    @error('nombre')
+    <small class="error">{{$message}}</small>
+      @enderror
+    </div>
+
+    <div class="links">
       <label for="links">Link:</label>
-      <input type="text" name="links" value="">
-      @error('links')
-      <small class="error">{{$message}}</small>
-        @enderror
-      </div>
+      <input type="text" name="links" id="links">
+      @error('link')
+      <small class="error">{{$message}}</small>  
+      @enderror
+    </div>
 
-      <div>
-        <input type="submit" value="Cargar">
-        <input type="button" value="Borrar">
+    <div class="botones" id="botones-archivos">
+        <button type="submit" class="btn btn-success">Cargar</button>
+        <button type="reset" class="btn btn-danger">Borrar</button>
+        <a href="/listadoSitios"><button type="button" class="btn btn-info">Volver</button></a>
         </div>
-
     </form>
+  </div>
+</section>
 
-
-
-  </section>
 
 @endsection
