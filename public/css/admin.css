@@ -12,7 +12,7 @@ main{
 }
 
 .titulo{
-    margin-left: 74px;
+  
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -57,10 +57,11 @@ li.inicio button.btn.btn-info{
 @media (min-width:1024px){
 
   .titulo{
-    display: inline-block;
-    text-align: center;
     width: 100%;
-    padding-right: 10%;
+  }
+
+  .titulo h3{
+    text-align: center;
   }
 
   .categorias{
@@ -70,7 +71,7 @@ li.inicio button.btn.btn-info{
 
   .cajita{
     background-color: white;
-    opacity:0.8;
+  
     width: 80%;
     height: 500px;
     margin-left: 10%;
