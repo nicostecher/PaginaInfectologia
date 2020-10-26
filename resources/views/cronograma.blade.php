@@ -13,29 +13,27 @@
     <div class="transparencia">
 
         <div class="caja-cronograma">
-          
               <div class="titulo-cronograma" >
-                 <h2> Cronograma</h2>
-                 </div>
-                
-                    
-                      <div class="imagen-cronograma">
-                        <ul>
-                          @forelse ($cronogramas as $cronograma)
-                          <li>
-                        <img src="/storage/upload/{{$cronograma->archivo}}"   alt="imagen">
-                      </li>
-                      @empty
-                    @endforelse
-                    </ul>
+                <h2> Cronograma</h2>
                 </div>
-        
-
+                  <div class="imagen-cronograma">
+                    <ul>
+                      @forelse ($cronogramas as $cronograma)
+                      <li>
+                    <img src="/storage/upload/{{$cronograma->archivo}}"   alt="imagen">
+                  </li>
+                  @empty
+                @endforelse
+                </ul>
+            </div>
         </div>
-   
+
+        <div class="paginacion">
+          {{$cronogramas->links()}}
+        </div>
     </section>
 
-    {{$cronogramas->links()}}
+    
 
     
 

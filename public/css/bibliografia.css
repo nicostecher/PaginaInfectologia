@@ -11,14 +11,19 @@ body{
     width: 100%;
 }
 
-header{
-    margin-bottom: 50px;
-}
 
 
 .titulo-bibliografia{
     margin-top: 15px;
 }
+
+/*.imagen-principal{
+    background-image: url("../imagenes/fondo.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+ 
+}*/
 
 .contenedor-bibliografia{
   background-color: white;
@@ -29,6 +34,7 @@ header{
   margin-bottom: 20px;
   display: block;
   overflow: hidden;
+  margin-top: 50px;
   
 }
 
@@ -43,9 +49,12 @@ header{
 }
 
 .listado-bibliografia li{
-    padding-top: 5px;
     text-align: center;
     font-family: 'Libre Baskerville', serif;
+}
+
+.listado-bibliografia li a button{
+    margin-bottom: 10px;
 }
 
 .listado-bibliografia a{
@@ -65,7 +74,6 @@ header{
     margin-left: 10%;
     margin-bottom: 30px;
     height: auto;
-        
     }
 
 

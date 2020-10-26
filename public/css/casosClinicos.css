@@ -12,18 +12,23 @@ body{
     width: 100%;
 }
 
-header{
-    margin-bottom: 50px;
+
+.imagen-principal{
+    background-image: url("../imagenes/fondo.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    padding-top: 10px;
 }
 
 .contenedor-casosClinicos{
+    margin-top: 30px;
     overflow: hidden;
-    width: 90%;
-    margin: 0 auto;
-    background-color:rgb(255, 255, 255,0.9);
+    height: 500px;
+    background-color:rgb(255, 255, 255,0.7);
     border:  1px solid black;
     box-shadow: 0 0 5px black;
-   margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 .titulo-casosClinicos{
@@ -39,10 +44,19 @@ header{
 
 .contenido-casosClinicos{
     text-align: center;
-
+    height: 400px;
 }
 
+.contenido-casosClinicos iframe{
+    max-width: 100%;
+    height: 300px;
+}
 
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 /* VERSIÓN ESCRIORIO */
 
@@ -50,19 +64,40 @@ header{
 @media (min-width:1024px){
 
     .contenedor-casosClinicos{
-     width: 90%;
-        box-shadow: 0 0 30px #fff;
-       box-shadow: 0 0 5px black;
-      margin-bottom: 150px;
-
+    width: 80%;
+    margin: 0 auto;
+    height: 700px;
+    box-shadow: 0 0 5px black;
+    margin-top: 50px;
     }
 
 
     .titulo-casosClinicos h2{
-        font-size: 35px;
+    font-size: 35px;
     }
 
 
+    .archivo {
+    margin-bottom: 50px;
+    }
 
-   
+    .archivo iframe{
+    width:1000px; 
+    height:500px;
+    }
+
+    .link{
+        margin-top: 20px;
+    }
+
+    
+
+    /*.fullScreen {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }*/
+
 }

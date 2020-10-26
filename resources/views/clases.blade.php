@@ -48,14 +48,10 @@
             </div>
               
       </section>
-      {{$clases->links()}}
 
-
-
-        
-   <br>
-   <br>
-   <br>
+      <div class="link">
+        {{$clases->links()}}
+      </div>
 
     </div>
   </div>

@@ -1,45 +1,80 @@
-.cuerpo-docente{
-  position: relative;
-  z-index: -1;
-  background-color: white;
-  opacity: 0.8;
-  border-radius: 15px;
-  height: 536px;
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  align-items: center;
-  display: block;
-  margin-right: 10px;
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  color:black;
 }
 
-body{
-  background-color: #D6D6D6;
+
+.contenedor-docente{
+  background-image: url("../imagenes/fondo.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  height: auto;
+  overflow: hidden;  
+}
+
+
+.cuerpo-docente{ 
+  margin-top: 30px;
+  background-color: rgb(255, 255, 255,0.8);
+  box-shadow: 0 0 5px black;
+  border-radius: 15px;  
+  width: 100%;
+}
+
+.cuerpo-docente ul{
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuerpo-docente img{
+  width: 100%;
+}
+
+p.cargos-docente{
+  font-weight: bold;
 }
 
 p.nombre-docente {
+  padding-top: 15px;
   font-size: 20px;
   font-weight: bold;
 }
 
 @media (min-width: 1024px){
+  
   .cuerpo-docente{
-    position: relative;
-    z-index: -1;
-    margin-left: 49px;
-    margin-right: 49px;
-    height: 370px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: auto;
   }
 
-  .docente2{
-    margin-left: -61px;
-}
+
+
+  .cuerpo-docente ul{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    
   }
+
+  .cuerpo-docente li{
+    text-align: center;  
+  }
+
+
+
 }
+
