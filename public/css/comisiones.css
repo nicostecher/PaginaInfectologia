@@ -1,6 +1,11 @@
-.navbar-expand-lg .navbar-nav .dropdown-menu {
-  z-index:99;
-    }
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
 
 .contenedor-sitio{
     width: 90%;

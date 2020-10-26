@@ -12,6 +12,7 @@
   <body>
 
     <section class="contenedor-sitio">
+      
       <div class="titulo-sitio">
           <h2>Comisiones</h2>
       </div>

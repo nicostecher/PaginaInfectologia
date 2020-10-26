@@ -22,11 +22,10 @@ header{
 
 .contenedor-bibliografia{
   background-color: white;
-  opacity: 0.8;
   box-shadow:  0 0 5px black;
-  width: 200px;
-  margin-left: 89px;
-  height: 300px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
   margin-bottom: 20px;
   display: block;
   overflow: hidden;
@@ -65,7 +64,6 @@ header{
     margin-right: 10%;
     margin-left: 10%;
     margin-bottom: 30px;
-    position: relative;
     height: auto;
         
     }

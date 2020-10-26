@@ -1,9 +1,13 @@
 @extends("plantilla")
+
+
 @section("main")
+
 
 <meta name="viewport" content="width=device-width, user-scalable=no">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="/css/bibliografia.css">
+<link rel="stylesheet" href="/css/plantilla.css">
+<link rel="stylesheet" href="/css/bibliografia.css">
 
 
 <section class="contenedor-bibliografia">

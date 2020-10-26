@@ -7,43 +7,35 @@
   color: black;
 }
 
-main{
-  height: 60%;
-}
 
 .titulo{
-  
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
+.titulo h3{
+  text-align: center;
+}
+
 .cajita{
-  background-color: white;
-  opacity: 0.8;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
-.editarVistas{
-  text-align: center;
-  padding-top: 10px;
- 
-}
 
-*.comisiones{
+.comisiones{
   width: 100%;
+
 }
 
 .comisiones ul{
+  overflow: hidden;
   margin-top: 10%;
   width: 100%;
-  display:flex;
-  flex-wrap: wrap;
-  justify-content:space-evenly; 
 }
 
 .comisiones ul li .btn.btn-info{
-  width: 400px;
+  width: 100%;
 }
 
 .btn.btn-info{
@@ -58,6 +50,7 @@ li.inicio button.btn.btn-info{
 
   .titulo{
     width: 100%;
+    margin-bottom: 0px;
   }
 
   .titulo h3{
@@ -70,45 +63,38 @@ li.inicio button.btn.btn-info{
   }
 
   .cajita{
+    margin-top: 25px;
     background-color: white;
-  
     width: 80%;
-    height: 500px;
+    height:450px;
     margin-left: 10%;
     margin-right: 10%;;
     margin-bottom: 20px;
-    overflow: hidden;
-    position: relative;
   }
 
   .cajita a{
     color:black;
   }
   
-  .editarVistas{
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
 
   .comisiones{
     width: 100%;
-    height:400px;
-    position: absolute;
+    height:100px;
   }
 
   .comisiones ul{
-    margin-top: 5%;
+    margin-top: 0%;
     width: 100%;
     height: 400px;
     display:flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly; 
     
   }
  
   .comisiones ul li .btn.btn-info{
-    padding-bottom: 10px;
+    margin-top: 10%;
     width: 400px;
   }
 
@@ -122,9 +108,5 @@ li.inicio button.btn.btn-info{
   }
   
 
-  .dropdown-menu.show{
-    position: relative;
-    z-index:0;
-  }
 
 }

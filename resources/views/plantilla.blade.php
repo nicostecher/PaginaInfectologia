@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/plantilla.css">
-    <link rel="stylesheet" href="/css/header.css">
     <title>Cursada de Infectología</title>
   </head>
   <body>
@@ -145,11 +144,12 @@
                  </ul>
                </div>
              </nav>
-
+            
     </header>
 
-
-    @yield("main")
+    @yield('main') 
+        
+  
 
     <footer>
       <div class="footer">
@@ -161,32 +161,28 @@
           <br>
           <p class="ubah">Universidad de Buenos Aires.</p>
         </div>
-        <!--
-        <div class="mapa">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.442876334298!2d-58.40200242380624!3d-34.59856163596656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9474de07c3%3A0x6d168bee0e66f0b5!2sHospital%20de%20Cl%C3%ADnicas%20Jose%20de%20San%20Martin!5e0!3m2!1ses!2sar!4v1593416377494!5m2!1ses!2sar" width="300" height="225" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
--->
+  
         <div class="contacta">
           <p class="contactanos">Contactanos:</p>
           <p class="email-catedra">catedra_infectologia@gmail.com</p>
         </div>
 
-        <div class="logo-uba">
-          <a href="http://www.uba.ar/"><img class="uba" src="/imagenes/Logo-UBA.png" alt="logo-uba"></a>
-        </div>
+          <div class="logo-uba">
+            <a href="http://www.uba.ar/"><img class="uba" src="/imagenes/Logo-UBA.png" alt="logo-uba"></a>
+          </div>
 
-      <!--
--->
 
 
       </div>
 
 
     </footer>
-
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  
 
   </body>
 </html>

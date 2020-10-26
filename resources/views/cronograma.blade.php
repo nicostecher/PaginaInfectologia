@@ -1,4 +1,5 @@
 @extends("plantilla")
+
 @section("main")
 
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -7,9 +8,6 @@
 
     <title>Cronograma</title>
   
-    
-
-
     <section class="contenedor-cronograma ">
 
     <div class="transparencia">
