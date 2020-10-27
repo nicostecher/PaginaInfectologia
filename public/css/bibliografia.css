@@ -8,34 +8,26 @@
 }
 
 body{
-    width: 100%;
+    background-image: url("../imagenes/fondo.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
 }
-
-
 
 .titulo-bibliografia{
     margin-top: 15px;
 }
 
-/*.imagen-principal{
-    background-image: url("../imagenes/fondo.jpg");
-    background-size:cover;
-    background-attachment: fixed;
-    background-repeat:no-repeat;
- 
-}*/
 
 .contenedor-bibliografia{
-  background-color: white;
-  box-shadow:  0 0 5px black;
-  width: 100%;
-  margin: 0 auto;
-  height: auto;
-  margin-bottom: 20px;
-  display: block;
-  overflow: hidden;
-  margin-top: 50px;
-  
+    background-color: rgb(255, 255, 255,0.8);
+    box-shadow:  0 0 5px black;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    overflow: hidden;
+    margin-top: 50px;
 }
 
 .titulo-bibliografia h2{
@@ -67,8 +59,6 @@ body{
 
 @media (min-width:1024px){
     .contenedor-bibliografia{
-
-    background-color: white;
     width: 80%;
     margin-right: 10%;
     margin-left: 10%;

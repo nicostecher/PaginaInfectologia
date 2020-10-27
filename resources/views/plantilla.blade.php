@@ -10,6 +10,7 @@
     <title>Cursada de Infectología</title>
   </head>
   <body>
+
     <header>
 
       <div class="imagen-uba">
@@ -64,7 +65,7 @@
                  </li>
                     @endguest
                     </div>
-
+                  </ul>
                  </div>
                </ul>
 
@@ -152,30 +153,18 @@
   
 
     <footer>
-      <div class="footer">
-        <br>
-        <div class="titulo-footer">
-          <p class="infecto">Infectología</p>
-          <br>
-          <p class="clinicas">Hospital de Clínicas</p>
-          <br>
-          <p class="ubah">Universidad de Buenos Aires.</p>
-        </div>
-  
-        <div class="contacta">
-          <p class="contactanos">Contactanos:</p>
-          <p class="email-catedra">catedra_infectologia@gmail.com</p>
-        </div>
-
-          <div class="logo-uba">
-            <a href="http://www.uba.ar/"><img class="uba" src="/imagenes/Logo-UBA.png" alt="logo-uba"></a>
-          </div>
-
-
-
-      </div>
-
-
+      <ul class="listado-footer">
+        <li class="nombre-catedra">
+          <p>Infectología <br> Hospital de Clínicas <br>
+            Universidad de Buenos Aires.</p>
+        </li>
+        <li class="contacto">
+          <p >Contactanos: catedra_infectologia@gmail.com</p>
+        </li>
+        <li class="imagen-footer">
+          <a href="http://www.uba.ar/"><img class="uba" src="/imagenes/Logo-UBA.png" alt="logo-uba"></a>
+        </li>
+      </ul>
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

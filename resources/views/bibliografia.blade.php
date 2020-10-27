@@ -1,40 +1,31 @@
 @extends("plantilla")
 
-
 @section("main")
 
-
-<meta name="viewport" content="width=device-width, user-scalable=no">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/plantilla.css">
+
 <link rel="stylesheet" href="/css/bibliografia.css">
 
-<div class="imagen-principal">
   <section class="contenedor-bibliografia">
-
     <div class="titulo-bibliografia">
         <h2>Bibliografía</h2>
     </div>
 
 
     <div class="contenido-bibliografia">
-
       <ul type= "circle" class="listado-bibliografia">
         @foreach ($bibliografias as $bibliografia)
         <li>
           <p>{{$bibliografia->titulo}}</p>
         </li>
-
         <li>
-        <a href="/bibliografia/{{$bibliografia->id}}"><button type="button" class="btn btn-info">descarga
-        </button></a>
+          <a href="/bibliografia/{{$bibliografia->id}}"><button type="button" class="btn btn-info">descarga
+          </button></a>
         </li>
-            
         @endforeach
       </ul>
     </div>
+  </section>
 
-</section>
-</div>
 
 @endsection

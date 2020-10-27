@@ -78,14 +78,15 @@ position: relative;
 padding-top: 20px;
 padding-right: 20px;
 width: 10%;
-
 }
 
-
+.navbar-dark .navbar-toggler{
+  background-color: black;
+}
 
 .fixed-top{
- position: relative;;
- float: right;
+  position: relative;;
+  float: right;
 }
 
 .listado-mobile{
@@ -98,12 +99,12 @@ width: 10%;
 
 .listado-mobile li a{
  text-decoration: none;
- color: white;
+ color: black;
 
 }
 
 .text-muted{
-color:white!important;
+color: black;
 
 }
 
@@ -124,42 +125,17 @@ padding-top: 5px;
 }
 
 
-.footer{
-  margin-top: 0px;
+footer{
   background-color: black;
-  height: 269px;
-}
-.contacta{
-  display: inline-block;
-  height: 20px;
-    text-align: center;
-
+ height: auto;
+ overflow: hidden;
 }
 
-.titulo-footer p{
-  color: white;
-  margin-top:-13px;
+.listado-footer{
   text-align: center;
+  padding-top: 10px;
 }
-
-p.clinicas{
-  margin-top: -40px;
-}
-
-p.ubah{
-  margin-top: -40px;
-}
-
-.contacta{
-  margin-left: 46px;
-}
-.contactanos{
-  color: white;
-  text-decoration: underline;
-  text-align: center;
-}
-
-.email-catedra{
+.listado-footer p{
   color: white;
 }
 .logo-uba{
@@ -346,6 +322,28 @@ margin-right: 112px;
 
 }
 
+
+
+.listado-footer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.listado-footer li{
+  width:341px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.nombre-catedra{
+ padding-right: 200px
+}
+
+
+/*
   .footer{
     margin-top: -1px;
     background-color: black;
@@ -412,4 +410,5 @@ margin-right: 112px;
     margin-top: -3px;
     margin-right: 109px;
   }
+  */
 }
