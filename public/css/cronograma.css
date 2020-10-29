@@ -12,7 +12,7 @@
 .transparencia{
     width: 100%;
     background-color: rgb(255, 255, 255,0.3);
-    padding-top:50px;
+    padding-top:100px;
    
 }
 
@@ -22,9 +22,6 @@ section.contenedor-cronograma{
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
-    z-index: -1;
-    padding-bottom: 15px;
-
 }
 
 

@@ -76,8 +76,6 @@
                                     {{ __('Registrate') }}
                                 </button>
                             </button>
-                            <input type="reset" value="Borrar">
-                        </div>
 
                             </div>
                         </div>
@@ -86,6 +84,7 @@
             </div>
         </div>
     </div>
-</div>
+ </div>
+
 
 @endsection

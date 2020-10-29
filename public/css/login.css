@@ -6,6 +6,13 @@
     text-decoration: none;
 }
 
+.menu-mobile{
+  display: none;
+}
+
+div.titulo-principal-mobile{
+  width: 100%;
+}
 .container {
     margin-top: 12px;
 
@@ -15,29 +22,28 @@
   margin-right: 3px;
 }
 
+.card{
+  margin-bottom: 20px;
+}
 .card-header{
   text-align: center;
 }
-
-p{
+.card-body{
   text-align: center;
 }
 
-.olvidaste{
-  margin-left: 59px;
+
+
+.olvidasste{
+  padding-top: 10px;
+  margin:0 auto;
 }
 
-label {
-  text-align: center;
-}
 
 .form-check{
   text-align: center;
 }
 
-button{
-  margin-left: 89px;
-}
 
 .cajita-registrate{
   margin-top:10px;
@@ -47,9 +53,7 @@ p{
   margin-bottom: 0px;
 }
 
-.registrate-a{
-  margin-left: 88px;
-}
+
 
 p.clinicas{
   margin-top: -25px;
@@ -68,22 +72,48 @@ img.uba{
  }
 
 @media (min-width: 1024px){
-  .contenedor-login{
-    margin-bottom: 39px;
+
+  div#menu-escritorio{
+    display: none;
   }
 
+div.usuario-escritorio{
+  display: none;
+}
+
+div.titulo-principal-escritorio{
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  
+}
+ 
+  .contenedor-login{
+    margin-top: 40px;
+    height: 400px;
+  }
+
+  .card{
+    padding-bottom: 10px;
+  }
+  .col-md-8.offset-md-4{
+    margin: 0 auto;
+  }
+
+  .col-md-6.offset-md-4{
+    margin: 0 auto;
+  }
   .btn-link  {
     display: block;
     margin-right: 200px;
   }
-  .form-check{
-        margin-left: -104px;
-  }
+
   .olvidasste{
-    margin-left: 248px;
+    padding-top: 10px;
+   margin: 0 auto;
   }
   .cajita-registrate{
-        margin-left: 373px;
+       text-align: center;
         margin-top: 10px;
   }
   p{
@@ -91,39 +121,18 @@ img.uba{
   }
 
   #boton{
-    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .olvidaste{
-        margin-left: 120px;
-  }
+ 
   .registrate-a{
     display: contents;
   }
 
-  footer{
-    position: relative;
-    margin-right: 35px;
-    width: 1360px;
-    margin-left: -130px;
+  button.btn.btn-primary{
+    background-color: #007bff!important;
   }
 
-  .titulo-footer{
-    position: absolute;
-  }
-
-  .contacta{
-    position:relative;
-    display: flex;
-    text-align: center;
-    margin-left: 500px;
-  }
-
-
-  .logo-uba{
-    position: relative;
-  }
-
-  img.uba{
-    margin-top: -43px;
-  }
+  
 }

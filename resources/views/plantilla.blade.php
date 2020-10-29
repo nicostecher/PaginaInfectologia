@@ -21,9 +21,6 @@
             <a href="/index"><h4 id="letra-1">Enfermedades Infecciosas <br>Hospital de Clínicas</h4><h4 id="letra-2">Facultad de Medicina <br> Universidad de Buenos Aires</h4></a>
         </div>
 
-        <div class="titulo-principal-escritorio">
-          <a href="/index"><h4>Enfermedades Infecciosas <br>Hospital de Clínicas, "Jose de San Martin" <br>Facultad de Medicina, Universidad de Buenos Aires</h4></a>
-      </div>
 
       <div class="imagen-clinicas">
         <a href="/index"><img src="/imagenes/logo-clinicas-transparente-.jpg"  width="100px" height="95px" alt="uba"></a>
@@ -55,7 +52,7 @@
                     <li class="text-muted">Cambiar contraseña</li>
                     <li id="sesion"><a href="{{ route('logout') }}"
                      onclick="event.preventDefault();
-                                   document.getElementById('logout-form').submit();">
+                      document.getElementById('logout-form').submit();">
                       {{ __('Cerrar sesión') }}
                   </a>
 
@@ -69,17 +66,46 @@
                  </div>
                </ul>
 
-             </div>
-             <nav class="navbar navbar-dark">
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" color="black">
-                 <span class="navbar-toggler-icon"></span>
-               </button>
-             </nav>
-           </div>
-         </div>
+                </div>
+                <nav class="navbar navbar-dark">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" color="black">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </nav>
+              </div>
+            </div>
 
                <!--- MENU ESCRITORIO!-->
+              <div class="titulo-principal-escritorio">
+                <a href="/index"><h4>Enfermedades Infecciosas <br>Hospital de Clínicas "José de San Martín" <br>Facultad de Medicina - Universidad de Buenos Aires</h4></a>
+            </div>
 
+               <div id="menu-escritorio" class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a id="sec" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Secciones
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a id="crono"class="dropdown-item" href="/cronograma">Cronograma</a>
+                       <a id="clases"class="dropdown-item" href="/clases">Clases</a>
+                        <a id="casos" class="dropdown-item" href="/casosClinicos">Casos Clinicos</a>
+                        <a id="cuerpo"class="dropdown-item" href="/cuerpoDocente">Cuerpo Docente</a>
+                        <a id="biblio"class="dropdown-item" href="/bibliografia">Bibliografía</a>
+                        <a id="sitio"class="dropdown-item" href="/sitiosDeInteres">Sitios de Interes</a>
+                        <a id="comi" class="dropdown-item" href="/comisiones">Comisiones</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a id="com" class="nav-link" href="/comisiones">Comisiones</a>
+                    </li>
+                  </ul>
+                </div>
+               </div>
 
           <div class="usuario-escritorio">
             @guest
@@ -119,32 +145,6 @@
            </div>
            @endguest
 
-             <nav id="menu-escritorio" class="navbar navbar-expand-lg navbar-light">
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                 <ul class="navbar-nav">
-                   <li class="nav-item dropdown">
-                     <a id="sec" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       Secciones
-                     </a>
-                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a id="crono"class="dropdown-item" href="/cronograma">Cronograma</a>
-                      <a id="clases"class="dropdown-item" href="/clases">Clases</a>
-                       <a id="casos" class="dropdown-item" href="/casosClinicos">Casos Clinicos</a>
-                       <a id="cuerpo"class="dropdown-item" href="/cuerpoDocente">Cuerpo Docente</a>
-                       <a id="biblio"class="dropdown-item" href="/bibliografia">Bibliografía</a>
-                       <a id="sitio"class="dropdown-item" href="/sitiosDeInteres">Sitios de Interes</a>
-                       <a id="comi" class="dropdown-item" href="/comisiones">Comisiones</a>
-                     </div>
-                   </li>
-                   <li class="nav-item">
-                     <a id="com" class="nav-link" href="/comisiones">Comisiones</a>
-                   </li>
-                 </ul>
-               </div>
-             </nav>
             
     </header>
 
@@ -159,7 +159,7 @@
             Universidad de Buenos Aires.</p>
         </li>
         <li class="contacto">
-          <p >Contactanos: catedra_infectologia@gmail.com</p>
+          <a href="mailto:catedra_infectologia@gmail.com">Contactanos: catedra_infectologia@gmail.com</a>
         </li>
         <li class="imagen-footer">
           <a href="http://www.uba.ar/"><img class="uba" src="/imagenes/Logo-UBA.png" alt="logo-uba"></a>

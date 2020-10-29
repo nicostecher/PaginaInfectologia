@@ -18,12 +18,13 @@ body{
 }
 
 /*HEADER EN MOBILE*/
+
 header{
   background-color:white;
   opacity: 0.8;
   overflow: hidden;
   width: 100%;
-  box-sizing: border-box;
+  
 }
 
 .titulo-principal-mobile{
@@ -116,6 +117,7 @@ padding-top: 5px;
 
 #menu-escritorio{
  display: none;
+ margin-left: 150px;
 }
 
 
@@ -155,11 +157,17 @@ display: contents;
 
 .logo-uba img{
   display: inline-block;
-float: right;
-margin-right: 112px;
+  margin-right: 112px;
 }
 
 .email-nosotros{
+  color: white;
+}
+
+.listado-footer li{
+  padding-top: 5px;
+}
+.listado-footer li a {
   color: white;
 }
 
@@ -168,7 +176,21 @@ margin-right: 112px;
 
 @media (min-width: 1024px){
 
-    .menu-mobile{
+  header{
+    background-color:white;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+  }
+
+
+ 
+  .menu-mobile{
       display:none;
 
   }
@@ -178,15 +200,15 @@ margin-right: 112px;
   }
 
   .titulo-principal-escritorio{
-      display: inline-block;
-      margin-left: 22%;
+      display: initial;
       margin-top: 10px;
       margin-bottom: -25;
+      order: 3;
+      margin-left: 200px;
   }
 
   .titulo-principal-escritorio h4{
       text-align: center;
-      color: black;
   }
 
   .titulo-principal-escritorio a{
@@ -196,9 +218,8 @@ margin-right: 112px;
 
 
   .imagen-uba{
-      float: left;
-      margin-top:5px;
-      margin-left: 5px;
+     margin-top:5px;
+      margin-left: 15px;
       margin-bottom: 5px;
       display: initial;
   }
@@ -206,17 +227,14 @@ margin-right: 112px;
 
   .imagen-clinicas{
       display: block;
-      float: right;
-      margin-right: 30px;
+      margin-right: 15px;
       margin-top: 3px;
+      order: 5;
   }
 
   .usuario-escritorio{
-      display: initial;
-    float: right;
-    margin-top: 30px;
-    margin-right:70px;
-    box-sizing: border-box;
+    display: initial;
+    order: 4;
   }
 
   /* BOTON DE USUARIO*/
@@ -226,6 +244,7 @@ margin-right: 112px;
       color:rgba(255, 255, 255, 0.596) ;
       border-color: rgba(255, 255, 255, 0.596);
       margin-left: 85px;
+      margin: 0 auto;
   }
 
   .card.card-body{
@@ -233,11 +252,12 @@ margin-right: 112px;
       margin: 5px;
       padding: 3px;
       padding-bottom: 0px;
+      text-align: center;
   }
 
   .card.card-body ul li {
       padding-top:3px;
-      padding-left: 14px;
+     
       color: white;
   }
 
@@ -245,11 +265,6 @@ margin-right: 112px;
     color: white;
   }
 
-
-
-  #sesion{
-      margin-left:25px
-  }
 
   /*BARRA DE NAVEGACION*/
 
@@ -260,14 +275,13 @@ margin-right: 112px;
   #com{
     color:black;
   }
+
+  
   #menu-escritorio{
-        position: absolute;
-        display: initial;
-        left: 95px;
-      padding-top:5px;
-        color: black;
-        margin-top: 33px;
-        margin-left: 25px;
+      display: inline-block;
+      position: absolute;
+      flex-basis: 50%;
+     
       }
 
   .navbar-light .navbar-nav .nav-link {
@@ -317,10 +331,6 @@ margin-right: 112px;
       font-weight: lighter;
   }
 
-.navbar-nav{
- position: relative;
-
-}
 
 
 
@@ -329,7 +339,8 @@ margin-right: 112px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .listado-footer li{
@@ -338,9 +349,8 @@ margin-right: 112px;
   padding-top: 25px;
 }
 
-.nombre-catedra{
- padding-right: 200px
-}
+
+
 
 
 /*

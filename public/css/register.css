@@ -3,9 +3,18 @@
     margin-bottom: 10px;
 }
 
-.form-group.row.mb-0{
-  margin-left: 62px;
+.menu-mobile{
+  display: none;
 }
+
+div.titulo-principal-mobile{
+  width: 100%;
+}
+.row.justify-content-center{
+  text-align:center;
+}
+
+
 
 button .btn btn-primary{
   margin-left: 75px;
@@ -15,16 +24,38 @@ button .btn btn-primary{
   text-align: center;
 }
 
-@media (min-width: 768px){
-  .form-group.row.mb-0{
-    margin-left: 90px;}
-}
-@media (min-width: 1024px){
-.registrate{
-      margin-left: 160px;
-}
 
-.card-header{
-  text-align: center;
-}
+@media (min-width: 1024px){
+
+  div#menu-escritorio{
+      display: none;
+    }
+
+  div.usuario-escritorio{
+    display: none;
+  }
+
+  div.titulo-principal-escritorio{
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    
+  }
+    .card{
+      margin-top: 20px;
+    }
+
+    .container{
+      height: 400px;
+    }
+
+    .col-md-6.offset-md-4{
+      margin:0 auto;
+    }
+
+  .card-header{
+    text-align: center;
+  }
+
+
 }

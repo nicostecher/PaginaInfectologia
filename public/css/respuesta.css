@@ -1,11 +1,50 @@
-div{
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.menu-mobile{
+  display: none;
+}
+
+div.titulo-principal-mobile{
+  width: 100%;
 }
 .container{
-  height: 370px;
   margin-bottom: 30px;
 }
 
 .card{
-  margin-top: 150px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+@media (min-width: 1024px){
+
+  div#menu-escritorio{
+    display: none;
+  }
+
+  div.usuario-escritorio{
+    display: none;
+  }
+
+  div.titulo-principal-escritorio{
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    
+  }
+
+  .container{
+    height: 400px;
+  }
+  .card{
+    margin-top: 100px;
+  }
+ 
 }
