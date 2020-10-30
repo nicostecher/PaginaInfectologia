@@ -98,6 +98,9 @@
                         <a id="biblio"class="dropdown-item" href="/bibliografia">Bibliografía</a>
                         <a id="sitio"class="dropdown-item" href="/sitiosDeInteres">Sitios de Interes</a>
                         <a id="comi" class="dropdown-item" href="/comisiones">Comisiones</a>
+                        @if(auth::user()->administrador==1)
+                          <a id="comi" class="dropdown-item"a href="/admin">Administrador</a>
+                        @endif
                       </div>
                     </li>
                     <li class="nav-item">
