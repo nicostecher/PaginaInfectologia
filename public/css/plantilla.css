@@ -201,8 +201,7 @@ display: contents;
 
   .titulo-principal-escritorio{
       display: initial;
-      margin-top: 10px;
-      margin-bottom: -25;
+     
       order: 3;
       margin-left: 200px;
   }

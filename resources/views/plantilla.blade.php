@@ -49,7 +49,7 @@
                     @else
                     <li class="text-muted">{{auth::user()->nombre}}</li>
                     <li class="text-muted">{{auth::user()->apellido}}</li>
-                    <li class="text-muted">Cambiar contraseña</li>
+                    <li class="text-muted"><a href="/cambiarPassword">cambiar Contraseña</a>
                     <li id="sesion"><a href="{{ route('logout') }}"
                      onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();">
@@ -128,7 +128,7 @@
                <div class="collapse" id="collapseExample">
                  <div class="card card-body">
                    <ul class="sesion-usuario" type="bullet">
-                     <li>Cambiar contraseña</li>
+                     <li> <a href="/cambiarPassword">Cambiar contraseña</a> </li>
                      <li id="sesion"><a href="{{ route('logout') }}"
                       onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">

@@ -13,6 +13,10 @@
 
 
 Route::group(['middleware' => ['admin']], function () {
+    
+    route::get('/admin', function(){
+        return view('admin');
+      });
 
     Route::get("/listadoCasosClinicos","CasosClinicosController@listadoCasosClinicos");
 
@@ -131,10 +135,7 @@ Route::get('/novedades', function () {
 
 Route::group(['middleware' => 'auth'], function () {
 
-  route::get('/admin', function(){
-    return view('admin');
-  });
-
+  
     Route::get('/bibliografia', "bibliografiaController@vista");
 
     Route::get('/', function () {
@@ -158,6 +159,11 @@ Route::group(['middleware' => 'auth'], function () {
     route::get("/index", "NovedadesController@mostrarNovedades");
 
     route::get("/sitiosDeInteres", "interesController@vista");
+
+    Route::get("/cambiarPassword", 
+    "cambiarPasswordController@vista");
+
+    Route::post("/cambiarPassword","cambiarPasswordController@actualizarPassword");
 });
 
 
