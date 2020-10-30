@@ -4,6 +4,13 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
+use Illuminate\Support\Str;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Auth\Events\PasswordReset;
+
 
 class ResetPasswordController extends Controller
 {
@@ -25,7 +32,7 @@ class ResetPasswordController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/index';
 
     /**
      * Create a new controller instance.
@@ -36,4 +43,37 @@ class ResetPasswordController extends Controller
     {
         $this->middleware('guest');
     }
+
+    protected function resetPassword($user, $password)
+    {
+        $user->contrasena = Hash::make($password);
+
+        $user->setRememberToken(Str::random(60));
+
+        $user->save();
+
+        event(new PasswordReset($user));
+
+        $this->guard()->login($user);
+    }
+
+    
+    protected function rules()
+    {
+        return [
+            'token' => 'required',
+            'email' => 'required|email',
+            'password' => 'required|confirmed|min:8',
+        ];
+    }
+
+    protected function validationErrorMessages()
+    {
+        return [
+            "password.min"=> "la contraseña debe tener al menos 8 caracteres",
+            "password.required"=>"el campo no puede estar vacio",
+            "password.confirmed"=>"las contraseñas no coinciden",
+        ];
+    }
+
 }
