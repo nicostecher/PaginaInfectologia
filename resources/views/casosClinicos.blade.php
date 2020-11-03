@@ -2,8 +2,6 @@
 
 
 @section("main")
-
-<link rel="stylesheet" href="/css/header.css">
 <link rel="stylesheet" href="/css/casosClinicos.css">
 
 <div class="imagen-principal">
@@ -11,7 +9,7 @@
 <div class="contenedor-casosClinicos">
   
   <div class="titulo-casosClinicos">
-      <h2>Casos Clinicos</h2>
+      <h2>Casos Clínicos</h2>
   </div>
 
   <div class="contenido-casosClinicos"> 
@@ -39,6 +37,9 @@
 
 </div>
 
+
 @endsection
 
 <script src="/js/iframe.js"></script>
+
+

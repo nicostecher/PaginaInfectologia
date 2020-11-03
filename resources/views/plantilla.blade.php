@@ -36,10 +36,10 @@
                 <ul class="listado-mobile">
                   <li class="text-muted"><a href="/cronograma">Cronograma</a></li>
                   <li class="text-muted"><a href="/clases">Clases</a></li>
-                  <li class="text-muted"><a href="/casosClinicos">Casos Clinicos</a></li>
+                  <li class="text-muted"><a href="/casosClinicos">Casos Clínicos</a></li>
                   <li class="text-muted"><a href="/cuerpoDocente">Cuerpo Docente</a></li>
                   <li class="text-muted"><a href="/bibliografia">Bibliografía</a></li>
-                  <li class="text-muted"><a href="/sitiosDeInteres">Sitios de Interes</a></li>
+                  <li class="text-muted"><a href="/sitiosDeInteres">Sitios de Interés</a></li>
 
                   <div class="usuario-mobile">
                     @guest
@@ -49,7 +49,7 @@
                     @else
                     <li class="text-muted">{{auth::user()->nombre}}</li>
                     <li class="text-muted">{{auth::user()->apellido}}</li>
-                    <li class="text-muted"><a href="/cambiarPassword">cambiar Contraseña</a>
+                    <li class="text-muted"><a href="/cambiarPassword">Cambiar contraseña</a>
                     <li id="sesion"><a href="{{ route('logout') }}"
                      onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();">
@@ -93,15 +93,11 @@
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                        <a id="crono"class="dropdown-item" href="/cronograma">Cronograma</a>
                        <a id="clases"class="dropdown-item" href="/clases">Clases</a>
-                        <a id="casos" class="dropdown-item" href="/casosClinicos">Casos Clinicos</a>
+                        <a id="casos" class="dropdown-item" href="/casosClinicos">Casos Clínicos</a>
                         <a id="cuerpo"class="dropdown-item" href="/cuerpoDocente">Cuerpo Docente</a>
                         <a id="biblio"class="dropdown-item" href="/bibliografia">Bibliografía</a>
-                        <a id="sitio"class="dropdown-item" href="/sitiosDeInteres">Sitios de Interes</a>
+                        <a id="sitio"class="dropdown-item" href="/sitiosDeInteres">Sitios de Interés</a>
                         <a id="comi" class="dropdown-item" href="/comisiones">Comisiones</a>
-                        @if(auth::user()->administrador==1)
-                          <a id="comi" class="dropdown-item"a href="/admin">Administrador</a>
-                        @endif
-                      </div>
                     </li>
                     <li class="nav-item">
                       <a id="com" class="nav-link" href="/comisiones">Comisiones</a>
@@ -159,7 +155,7 @@
       <ul class="listado-footer">
         <li class="nombre-catedra">
           <p>Infectología <br> Hospital de Clínicas <br>
-            Universidad de Buenos Aires.</p>
+            Universidad de Buenos Aires</p>
         </li>
         <li class="contacto">
           <a href="mailto:catedra_infectologia@gmail.com">Contactanos: catedra_infectologia@gmail.com</a>

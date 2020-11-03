@@ -15,7 +15,7 @@
             </div>
      
             <div class="volverMenu">
-             <a href="/admin" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Volver al menu</a>
+             <a href="/admin" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Volver al menú</a>
             </div>
         </div>
 

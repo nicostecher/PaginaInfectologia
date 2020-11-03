@@ -23,7 +23,6 @@ body{
     box-shadow:  0 0 5px black;
     width: 100%;
     margin: 0 auto;
-    height: auto;
     margin-bottom: 20px;
     display: block;
     overflow: hidden;
@@ -60,10 +59,10 @@ body{
 @media (min-width:1024px){
     .contenedor-bibliografia{
     width: 80%;
+    height:400px;
     margin-right: 10%;
     margin-left: 10%;
     margin-bottom: 30px;
-    height: auto;
     }
 
 
@@ -82,5 +81,6 @@ body{
        text-align: center;
 
     }
-
+    
+   
 }

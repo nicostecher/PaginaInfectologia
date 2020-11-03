@@ -5,7 +5,7 @@
 <section id="contenedor">
 
 <div class="titulo">
-<h3>Cargar una Bibliografia</h3>
+<h3>Cargar una Bibliografía</h3>
 </div>
 
 <div class="contenido-carga" id="contenido-archivos">

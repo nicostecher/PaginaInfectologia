@@ -4,18 +4,18 @@
 <link rel="stylesheet" href="/css/listadoDeEdicion.css">
 
 @section('main')
-
+s
     <div class="titulo">
-    <h3>Listado de Casos Clinicos</h3>
+    <h3>Listado de Casos Clínicos</h3>
         </div>
  
         <div class="menu-edicion">
             <div class="claseNueva">
-                <a href="/nuevoCasoClinico" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Cargar un Caso Clinico</a>
+                <a href="/nuevoCasoClinico" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Cargar un Caso Clínico</a>
             </div>
         
             <div class="volverMenu">
-                <a href="/admin" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Volver al menu</a>
+                <a href="/admin" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Volver al menú</a>
             </div>
         </div>
 
@@ -28,8 +28,9 @@
        </div>
 
         <article class="listado">
+            @foreach ($casos as $caso)
             <ul>
-                @foreach ($casos as $caso)
+                
                     <li>
                         <div class="nombre">
                             <p>{{$caso->nombre}}</p>
@@ -61,8 +62,8 @@
                         </form>
                         </li>
                     </div>
-                @endforeach
             </ul>
+            @endforeach
         </article>
 
 

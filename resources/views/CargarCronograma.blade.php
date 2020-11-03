@@ -12,7 +12,7 @@
 <div class="nombre">
   <form action="/cronograma" method="post" enctype="multipart/form-data">
     {{ csrf_field() }}
-    <label for="nombre">nombre:</label>
+    <label for="nombre">Nombre:</label>
     <input type="text" name="nombre" value="">
     @error('nombre')
     <small class="error">{{$message}}</small>

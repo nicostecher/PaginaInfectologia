@@ -5,7 +5,7 @@
 <section id="contenedor">
 
 <div class="titulo">
-<h3>Cargar un Caso Clinico</h3>
+<h3>Cargar un Caso Clínico</h3>
 </div>
 
 <div class="contenido-carga" id="contenido-archivos">

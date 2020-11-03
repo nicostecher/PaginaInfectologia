@@ -57,10 +57,10 @@
             <a href="/cronograma">Cronograma</a>
           </div>
           <div class="categoria-bibliografia">
-            <a href="/bibliografia">Bibliografia</a>
+            <a href="/bibliografia">Bibliografía</a>
           </div>
           <div class="categoria-casosClinicos">
-            <a href="/casosClinicos">Casos Clinicos</a>
+            <a href="/casosClinicos">Casos Clínicos</a>
           </div>
           <div class="categoria-clases">
             <a href="/clases">Clases</a>

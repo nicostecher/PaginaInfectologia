@@ -5,16 +5,16 @@
 @section('main')
 
 <div class="titulo">
-    <h3>Listado de bibliografias</h3>
+    <h3>Listado de bibliografías</h3>
         </div>
 
         <div class="menu-edicion">
             <div class="claseNueva">
-                <a href="/cargarBibliografia" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Cargar una Bibliografia</a>
+                <a href="/cargarBibliografia" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Cargar una Bibliografía</a>
                 </div>
     
             <div class="volverMenu">
-                <a href="/admin" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Volver al menu</a>
+                <a href="/admin" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Volver al menú</a>
                 </div>
             </div>
     

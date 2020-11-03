@@ -17,7 +17,7 @@
 
 .transparencia{
     background-color: rgb(255, 255, 255,0.3);
-  padding-top: 30px;
+    padding-top: 30px;
 }
 
 .titulo-escritorio{
@@ -65,6 +65,10 @@ section{
 .video{
     position: relative;
     margin-top: 15px;
+}
+
+.video iframe{
+    width: 100%;
 }
 
 .descripcion p{

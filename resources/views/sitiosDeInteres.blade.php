@@ -7,7 +7,7 @@
 <div class="contenedor-sitio">
   <div class="caja">
     <div class="titulo-sitio">
-        <h2>Sitios de Interes</h2>
+        <h2>Sitios de Interés</h2>
     </div>
     <div class="contenido-sitio">
       <ul type= "circle" class="listado-sitio">
@@ -20,5 +20,4 @@
     </div>
   </div>
 </div>
-
 @endsection
