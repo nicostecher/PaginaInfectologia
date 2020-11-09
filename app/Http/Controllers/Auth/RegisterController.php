@@ -106,7 +106,7 @@ class RegisterController extends Controller
     public function Email($dates){
         mail::send("emails.plantilla",$dates,function($message){
             $message->subject("Solicitúd de Acceso a la Cursada");
-            $message->to("nicostecherg@gmail.com");
+            $message->to("nicostecher1@gmail.com");
             $message->from("no-reply@cursada.com", "cursada");
         });
     }

@@ -37,8 +37,9 @@ class bibliografiaController extends Controller
        
         $nuevaBibliografia= new bibliografia();
 
-
-        $ruta=$req->file('documento')->store("upload","public");
+        $archivo=$req->file("documento");
+        $nombre=$archivo->getClientOriginalName();
+        $ruta=$archivo->storeAs("public","upload"."/". $nombre);
         $nombreArchivo=basename($ruta);
         
         $nuevaBibliografia->titulo= $req["titulo"];
@@ -61,7 +62,7 @@ class bibliografiaController extends Controller
 
         $nombre =$descarga->titulo;
     
-         return response()->download($ruta, $nombre);
+         return response()->download($ruta);
 
       }
 
@@ -95,8 +96,10 @@ class bibliografiaController extends Controller
 
             Storage::delete("public/upload/".$bibliografia->documento);
 
-            $bibliografiaVieja["documento"]=$req->file("documento")->store("upload","public");
-            $nombreArchivo=basename($bibliografiaVieja["documento"]);
+            $bibliografiaVieja["documento"]=$req->file("documento");
+            $nombre=$bibliografiaVieja["documento"]->getClientOriginalName();
+            $ruta=$bibliografiaVieja["documento"]->storeAs("public","upload"."/". $nombre);
+            $nombreArchivo=basename($ruta);
 
             $bibliografiaVieja["documento"]=$nombreArchivo;
 

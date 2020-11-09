@@ -72,8 +72,6 @@ Route::group(['middleware' => ['admin']], function () {
 
     route::post("/listadoDocentes","DocentesController@borrarDocente");
 
-    route::get("/bibliografia/{id}","bibliografiaController@descargarBibliografia");
-
     route::get("/listadoBibliografias","bibliografiaController@listadoBibliografia");
 
     route::post("/editarBibliografia/{id}","bibliografiaController@actualizarBibliografia");
@@ -137,14 +135,8 @@ Route::group(['middleware' => 'auth'], function () {
 
   
     Route::get('/bibliografia', "bibliografiaController@vista");
-
-    Route::get('/', function () {
-        return view('welcome');
-    });
-
-    Route::get('/header', function(){
-        return view("header");
-    });
+    
+    route::get("/bibliografia/{id}","bibliografiaController@descargarBibliografia");
 
     route::get('/cuerpoDocente',"DocentesController@vista");
 
